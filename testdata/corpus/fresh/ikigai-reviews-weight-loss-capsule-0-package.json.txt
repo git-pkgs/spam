@@ -1,0 +1,15 @@
+{
+  "name": "ikigai-reviews-weight-loss-capsule",
+  "version": "1.0.0",
+  "description": "Ikigai Weight Loss: Indulge in the delightful flavors of Ikigai Weight Loss to potentially curb weight loss.",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ikigai",
+    "Reviews"
+  ],
+  "author": "Cris",
+  "license": "ISC"
+}

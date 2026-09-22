@@ -1,0 +1,53 @@
+{
+  "rules": [
+    {
+      "id": "PROMOTIONAL_PHRASES",
+      "description": "Three promotional cues, or two offer claims with a cue and a URL in one document",
+      "category": "promotion",
+      "default_weight": 1,
+      "provenance": "git-pkgs/spam"
+    },
+    {
+      "id": "KEYWORD_REPETITION",
+      "description": "A four-word text sequence repeated at least six times in one document",
+      "category": "repetition",
+      "default_weight": 0,
+      "provenance": "git-pkgs/spam"
+    },
+    {
+      "id": "REPEATED_URLS",
+      "description": "Three URLs share a destination, retaining queries, with one occurrence nearest a promotional cue within 256 bytes on the same line",
+      "category": "links",
+      "default_weight": 1,
+      "provenance": "git-pkgs/spam"
+    },
+    {
+      "id": "LINK_HEAVY",
+      "description": "At least ten URLs occupy at least 35 percent of raw document bytes",
+      "category": "links",
+      "default_weight": 0,
+      "provenance": "git-pkgs/spam"
+    },
+    {
+      "id": "REPEATED_LINES",
+      "description": "A trimmed line of at least 24 bytes occurs three times in one document",
+      "category": "repetition",
+      "default_weight": 0,
+      "provenance": "git-pkgs/spam"
+    }
+  ],
+  "patterns": [
+    {
+      "id": 1,
+      "expression": "(?i)\\b(click here|check here|generate here|clicking this button|download now|buy now|visit our|contact us|no human verification|no survey|guaranteed profit)\\b"
+    },
+    {
+      "id": 2,
+      "expression": "(?i)https?://"
+    },
+    {
+      "id": 3,
+      "expression": "(?i)\\b((free|unlimited) (gems|coins|credits|followers)|no human verification|no survey|guaranteed (profit|profits|returns))\\b"
+    }
+  ]
+}

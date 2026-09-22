@@ -1,0 +1,2 @@
+testdata/corpus/** -text
+rules/upstream/** -text

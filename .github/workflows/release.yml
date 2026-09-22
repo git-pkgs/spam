@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions: {}
+
+jobs:
+  checks:
+    uses: $/.github/workflows/ci.yml
+
+  release:
+    needs: checks
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create release
+        run: |
+          gh release list --repo "$GITHUB_REPOSITORY" --limit 100 --json tagName
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "Release already exists for $TAG"
+            exit 0
+          fi
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --title "$TAG" --generate-notes --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}

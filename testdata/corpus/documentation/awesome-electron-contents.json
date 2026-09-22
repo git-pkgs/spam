@@ -1,0 +1,57 @@
+[
+  {
+    "name": "package/package.json",
+    "bytes": 809,
+    "regular": true
+  },
+  {
+    "name": "package/.editorconfig",
+    "bytes": 129,
+    "regular": true
+  },
+  {
+    "name": "package/.gitattributes",
+    "bytes": 34,
+    "regular": true
+  },
+  {
+    "name": "package/awesome.json",
+    "bytes": 62122,
+    "regular": true
+  },
+  {
+    "name": "package/build.js",
+    "bytes": 1458,
+    "regular": true
+  },
+  {
+    "name": "package/code-of-conduct.md",
+    "bytes": 3230,
+    "regular": true
+  },
+  {
+    "name": "package/contributing.md",
+    "bytes": 2485,
+    "regular": true
+  },
+  {
+    "name": "package/electron-logo.svg",
+    "bytes": 1905,
+    "regular": true
+  },
+  {
+    "name": "package/readme.md",
+    "bytes": 32508,
+    "regular": true
+  },
+  {
+    "name": "package/test.js",
+    "bytes": 914,
+    "regular": true
+  },
+  {
+    "name": "package/.github/pull_request_template.md",
+    "bytes": 320,
+    "regular": true
+  }
+]

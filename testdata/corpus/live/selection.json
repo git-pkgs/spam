@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-22T17:04:12Z",
+  "catalogue_sha256": "9ce4e0f3dc77240a147ae80b0fadeba776294d36164fb4d1136b2664c3b8764e",
+  "packages": 10,
+  "documents": 18,
+  "document_bytes": 69671,
+  "selection": "Purposeful controls from a previously inspected 100-release live sample and its Helm/Maven coverage follow-ups. Selected to cover ordinary informational signals and distinct manifest formats. Review was not blind to scanner output; this is not an unseen test set or a prevalence sample.",
+  "original_sample": {
+    "seed": "spam-live-3",
+    "packages": 100,
+    "registries": 7,
+    "selection_at": "2026-09-22T15:39:24.424725Z"
+  },
+  "groups": "Keep both AWS SDK Kotlin components together and both fragcap crates together. Ten releases form eight conservative project groups; operator independence is unproven.",
+  "members": "Selected archive manifests and READMEs, plus separate Maven POMs. Feed descriptions are omitted because they are package-level snapshots. Document source_kind distinguishes archive members from separately fetched manifests.",
+  "evaluation_status": "All documents had been scanned before promotion. No expressions or weights were changed for this selection.",
+  "scanner_sources": {
+    "spam.go": "fd99587947bef29ba2d07514a176d632ff2ca2779d14086475020a643a97c94a",
+    "signals.go": "caeb24fcd3ed6f9a7d33c839b36f20127fe1f0640245e8d0d00082a640d96b70",
+    "rules.go": "4c053764b13bfb4fb0b09cc41168e9e7fe636461fdcddf451030c61ebd8928a9"
+  }
+}

@@ -1,0 +1,642 @@
+--- !ruby/object:Gem::Specification
+name: casino
+version: !ruby/object:Gem::Version
+  version: 4.1.2
+platform: ruby
+authors:
+- Nils Caspar
+- Raffael Schmid
+- Samuel Sieg
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2016-05-26 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: capybara
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.1'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.1'
+- !ruby/object:Gem::Dependency
+  name: rake
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '10.0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '10.0'
+- !ruby/object:Gem::Dependency
+  name: rspec
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.0'
+- !ruby/object:Gem::Dependency
+  name: rspec-its
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.0'
+- !ruby/object:Gem::Dependency
+  name: rspec-rails
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.0'
+- !ruby/object:Gem::Dependency
+  name: sqlite3
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.3'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.3'
+- !ruby/object:Gem::Dependency
+  name: factory_girl
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '4.1'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '4.1'
+- !ruby/object:Gem::Dependency
+  name: webmock
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.9'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.9'
+- !ruby/object:Gem::Dependency
+  name: coveralls
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.7'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.7'
+- !ruby/object:Gem::Dependency
+  name: rails
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 4.1.0
+    - - "<"
+      - !ruby/object:Gem::Version
+        version: 4.3.0
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 4.1.0
+    - - "<"
+      - !ruby/object:Gem::Version
+        version: 4.3.0
+- !ruby/object:Gem::Dependency
+  name: sass-rails
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 4.0.0
+    - - "<"
+      - !ruby/object:Gem::Version
+        version: 6.0.0
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 4.0.0
+    - - "<"
+      - !ruby/object:Gem::Version
+        version: 6.0.0
+- !ruby/object:Gem::Dependency
+  name: addressable
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.3'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.3'
+- !ruby/object:Gem::Dependency
+  name: terminal-table
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.4'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '1.4'
+- !ruby/object:Gem::Dependency
+  name: useragent
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.4'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.4'
+- !ruby/object:Gem::Dependency
+  name: faraday
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.8'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.8'
+- !ruby/object:Gem::Dependency
+  name: rotp
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.0'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '2.0'
+- !ruby/object:Gem::Dependency
+  name: grape
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.8'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.8'
+- !ruby/object:Gem::Dependency
+  name: grape-entity
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.4'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.4'
+- !ruby/object:Gem::Dependency
+  name: rqrcode_png
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.1'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.1'
+- !ruby/object:Gem::Dependency
+  name: kaminari
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.16'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '0.16'
+description: CASino is a simple CAS (Central Authentication Service) server.
+email:
+- ncaspar@me.com
+- raffael@yux.ch
+- samuel.sieg@me.com
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- ".gitignore"
+- ".rspec"
+- ".ruby-gemset"
+- ".travis.yml"
+- Gemfile
+- LICENSE.txt
+- README.md
+- Rakefile
+- app/api/casino/api.rb
+- app/api/casino/api/entity/auth_token_ticket.rb
+- app/api/casino/api/resource/auth_token_tickets.rb
+- app/assets/fonts/casino-icons.eot
+- app/assets/fonts/casino-icons.svg
+- app/assets/fonts/casino-icons.ttf
+- app/assets/fonts/casino-icons.woff
+- app/assets/images/favicon.png
+- app/assets/images/logo.png
+- app/assets/images/logo@2x.png
+- app/assets/images/rails.png
+- app/assets/javascripts/casino/application.js.erb
+- app/assets/javascripts/casino/index.js
+- app/assets/javascripts/casino/sessions.js
+- app/assets/stylesheets/casino.scss
+- app/assets/stylesheets/casino/icons.scss
+- app/assets/stylesheets/casino/normalize.scss
+- app/authenticators/casino/static_authenticator.rb
+- app/builders/casino/proxy_response_builder.rb
+- app/builders/casino/ticket_validation_response_builder.rb
+- app/controllers/casino/application_controller.rb
+- app/controllers/casino/auth_tokens_controller.rb
+- app/controllers/casino/controller_concern/ticket_validator.rb
+- app/controllers/casino/login_attempts_controller.rb
+- app/controllers/casino/proxy_tickets_controller.rb
+- app/controllers/casino/service_tickets_controller.rb
+- app/controllers/casino/sessions_controller.rb
+- app/controllers/casino/two_factor_authenticators_controller.rb
+- app/helpers/application_helper.rb
+- app/helpers/casino/sessions_helper.rb
+- app/helpers/casino/two_factor_authenticators_helper.rb
+- app/models/casino/auth_token_ticket.rb
+- app/models/casino/login_attempt.rb
+- app/models/casino/login_ticket.rb
+- app/models/casino/model_concern/browser_info.rb
+- app/models/casino/model_concern/consumable_ticket.rb
+- app/models/casino/model_concern/ticket.rb
+- app/models/casino/proxy_granting_ticket.rb
+- app/models/casino/proxy_ticket.rb
+- app/models/casino/service_rule.rb
+- app/models/casino/service_ticket.rb
+- app/models/casino/service_ticket/single_sign_out_notifier.rb
+- app/models/casino/ticket_granting_ticket.rb
+- app/models/casino/two_factor_authenticator.rb
+- app/models/casino/user.rb
+- app/models/casino/validation_result.rb
+- app/processors/casino/authentication_processor.rb
+- app/processors/casino/browser_processor.rb
+- app/processors/casino/proxy_granting_ticket_processor.rb
+- app/processors/casino/service_ticket_processor.rb
+- app/processors/casino/ticket_granting_ticket_processor.rb
+- app/processors/casino/two_factor_authenticator_processor.rb
+- app/services/casino/auth_token_validation_service.rb
+- app/views/casino/application/_footer.html.erb
+- app/views/casino/application/_messages.html.erb
+- app/views/casino/kaminari/_next_page.html.erb
+- app/views/casino/kaminari/_paginator.html.erb
+- app/views/casino/kaminari/_prev_page.html.erb
+- app/views/casino/login_attempts/_table.html.erb
+- app/views/casino/login_attempts/index.html.erb
+- app/views/casino/service_tickets/validate.text.erb
+- app/views/casino/sessions/index.html.erb
+- app/views/casino/sessions/logout.html.erb
+- app/views/casino/sessions/new.html.erb
+- app/views/casino/sessions/service_not_allowed.html.erb
+- app/views/casino/sessions/validate_otp.html.erb
+- app/views/casino/two_factor_authenticators/new.html.erb
+- app/views/layouts/application.html.erb
+- casino-public_cert.pem
+- casino.gemspec
+- config/.gitignore
+- config/cas.yml
+- config/database.yml
+- config/initializers/kaminari.rb
+- config/initializers/mime_types.rb
+- config/initializers/wrap_parameters.rb
+- config/locales/ar.yml
+- config/locales/de.yml
+- config/locales/en.yml
+- config/locales/fr.yml
+- config/locales/pt-BR.yml
+- config/locales/ru.yml
+- config/locales/zh-CN.yml
+- config/locales/zh-TW.yml
+- config/routes.rb
+- db/migrate/20130809135400_create_core_schema.rb
+- db/migrate/20130809135401_rename_base_models.rb
+- db/migrate/20131022110146_cleanup_indexes.rb
+- db/migrate/20131022110246_fix_long_index_names.rb
+- db/migrate/20131022110346_change_service_to_text.rb
+- db/migrate/20140821142611_change_user_agent_to_text.rb
+- db/migrate/20140827183611_fix_length_of_text_fields.rb
+- db/migrate/20140831205255_create_auth_token_tickets.rb
+- db/migrate/20151022192752_add_user_ip_to_ticket_granting_ticket.rb
+- db/migrate/20160502074450_create_login_attempts.rb
+- db/migrate/20160524121117_remove_username_from_login_attempts.rb
+- lib/assets/.gitkeep
+- lib/casino.rb
+- lib/casino/authenticator.rb
+- lib/casino/engine.rb
+- lib/casino/inflections.rb
+- lib/casino/tasks.rb
+- lib/casino/tasks/authentication.rake
+- lib/casino/tasks/cleanup.rake
+- lib/casino/tasks/service_rule.rake
+- lib/casino/tasks/user.rake
+- lib/casino/version.rb
+- lib/generators/casino/install/USAGE
+- lib/generators/casino/install/install_generator.rb
+- lib/generators/casino/install/templates/README
+- lib/generators/casino/install/templates/cas.yml
+- lib/generators/casino/install/templates/casino_and_overrides.scss
+- lib/generators/casino/templates/casino_core.rb
+- lib/generators/casino/templates/database.yml
+- public/404.html
+- public/422.html
+- public/500.html
+- public/favicon.ico
+- public/robots.txt
+- script/rails
+- spec/authenticator/base_spec.rb
+- spec/authenticator/static_spec.rb
+- spec/controllers/auth_tokens_controller_spec.rb
+- spec/controllers/login_attempts_controller_spec.rb
+- spec/controllers/proxy_tickets_controller_spec.rb
+- spec/controllers/service_and_proxy_tickets_controller_spec.rb
+- spec/controllers/service_tickets_controller_spec.rb
+- spec/controllers/sessions_controller_spec.rb
+- spec/controllers/two_factor_authenticators_controller_spec.rb
+- spec/dummy/Rakefile
+- spec/dummy/app/assets/javascripts/application.js
+- spec/dummy/app/assets/stylesheets/application.css
+- spec/dummy/app/assets/stylesheets/casino_and_overrides.scss
+- spec/dummy/app/controllers/application_controller.rb
+- spec/dummy/app/helpers/application_helper.rb
+- spec/dummy/app/mailers/.gitkeep
+- spec/dummy/app/models/.gitkeep
+- spec/dummy/app/views/layouts/application.html.erb
+- spec/dummy/config.ru
+- spec/dummy/config/application.rb
+- spec/dummy/config/boot.rb
+- spec/dummy/config/cas.yml
+- spec/dummy/config/database.yml
+- spec/dummy/config/environment.rb
+- spec/dummy/config/environments/development.rb
+- spec/dummy/config/environments/production.rb
+- spec/dummy/config/environments/test.rb
+- spec/dummy/config/initializers/backtrace_silencers.rb
+- spec/dummy/config/initializers/inflections.rb
+- spec/dummy/config/initializers/mime_types.rb
+- spec/dummy/config/initializers/secret_token.rb
+- spec/dummy/config/initializers/session_store.rb
+- spec/dummy/config/initializers/wrap_parameters.rb
+- spec/dummy/config/locales/en.yml
+- spec/dummy/config/routes.rb
+- spec/dummy/db/.gitkeep
+- spec/dummy/db/migrate/20140831214845_create_core_schema.casino.rb
+- spec/dummy/db/migrate/20140831214846_rename_base_models.casino.rb
+- spec/dummy/db/migrate/20140831214847_cleanup_indexes.casino.rb
+- spec/dummy/db/migrate/20140831214848_fix_long_index_names.casino.rb
+- spec/dummy/db/migrate/20140831214849_change_service_to_text.casino.rb
+- spec/dummy/db/migrate/20140831214850_change_user_agent_to_text.casino.rb
+- spec/dummy/db/migrate/20140831214851_fix_length_of_text_fields.casino.rb
+- spec/dummy/db/migrate/20140831214852_create_auth_token_tickets.casino.rb
+- spec/dummy/db/migrate/20151026130743_add_user_ip_to_ticket_granting_ticket.casino.rb
+- spec/dummy/db/schema.rb
+- spec/dummy/lib/assets/.gitkeep
+- spec/dummy/log/.gitkeep
+- spec/dummy/public/404.html
+- spec/dummy/public/422.html
+- spec/dummy/public/500.html
+- spec/dummy/public/favicon.ico
+- spec/dummy/script/rails
+- spec/features/login_attempts_spec.rb
+- spec/features/login_spec.rb
+- spec/features/logout_spec.rb
+- spec/features/session_overview_spec.rb
+- spec/features/two_factor_authenticator_spec.rb
+- spec/model/auth_token_ticket_spec.rb
+- spec/model/login_attempt_spec.rb
+- spec/model/login_ticket_spec.rb
+- spec/model/proxy_ticket_spec.rb
+- spec/model/service_rule_spec.rb
+- spec/model/service_ticket/single_sign_out_notifier_spec.rb
+- spec/model/service_ticket_spec.rb
+- spec/model/ticket_granting_ticket_spec.rb
+- spec/model/two_factor_authenticator_spec.rb
+- spec/services/auth_token_validation_service_spec.rb
+- spec/spec_helper.rb
+- spec/support/.gitkeep
+- spec/support/casino.rb
+- spec/support/factories/login_attempt_factory.rb
+- spec/support/factories/login_ticket_factory.rb
+- spec/support/factories/proxy_granting_ticket_factory.rb
+- spec/support/factories/proxy_ticket_factory.rb
+- spec/support/factories/service_rule_factory.rb
+- spec/support/factories/service_ticket_factory.rb
+- spec/support/factories/ticket_granting_ticket_factory.rb
+- spec/support/factories/two_factor_authenticator_factory.rb
+- spec/support/factories/user_factory.rb
+- spec/support/features_helper.rb
+- spec/support/has_browser_info.rb
+- spec/support/kaminari.rb
+- spec/support/rspec.rb
+- spec/support/sign_in.rb
+- spec/support/sqlite3.rb
+- vendor/assets/javascripts/.gitkeep
+- vendor/assets/stylesheets/.gitkeep
+homepage: http://rbcas.org/
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.4.5.1
+signing_key: 
+specification_version: 4
+summary: A simple CAS server written in Ruby using the Rails framework.
+test_files:
+- spec/authenticator/base_spec.rb
+- spec/authenticator/static_spec.rb
+- spec/controllers/auth_tokens_controller_spec.rb
+- spec/controllers/login_attempts_controller_spec.rb
+- spec/controllers/proxy_tickets_controller_spec.rb
+- spec/controllers/service_and_proxy_tickets_controller_spec.rb
+- spec/controllers/service_tickets_controller_spec.rb
+- spec/controllers/sessions_controller_spec.rb
+- spec/controllers/two_factor_authenticators_controller_spec.rb
+- spec/dummy/Rakefile
+- spec/dummy/app/assets/javascripts/application.js
+- spec/dummy/app/assets/stylesheets/application.css
+- spec/dummy/app/assets/stylesheets/casino_and_overrides.scss
+- spec/dummy/app/controllers/application_controller.rb
+- spec/dummy/app/helpers/application_helper.rb
+- spec/dummy/app/mailers/.gitkeep
+- spec/dummy/app/models/.gitkeep
+- spec/dummy/app/views/layouts/application.html.erb
+- spec/dummy/config.ru
+- spec/dummy/config/application.rb
+- spec/dummy/config/boot.rb
+- spec/dummy/config/cas.yml
+- spec/dummy/config/database.yml
+- spec/dummy/config/environment.rb
+- spec/dummy/config/environments/development.rb
+- spec/dummy/config/environments/production.rb
+- spec/dummy/config/environments/test.rb
+- spec/dummy/config/initializers/backtrace_silencers.rb
+- spec/dummy/config/initializers/inflections.rb
+- spec/dummy/config/initializers/mime_types.rb
+- spec/dummy/config/initializers/secret_token.rb
+- spec/dummy/config/initializers/session_store.rb
+- spec/dummy/config/initializers/wrap_parameters.rb
+- spec/dummy/config/locales/en.yml
+- spec/dummy/config/routes.rb
+- spec/dummy/db/.gitkeep
+- spec/dummy/db/migrate/20140831214845_create_core_schema.casino.rb
+- spec/dummy/db/migrate/20140831214846_rename_base_models.casino.rb
+- spec/dummy/db/migrate/20140831214847_cleanup_indexes.casino.rb
+- spec/dummy/db/migrate/20140831214848_fix_long_index_names.casino.rb
+- spec/dummy/db/migrate/20140831214849_change_service_to_text.casino.rb
+- spec/dummy/db/migrate/20140831214850_change_user_agent_to_text.casino.rb
+- spec/dummy/db/migrate/20140831214851_fix_length_of_text_fields.casino.rb
+- spec/dummy/db/migrate/20140831214852_create_auth_token_tickets.casino.rb
+- spec/dummy/db/migrate/20151026130743_add_user_ip_to_ticket_granting_ticket.casino.rb
+- spec/dummy/db/schema.rb
+- spec/dummy/lib/assets/.gitkeep
+- spec/dummy/log/.gitkeep
+- spec/dummy/public/404.html
+- spec/dummy/public/422.html
+- spec/dummy/public/500.html
+- spec/dummy/public/favicon.ico
+- spec/dummy/script/rails
+- spec/features/login_attempts_spec.rb
+- spec/features/login_spec.rb
+- spec/features/logout_spec.rb
+- spec/features/session_overview_spec.rb
+- spec/features/two_factor_authenticator_spec.rb
+- spec/model/auth_token_ticket_spec.rb
+- spec/model/login_attempt_spec.rb
+- spec/model/login_ticket_spec.rb
+- spec/model/proxy_ticket_spec.rb
+- spec/model/service_rule_spec.rb
+- spec/model/service_ticket/single_sign_out_notifier_spec.rb
+- spec/model/service_ticket_spec.rb
+- spec/model/ticket_granting_ticket_spec.rb
+- spec/model/two_factor_authenticator_spec.rb
+- spec/services/auth_token_validation_service_spec.rb
+- spec/spec_helper.rb
+- spec/support/.gitkeep
+- spec/support/casino.rb
+- spec/support/factories/login_attempt_factory.rb
+- spec/support/factories/login_ticket_factory.rb
+- spec/support/factories/proxy_granting_ticket_factory.rb
+- spec/support/factories/proxy_ticket_factory.rb
+- spec/support/factories/service_rule_factory.rb
+- spec/support/factories/service_ticket_factory.rb
+- spec/support/factories/ticket_granting_ticket_factory.rb
+- spec/support/factories/two_factor_authenticator_factory.rb
+- spec/support/factories/user_factory.rb
+- spec/support/features_helper.rb
+- spec/support/has_browser_info.rb
+- spec/support/kaminari.rb
+- spec/support/rspec.rb
+- spec/support/sign_in.rb
+- spec/support/sqlite3.rb

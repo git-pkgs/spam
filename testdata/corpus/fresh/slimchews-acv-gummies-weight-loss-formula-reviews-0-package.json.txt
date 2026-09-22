@@ -1,0 +1,16 @@
+{
+  "name": "slimchews-acv-gummies-weight-loss-formula-reviews",
+  "version": "1.0.0",
+  "description": "Best Weight Loss Gummies SlimChews ACV Gummies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SlimChews",
+    "ACV",
+    "Gummies"
+  ],
+  "author": "SlimChews",
+  "license": "ISC"
+}

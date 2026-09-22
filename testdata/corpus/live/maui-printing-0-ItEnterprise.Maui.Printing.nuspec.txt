@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>ItEnterprise.Maui.Printing</id>
+    <version>1.0.29</version>
+    <authors>ItEnterprise</authors>
+    <description>ItEnterprise common printring library for MAUI</description>
+    <tags>ItEnterprise, maui, android, ios, windows, printing</tags>
+    <repository type="git" commit="fafd8e7029cc375e6e086deba133a264d9412710" />
+    <dependencies>
+      <group targetFramework="net10.0-android36.0">
+        <dependency id="CommunityToolkit.Maui" version="13.0.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.4.2" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.LogHelper" version="1.0.42" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.ToolBox" version="1.0.47" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.UIKit" version="1.0.69" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="10.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="10.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.20" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Maui.Buttons" version="34.2.8" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Maui.Inputs" version="34.2.8" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugin.Bluetooth" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Zebra.Printer.SDK" version="5.0.3685" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0-ios26.0">
+        <dependency id="CommunityToolkit.Maui" version="13.0.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.4.2" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.LogHelper" version="1.0.42" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.ToolBox" version="1.0.47" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.UIKit" version="1.0.69" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="10.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="10.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.20" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Maui.Buttons" version="34.2.8" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Maui.Inputs" version="34.2.8" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugin.Bluetooth" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Zebra.Printer.SDK" version="5.0.3685" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net10.0-windows10.0.26100">
+        <dependency id="CommunityToolkit.Maui" version="13.0.0" exclude="Build,Analyzers" />
+        <dependency id="CommunityToolkit.Mvvm" version="8.4.2" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.LogHelper" version="1.0.42" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.ToolBox" version="1.0.47" exclude="Build,Analyzers" />
+        <dependency id="ItEnterprise.Maui.UIKit" version="1.0.69" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="10.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="10.0.12" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="10.0.20" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Maui.Buttons" version="34.2.8" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Maui.Inputs" version="34.2.8" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugin.Bluetooth" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Zebra.Printer.SDK" version="5.0.3685" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

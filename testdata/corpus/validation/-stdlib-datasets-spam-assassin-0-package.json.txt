@@ -1,0 +1,77 @@
+{
+  "name": "@stdlib/datasets-spam-assassin",
+  "version": "0.2.3",
+  "description": "Spam Assassin public mail corpus.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "browser": "./lib/browser.js",
+  "directories": {
+    "data": "./data",
+    "doc": "./docs",
+    "lib": "./lib",
+    "scripts": "./scripts",
+    "dist": "./dist"
+  },
+  "types": "./docs/types",
+  "scripts": {},
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/datasets-spam-assassin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {
+    "@stdlib/fs-read-json": "^0.2.4",
+    "@stdlib/string-replace": "^0.2.3",
+    "@stdlib/utils-copy": "^0.2.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "datasets",
+    "dataset",
+    "data",
+    "email",
+    "e-mail",
+    "mail",
+    "spam",
+    "spam assassin",
+    "ham",
+    "text",
+    "classification",
+    "classifier",
+    "corpus",
+    "nlp"
+  ],
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/stdlib"
+  }
+}

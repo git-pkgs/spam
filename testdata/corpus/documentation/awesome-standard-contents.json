@@ -1,0 +1,17 @@
+[
+  {
+    "name": "package/package.json",
+    "bytes": 618,
+    "regular": true
+  },
+  {
+    "name": "package/README.md",
+    "bytes": 5267,
+    "regular": true
+  },
+  {
+    "name": "package/CONTRIBUTING.md",
+    "bytes": 802,
+    "regular": true
+  }
+]

@@ -1,0 +1,384 @@
+[
+  {
+    "registry": "npm",
+    "name": "mailparser",
+    "version": "3.9.28",
+    "archive_url": "https://registry.npmjs.org/mailparser/-/mailparser-3.9.28.tgz",
+    "expected_integrity": "sha512-O7oCYzWW9YH5lHk/y3Z8R8dFnUq8wqaH146BuU2NDt/3MGjdfMLzGF2Ft7WksTCeq00covNKpwxQabcG3zJFqQ==",
+    "metadata_url": "https://registry.npmjs.org/mailparser/3.9.28",
+    "split_group": "nodemailer",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "6558101a72a6969d51a6b7f9f3fa52ca2076855f3c0da8dc51255015fa78eddf",
+    "bytes": 20955,
+    "documents": [
+      {
+        "path": "mailparser-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 1596,
+        "sha256": "6c447c94db89bbc607700b8b093023b81bd81d6e796b225b41f4f84c3e55f3df"
+      },
+      {
+        "path": "mailparser-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 952,
+        "sha256": "25ae65b78fe4c00c164e2ae45cdc1284583c2d7c8b3daaf1f65b3743216af819"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "Email parser with documented stream and simpleParser APIs.",
+    "archive_filename": "mailparser-3.9.28.tgz"
+  },
+  {
+    "registry": "npm",
+    "name": "nodemailer",
+    "version": "10.0.10",
+    "archive_url": "https://registry.npmjs.org/nodemailer/-/nodemailer-10.0.10.tgz",
+    "expected_integrity": "sha512-He9XskOFms62SyAKkLu8CcGcYHAo+BSHSsORI8s4PJH8qZgZY4L4lDfvyN0twvmbpyG+eGrxpyBlskj9d9rJ8A==",
+    "metadata_url": "https://registry.npmjs.org/nodemailer/10.0.10",
+    "split_group": "nodemailer",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "f3ac1b7be83e38e6e2c4cc13754303b16d3829ec4868528a24a833d4032b717e",
+    "bytes": 324928,
+    "documents": [
+      {
+        "path": "nodemailer-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 6125,
+        "sha256": "a79eec5b574734e6910738d7d9de345a2951e7bfac76359e4acb52e13dbee25d"
+      },
+      {
+        "path": "nodemailer-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 6344,
+        "sha256": "75de98e12460fb956b8aaea464277094028a27d26ebf14655835d1f50c215e39"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "Email library with transport documentation and related EmailEngine promotion.",
+    "archive_filename": "nodemailer-10.0.10.tgz"
+  },
+  {
+    "registry": "npm",
+    "name": "linkify-it",
+    "version": "6.1.0",
+    "archive_url": "https://registry.npmjs.org/linkify-it/-/linkify-it-6.1.0.tgz",
+    "expected_integrity": "sha512-wJ/TwpSDTLepCrQoYWYIExIKg5Zchex2Nn5yk2mFnB+6PtdkHtyLx742md9csRjjOnGkKIS/RrbY7l8D6gT9Vw==",
+    "metadata_url": "https://registry.npmjs.org/linkify-it/6.1.0",
+    "split_group": "linkify-it",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "780a9e8232ea7e4c9f04348e2e2a567485c34abed805a15cfff8fff2029076b8",
+    "bytes": 36071,
+    "documents": [
+      {
+        "path": "linkify-it-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 1693,
+        "sha256": "5dc14a32eb18ce1de17e257c9059162683d939cf74bcfdbbf7526ece1742f821"
+      },
+      {
+        "path": "linkify-it-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 4560,
+        "sha256": "796e0469da01d76e99868f560743b76f316f6287b8c43d553e0fb4db919940fa"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "URL recognition library with documented API and link examples.",
+    "archive_filename": "linkify-it-6.1.0.tgz"
+  },
+  {
+    "registry": "npm",
+    "name": "@stdlib/datasets-spam-assassin",
+    "version": "0.2.3",
+    "archive_url": "https://registry.npmjs.org/@stdlib/datasets-spam-assassin/-/datasets-spam-assassin-0.2.3.tgz",
+    "expected_integrity": "sha512-prhsLtZInQ4fX9kdYC+rhurigafJdtXlp/fTnBYw//At21Hcw4zhSbiyyAcj2Quv/EKl8sE3PMlB2IJ7IHv6Dw==",
+    "metadata_url": "https://registry.npmjs.org/@stdlib%2Fdatasets-spam-assassin/0.2.3",
+    "split_group": "spam-assassin",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "8d15982711d6fa4b415fa84e83f654b34ac06db49f120eb9a3d33dd3346622cb",
+    "bytes": 19941393,
+    "documents": [
+      {
+        "path": "-stdlib-datasets-spam-assassin-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 1562,
+        "sha256": "ff4b549ac7ecccf81458a0ff7f17fe6738ceaa852db68497d03df85fd9dd583c"
+      },
+      {
+        "path": "-stdlib-datasets-spam-assassin-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 7574,
+        "sha256": "879a91b1c4b4e3043f528afc68c307927612f80e12d0a1e6d325c3c18f0482ca"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "Legitimate public email corpus with documented spam and ham groups. Baseline selects only package.json and README.",
+    "archive_filename": "datasets-spam-assassin-0.2.3.tgz"
+  },
+  {
+    "registry": "pypi",
+    "name": "textblob",
+    "version": "0.20.1",
+    "archive_url": "https://files.pythonhosted.org/packages/b9/36/bea92e52a9c2b2e73c0507b1f47f5d5378a300131811e585780e19005b98/textblob-0.20.1.tar.gz",
+    "expected_integrity": "sha256-fbd1a3307532e9dddb8f50284874559e01020e79b5fe5ae4c1da709a9e2087ea",
+    "metadata_url": "https://pypi.org/pypi/textblob/json",
+    "split_group": "textblob",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "fbd1a3307532e9dddb8f50284874559e01020e79b5fe5ae4c1da709a9e2087ea",
+    "bytes": 639537,
+    "documents": [
+      {
+        "path": "textblob-0-README.rst.txt",
+        "member": "textblob-0.20.1/README.rst",
+        "bytes": 3018,
+        "sha256": "4b50deef7acd30ed290810790753bf44273b038916fddadd9c9e7b1bc06823f1"
+      },
+      {
+        "path": "textblob-1-PKG-INFO.txt",
+        "member": "textblob-0.20.1/PKG-INFO",
+        "bytes": 4018,
+        "sha256": "3ecca8a1a0d187158ae3273bff0c6e028b1598e1d6dbc7d7b503cf37b1393274"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "Text processing library with documented NLP APIs.",
+    "archive_filename": "textblob-0.20.1.tar.gz"
+  },
+  {
+    "registry": "pypi",
+    "name": "bleach",
+    "version": "6.4.0",
+    "archive_url": "https://files.pythonhosted.org/packages/48/3c/e12ac860709702bd5ebeb9b56a4fe334f1001246ee1b8f2b7ee28912df7d/bleach-6.4.0.tar.gz",
+    "expected_integrity": "sha256-4202482733d85cedd04e59fcb2f89f4e4c7c385a78d3c3c23c30446843a37452",
+    "metadata_url": "https://pypi.org/pypi/bleach/json",
+    "split_group": "bleach",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "4202482733d85cedd04e59fcb2f89f4e4c7c385a78d3c3c23c30446843a37452",
+    "bytes": 204857,
+    "documents": [
+      {
+        "path": "bleach-0-PKG-INFO.txt",
+        "member": "bleach-6.4.0/PKG-INFO",
+        "bytes": 32173,
+        "sha256": "757bfd0f144af9186a9bd94f06014963f5b0919a4e124fa55e9737a8c8981764"
+      },
+      {
+        "path": "bleach-1-README.rst.txt",
+        "member": "bleach-6.4.0/README.rst",
+        "bytes": 3610,
+        "sha256": "3758322d5c94ebde7d5e8b03768086df4d45b6a696130795c4753f9b2523415e"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "HTML sanitizer with documented escaping and linkification behavior.",
+    "archive_filename": "bleach-6.4.0.tar.gz"
+  },
+  {
+    "registry": "nuget",
+    "name": "MailKit",
+    "version": "4.18.0",
+    "archive_url": "https://api.nuget.org/v3-flatcontainer/mailkit/4.18.0/mailkit.4.18.0.nupkg",
+    "expected_integrity": "sha512-vdsgE3rsavwzJwNy6mNrupWd2H6YanNT7UFynXn1JLWxdatu/iMX9RU9jRMDFd72m4ZK5jzijeO2ls0OOFIQXw==",
+    "metadata_url": "https://api.nuget.org/v3/registration5-semver1/mailkit/4.18.0.json",
+    "split_group": "mailkit",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "565d372247d4b8e25662e71446e2a91a629e5667c4f687e6f534d65937e01551",
+    "bytes": 5931159,
+    "documents": [
+      {
+        "path": "MailKit-0-MailKit.nuspec.txt",
+        "member": "MailKit.nuspec",
+        "bytes": 6353,
+        "sha256": "5081e1304c3c0ee83716bff2b12fbd1b0866d871d20ef0b8f888087cd6427e10"
+      },
+      {
+        "path": "MailKit-1-README.md.txt",
+        "member": "docs/README.md",
+        "bytes": 28418,
+        "sha256": "88a8a52116c5beeb07e047e6a12e98101872133cadb939b0133aae3b1ed3c6e7"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "Email client library with API examples and protocol documentation.",
+    "archive_filename": "mailkit.4.18.0.nupkg"
+  },
+  {
+    "registry": "nuget",
+    "name": "Bogus",
+    "version": "35.6.5",
+    "archive_url": "https://api.nuget.org/v3-flatcontainer/bogus/35.6.5/bogus.35.6.5.nupkg",
+    "expected_integrity": "sha512-DC7rdKRS6dNZb7WI/3IpSTXDZguve3wvtf3wCFWmPmd9oovgurrs0OxJl7FZU33Zb3/7WherD+8rPzdsOkV1IQ==",
+    "metadata_url": "https://api.nuget.org/v3/registration5-semver1/bogus/35.6.5.json",
+    "split_group": "bogus",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "0d269fb69cf6357bfd9342082bd1907790a460fae0be44b1aee28541283781b7",
+    "bytes": 3692907,
+    "documents": [
+      {
+        "path": "Bogus-0-Bogus.nuspec.txt",
+        "member": "Bogus.nuspec",
+        "bytes": 3345,
+        "sha256": "fcc2c40d139ac19e55927616213dee52973c20d294c7498e67027c8cdbfffe45"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "Test-data generator with release notes and library dependencies.",
+    "archive_filename": "bogus.35.6.5.nupkg"
+  },
+  {
+    "registry": "npm",
+    "name": "working-trick-vbucks-now-2023-free-offers-fgfgdfg",
+    "version": "4.2.7",
+    "archive_url": "https://registry.npmjs.org/working-trick-vbucks-now-2023-free-offers-fgfgdfg/-/working-trick-vbucks-now-2023-free-offers-fgfgdfg-4.2.7.tgz",
+    "expected_integrity": "sha512-4OhAaxbj0M6MsVEOtXOMPJz5cflmbljwHEVOscSPHJjAAt2yCW00IporSHAG3YvmIORJKqowMWS001Oc+dAYJA==",
+    "metadata_url": "https://registry.npmjs.org/working-trick-vbucks-now-2023-free-offers-fgfgdfg/4.2.7",
+    "split_group": "2023-vbucks-search",
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "upstream_integrity_verified": true,
+    "sha256": "236da4bdca0074f4f18fbdedc27606cdee779267085747b90e783e1e415d1f0e",
+    "bytes": 1542,
+    "documents": [
+      {
+        "path": "working-trick-vbucks-now-2023-free-offers-fgfgdfg-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 320,
+        "sha256": "66d8e03dd2facb04fa74d91e98580aba3135b2dcdb73c3dbc8fa12ca3e8e2881"
+      },
+      {
+        "path": "working-trick-vbucks-now-2023-free-offers-fgfgdfg-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 2691,
+        "sha256": "5e526ef950ae0a266f9886a0bd605341c310f7c31edfb1ccba3d03519bf679a4"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "label_basis": "Manual review of original README and manifest before scoring; registry search discovery, not an external verdict.",
+    "observations": "README promotes a free Fortnite currency generator and repeats an outbound claim link. No package API or software usage is described.",
+    "archive_filename": "working-trick-vbucks-now-2023-free-offers-fgfgdfg-4.2.7.tgz"
+  },
+  {
+    "registry": "npm",
+    "name": "boost-casino",
+    "version": "1.0.0",
+    "archive_url": "https://registry.npmjs.org/boost-casino/-/boost-casino-1.0.0.tgz",
+    "expected_integrity": "sha512-20UeL64vAJ68o6eLASJ9PN3LgIGdihQ4q3xCiM2gUUDwCm8z6vKxACvvkYDSwJwE9MZv2KfN59K9XpM5HAGnJA==",
+    "metadata_url": "https://registry.npmjs.org/boost-casino/1.0.0",
+    "split_group": "2026-casino-seo-search",
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "upstream_integrity_verified": true,
+    "sha256": "7246e1b2911045c7ea8404b35a63dbea7d50421dec9a6575a1d50d7ca09b417f",
+    "bytes": 2903,
+    "documents": [
+      {
+        "path": "boost-casino-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 419,
+        "sha256": "0c2267bfb77284c3d820bea304ef9059d7b70178122007252edceb6742f7ea12"
+      },
+      {
+        "path": "boost-casino-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 5823,
+        "sha256": "9aa143af067070a14676e9bd26a92ba5834f11ca9eeed5a1bb403d2c32806140"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "label_basis": "Manual review of original README and manifest before scoring; registry search discovery, not an external verdict.",
+    "observations": "README is a casino article with an outbound casino link and hosted image; manifest homepage and repository point to the same casino domain. No package API or software usage is described.",
+    "archive_filename": "boost-casino-1.0.0.tgz"
+  },
+  {
+    "registry": "npm",
+    "name": "boomerang-casino",
+    "version": "1.0.0",
+    "archive_url": "https://registry.npmjs.org/boomerang-casino/-/boomerang-casino-1.0.0.tgz",
+    "expected_integrity": "sha512-5imZ4aRMzTNmVtfg3ybn6AL+H5tY+4abdh7FlWVZPiUypzNzhrm5lguAuPXMIIBXFTeoCi22QpfqIns5ysFwGw==",
+    "metadata_url": "https://registry.npmjs.org/boomerang-casino/1.0.0",
+    "split_group": "2026-casino-seo-search",
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "upstream_integrity_verified": true,
+    "sha256": "5dd98137b7aacea51f5556108730fb083848c45ff707cee64e3836b272130ed1",
+    "bytes": 2957,
+    "documents": [
+      {
+        "path": "boomerang-casino-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 429,
+        "sha256": "5470f9336d6d1c4f095e2a7d5e7a126e99a9c185c4a91d11e67b64fcd0ffea06"
+      },
+      {
+        "path": "boomerang-casino-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 5829,
+        "sha256": "e6598b489749e2346c5be14a82cd695accea878f390afbeca20407d894277479"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "label_basis": "Manual review of original README and manifest before scoring; registry search discovery, not an external verdict.",
+    "observations": "README is a casino article with an outbound casino link and hosted image; manifest homepage and repository point to the same casino domain. No package API or software usage is described.",
+    "archive_filename": "boomerang-casino-1.0.0.tgz"
+  },
+  {
+    "registry": "npm",
+    "name": "macau-casino",
+    "version": "1.0.0",
+    "archive_url": "https://registry.npmjs.org/macau-casino/-/macau-casino-1.0.0.tgz",
+    "expected_integrity": "sha512-pDSkiZMTY99kTFxjn91Gw4YpO0bZu90z+/pn6BJiAulGdpOBAvBSsm3C1NxkBXB75FxfxG9FI23z6eSEzLOSOg==",
+    "metadata_url": "https://registry.npmjs.org/macau-casino/1.0.0",
+    "split_group": "2026-casino-seo-search",
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "upstream_integrity_verified": true,
+    "sha256": "d9043105f8b65467c5f481cd5ec22934c00521a0f5b80132877edd0b1230d211",
+    "bytes": 2488,
+    "documents": [
+      {
+        "path": "macau-casino-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 415,
+        "sha256": "3b4a49973d7ba8cf0326f4ed346f9456419d1b5384723057ed50105f41f62425"
+      },
+      {
+        "path": "macau-casino-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 4675,
+        "sha256": "894ec54ac61ea763ed1919789bf4029e78f9854a53e6506787118891d0bbc6de"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "label_basis": "Manual review of original README and manifest before scoring; registry search discovery, not an external verdict.",
+    "observations": "README is a casino article with an outbound casino link and hosted image; manifest homepage and repository point to the same casino domain. No package API or software usage is described.",
+    "archive_filename": "macau-casino-1.0.0.tgz"
+  }
+]

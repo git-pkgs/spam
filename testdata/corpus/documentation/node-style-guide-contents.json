@@ -1,0 +1,32 @@
+[
+  {
+    "name": "package/package.json",
+    "bytes": 565,
+    "regular": true
+  },
+  {
+    "name": "package/index.js",
+    "bytes": 314,
+    "regular": true
+  },
+  {
+    "name": "package/.Readme.md.un~",
+    "bytes": 231166,
+    "regular": true
+  },
+  {
+    "name": "package/.eslintrc",
+    "bytes": 725,
+    "regular": true
+  },
+  {
+    "name": "package/.jshintrc",
+    "bytes": 245,
+    "regular": true
+  },
+  {
+    "name": "package/Readme.md",
+    "bytes": 11626,
+    "regular": true
+  }
+]

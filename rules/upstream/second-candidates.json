@@ -1,0 +1,1840 @@
+[
+  {
+    "id": "SA___CLICK_HERE",
+    "project": "spamassassin",
+    "upstream_id": "__CLICK_HERE",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 1584,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body        __CLICK_HERE       /\\bclick\\shere\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bclick\\shere\\b",
+    "description": "Research wording probe: __CLICK_HERE",
+    "description_origin": "research",
+    "category": "call_to_action",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3591,
+        "upstream_id": "SUSP_UTF8_WORD_COMBO",
+        "kind": "meta",
+        "expression": "__4BYTE_UTF8_WORD && ( __LIST_PARTIAL || __RDNS_NONE || __CLICK_HERE || __XM_PHPMAILER || __STY_INVIS_3 ||  __TO___LOWER || __MSGID_OK_DIGITS || __HTML_IMG_ONLY )",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "Click here",
+        "match": true
+      },
+      {
+        "text": "click elsewhere",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___PDS_SEO1",
+    "project": "spamassassin",
+    "upstream_id": "__PDS_SEO1",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/pds/20_ntld.cf",
+    "line": 96,
+    "source_sha256": "350d3ff2adb7b27cbcf7dd65c75a81b1b1b38148ccb6a2cf9ca07af5b7cbfaf7",
+    "source_definition": "body     __PDS_SEO1 /(?:top|first page|1st) (?:(?:results|rank(?:ing)?) )?(?:in|of|on) (?:Google|MSN|Yahoo|Bing)|rank number one|top page rank|guarantee you 1st|link.building/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)(?:top|first page|1st) (?:(?:results|rank(?:ing)?) )?(?:in|of|on) (?:Google|MSN|Yahoo|Bing)|rank number one|top page rank|guarantee you 1st|link.building",
+    "description": "Research wording probe: __PDS_SEO1",
+    "description_origin": "research",
+    "category": "seo_pitch",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/pds/20_ntld.cf",
+        "line": 99,
+        "upstream_id": "SEO_SUSP_NTLD",
+        "kind": "meta",
+        "expression": "__FROM_ADDRLIST_SUSPNTLD && (__PDS_SEO1 + __PDS_SEO2 >= 1)",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "first page on Google",
+        "match": true
+      },
+      {
+        "text": "search with Google",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___PDS_SEO2",
+    "project": "spamassassin",
+    "upstream_id": "__PDS_SEO2",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/pds/20_ntld.cf",
+    "line": 97,
+    "source_sha256": "350d3ff2adb7b27cbcf7dd65c75a81b1b1b38148ccb6a2cf9ca07af5b7cbfaf7",
+    "source_definition": "body     __PDS_SEO2 /(?:losing your|your website) (?:[a-z]+ )?(?:rank(?:ing)?|results)|rank well on [a-z]+\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)(?:losing your|your website) (?:[a-z]+ )?(?:rank(?:ing)?|results)|rank well on [a-z]+\\b",
+    "description": "Research wording probe: __PDS_SEO2",
+    "description_origin": "research",
+    "category": "seo_pitch",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/pds/20_ntld.cf",
+        "line": 99,
+        "upstream_id": "SEO_SUSP_NTLD",
+        "kind": "meta",
+        "expression": "__FROM_ADDRLIST_SUSPNTLD && (__PDS_SEO1 + __PDS_SEO2 >= 1)",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "your website ranking",
+        "match": true
+      },
+      {
+        "text": "your website source",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA_LOW_PRICE",
+    "project": "spamassassin",
+    "upstream_id": "LOW_PRICE",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rules/20_phrases.cf",
+    "line": 145,
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "source_definition": "body LOW_PRICE                  /\\blow.{0,4} (?-i:P)rice/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\blow.{0,4} (?-i:P)rice",
+    "description": "Lowest Price",
+    "description_origin": "upstream",
+    "category": "price",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 218,
+        "text": "score LOW_PRICE 0.1"
+      }
+    ],
+    "upstream_meta_references": [],
+    "source_location": "rules",
+    "upstream_role": "named_body_rule",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "low Price",
+        "match": true
+      },
+      {
+        "text": "low price",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA_ONLINE_MKTG_CNSLT",
+    "project": "spamassassin",
+    "upstream_id": "ONLINE_MKTG_CNSLT",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 2493,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body      ONLINE_MKTG_CNSLT             /\\bonline marketing consultant\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bonline marketing consultant\\b",
+    "description": "Research wording probe: ONLINE_MKTG_CNSLT",
+    "description_origin": "research",
+    "category": "seo_pitch",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [],
+    "source_location": "sandbox",
+    "upstream_role": "named_body_rule",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "online marketing consultant",
+        "match": true
+      },
+      {
+        "text": "online marketing library",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA_DETAILS_OF_PRODUCT",
+    "project": "spamassassin",
+    "upstream_id": "DETAILS_OF_PRODUCT",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 4037,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       DETAILS_OF_PRODUCT          /(?:Please|kindly) (?:see|refer to|check(?: out)?) the (?:details of the product|(?:detailed |complete |specific )?product (?:details|information)) (?:below|following|that follow|in detail)|the following (?:(?:is the )?(?:detailed )?product information|is a brief introduction to (?:\\w+\\s){0,5}this product)|\\bhere (?:is|are) some basic information about this|you can (?:\\w+ )?understand our product|take a look at this product|interested in learning about (?:this|our product)|grasp our (?:product|goods)|details can be checked below|(?:provide|present) you \\w+ the product(?:[-\\s]specific)? (?:details|information)/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)(?:Please|kindly) (?:see|refer to|check(?: out)?) the (?:details of the product|(?:detailed |complete |specific )?product (?:details|information)) (?:below|following|that follow|in detail)|the following (?:(?:is the )?(?:detailed )?product information|is a brief introduction to (?:\\w+\\s){0,5}this product)|\\bhere (?:is|are) some basic information about this|you can (?:\\w+ )?understand our product|take a look at this product|interested in learning about (?:this|our product)|grasp our (?:product|goods)|details can be checked below|(?:provide|present) you \\w+ the product(?:[-\\s]specific)? (?:details|information)",
+    "description": "Research wording probe: DETAILS_OF_PRODUCT",
+    "description_origin": "research",
+    "category": "product_pitch",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [
+      {
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 4038,
+        "text": "score      DETAILS_OF_PRODUCT          1.250\t# limit"
+      }
+    ],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 4043,
+        "upstream_id": "NEW_PRODUCT_SPAM",
+        "kind": "meta",
+        "expression": "(READY_TO_SHIP + WANT_TO_ORDER + YOUR_DELIVERY_ADDRESS + __NEW_PRODUCTS + DETAILS_OF_PRODUCT + LEADING_MANUFACTURER) > 3",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "named_body_rule",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "take a look at this product",
+        "match": true
+      },
+      {
+        "text": "take a look at this function",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___PERFECT_BINARY",
+    "project": "spamassassin",
+    "upstream_id": "__PERFECT_BINARY",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3549,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __PERFECT_BINARY            /\\bperfect binary option\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bperfect binary option\\b",
+    "description": "Research wording probe: __PERFECT_BINARY",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "perfect binary option",
+        "match": true
+      },
+      {
+        "text": "binary option parser",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___WE_PAID",
+    "project": "spamassassin",
+    "upstream_id": "__WE_PAID",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3550,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __WE_PAID                   /\\bwe have (?:already )?(?:paid|sent|remitted|issued) \\$?\\d+(?:,\\d+)* (?:thousand )?(?:dollars )?to our (?:users|subscribers|members|clients|affiliates|partners)\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bwe have (?:already )?(?:paid|sent|remitted|issued) \\$?\\d+(?:,\\d+)* (?:thousand )?(?:dollars )?to our (?:users|subscribers|members|clients|affiliates|partners)\\b",
+    "description": "Research wording probe: __WE_PAID",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "we have paid 100 dollars to our users",
+        "match": true
+      },
+      {
+        "text": "we have paid our invoice",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___MAKE_XTRA_DOLLAR",
+    "project": "spamassassin",
+    "upstream_id": "__MAKE_XTRA_DOLLAR",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3551,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __MAKE_XTRA_DOLLAR          /\\bmake an extra dollar\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bmake an extra dollar\\b",
+    "description": "Research wording probe: __MAKE_XTRA_DOLLAR",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "make an extra dollar",
+        "match": true
+      },
+      {
+        "text": "make a dollar sign",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___BONUS_LAST_DAY",
+    "project": "spamassassin",
+    "upstream_id": "__BONUS_LAST_DAY",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3552,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __BONUS_LAST_DAY            /\\b(?:last|final) day of the (?:\\$\\d+ |\\d+ dollars? )?bonus offer(?:ing)?\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\b(?:last|final) day of the (?:\\$\\d+ |\\d+ dollars? )?bonus offer(?:ing)?\\b",
+    "description": "Research wording probe: __BONUS_LAST_DAY",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "last day of the bonus offer",
+        "match": true
+      },
+      {
+        "text": "last day of the month",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___PASSIVE_INCOME",
+    "project": "spamassassin",
+    "upstream_id": "__PASSIVE_INCOME",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3553,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __PASSIVE_INCOME            /\\bpassive income\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bpassive income\\b",
+    "description": "Research wording probe: __PASSIVE_INCOME",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "passive income",
+        "match": true
+      },
+      {
+        "text": "passive listener",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___WITHOUT_EFFORT",
+    "project": "spamassassin",
+    "upstream_id": "__WITHOUT_EFFORT",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3554,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __WITHOUT_EFFORT            /\\bwith(?:out(?: a(?:ny)?| the)?| no)(?: great| special| extra)? effort\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bwith(?:out(?: a(?:ny)?| the)?| no)(?: great| special| extra)? effort\\b",
+    "description": "Research wording probe: __WITHOUT_EFFORT",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "without any extra effort",
+        "match": true
+      },
+      {
+        "text": "with extra effort",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___TRANSFORM_LIFE",
+    "project": "spamassassin",
+    "upstream_id": "__TRANSFORM_LIFE",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3555,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __TRANSFORM_LIFE            /\\b(?:transform|change) your (?:daily )?life(?:style)?\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\b(?:transform|change) your (?:daily )?life(?:style)?\\b",
+    "description": "Research wording probe: __TRANSFORM_LIFE",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3559,
+        "upstream_id": "TRANSFORM_LIFE",
+        "kind": "meta",
+        "expression": "__TRANSFORM_LIFE && !__HAS_CAMPAIGNID && !__HAS_SENDER && !__HAS_X_MAILER && !__VIA_ML ",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "change your lifestyle",
+        "match": true
+      },
+      {
+        "text": "change your configuration",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___STAY_HOME",
+    "project": "spamassassin",
+    "upstream_id": "__STAY_HOME",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3556,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __STAY_HOME                 /\\b(?:going out of|leaving)(?: your)? (?:home|house|residence)\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\b(?:going out of|leaving)(?: your)? (?:home|house|residence)\\b",
+    "description": "Research wording probe: __STAY_HOME",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "leaving your home",
+        "match": true
+      },
+      {
+        "text": "leaving your editor",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___RECEIVE_BONUS",
+    "project": "spamassassin",
+    "upstream_id": "__RECEIVE_BONUS",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+    "line": 3557,
+    "source_sha256": "0dbe1ea3968204b93ade6924b915eb1e97448bce788ca17ec464e5008eeffd16",
+    "source_definition": "body       __RECEIVE_BONUS             /\\byou(?:'ll)?(?: also| will)* (?:rec[ei]*ve|get|earn|collect|be (?:awarded|handed|remitted|given|paid|(?:greeted|welcomed|started) with)) (?:an? )?(?:gift|bonus|extra)(?: of|:)? \\$[\\d,]+/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\byou(?:'ll)?(?: also| will)* (?:rec[ei]*ve|get|earn|collect|be (?:awarded|handed|remitted|given|paid|(?:greeted|welcomed|started) with)) (?:an? )?(?:gift|bonus|extra)(?: of|:)? \\$[\\d,]+",
+    "description": "Research wording probe: __RECEIVE_BONUS",
+    "description_origin": "research",
+    "category": "income_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3564,
+        "upstream_id": "__WFH_01",
+        "kind": "meta",
+        "expression": "( __PERFECT_BINARY + __WE_PAID + __MAKE_XTRA_DOLLAR + __BONUS_LAST_DAY + __PASSIVE_INCOME + __WITHOUT_EFFORT + __TRANSFORM_LIFE + __STAY_HOME + __RECEIVE_BONUS ) > 2",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3566,
+        "upstream_id": "__BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3571,
+        "upstream_id": "__TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_WAY_TOO_MANY && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3576,
+        "upstream_id": "__FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "(FREEMAIL_FROM || FREEMAIL_REPLYTO) && __WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3567,
+        "upstream_id": "BITCOIN_WFH_01",
+        "kind": "meta",
+        "expression": "__BITCOIN_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3572,
+        "upstream_id": "TO_TOO_MANY_WFH_01",
+        "kind": "meta",
+        "expression": "__TO_TOO_MANY_WFH_01",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3577,
+        "upstream_id": "FREEMAIL_WFH_01",
+        "kind": "meta",
+        "expression": "__FREEMAIL_WFH_01",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "you will get a bonus of $100",
+        "match": true
+      },
+      {
+        "text": "you will get a callback",
+        "match": false
+      }
+    ]
+  },
+  {
+    "id": "SA___LOTTO_RELATED",
+    "project": "spamassassin",
+    "upstream_id": "__LOTTO_RELATED",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+    "line": 148,
+    "source_sha256": "3e3a0d2b2651d41facd0e83d7313ccddd53eecd9de2e11757f9057c438b941d8",
+    "source_definition": "body     __LOTTO_RELATED    /\\b(?:lot+(?:o|ery)|sweepstakes)\\s(?:prize|draw(?:s|ing)?|(?:ge)?win(?:n?er|n?ing)?|jackpot+|award|fund|com+it+e+|com+is+ion|guild|promotion|promocao|program|day|online|company|(?:in)?corporat|agent|co[-,]?ordinator|team)/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\b(?:lot+(?:o|ery)|sweepstakes)\\s(?:prize|draw(?:s|ing)?|(?:ge)?win(?:n?er|n?ing)?|jackpot+|award|fund|com+it+e+|com+is+ion|guild|promotion|promocao|program|day|online|company|(?:in)?corporat|agent|co[-,]?ordinator|team)",
+    "description": "Research wording probe: __LOTTO_RELATED",
+    "description_origin": "research",
+    "category": "lottery_claim",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "upstream_score_definitions": [],
+    "upstream_meta_references": [
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 26,
+        "upstream_id": "__ADVANCE_FEE_2_NEW",
+        "kind": "meta",
+        "expression": "(__AFRICAN_STATE + __ATM_CARD + __BACK_SCRATCH +  __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + __EX_CUSTOMER + __FOUND_YOU + __FRAUD_AON + __FRAUD_AUM + __FRAUD_AXF + __FRAUD_BEP + __FRAUD_BGP + __FRAUD_CKF + __FRAUD_DPR + __FRAUD_FVU + __FRAUD_GBW + __FRAUD_IPK + __FRAUD_IRT + __FRAUD_JNB + __FRAUD_JYG + __FRAUD_MCQ + __FRAUD_MLY + __FRAUD_MQO + __FRAUD_NEB + __FRAUD_QFY + __FRAUD_QXX + __FRAUD_SNT + __FRAUD_ULK + __FRAUD_UOQ + __FRAUD_VQE + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_XJR + __FRAUD_XWW + __FRAUD_YPO + __FRAUD_YQV + __I_INHERIT + __INTL_BANK + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + LOTTO_AGENT + LOTTO_AGENT_RPLY + __LOTTO_DEPT + __LOTTO_RELATED + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS + __LUCKY_WINNER + __NEXT_OF_KIN + __NOT_DEAD_YET + __PCT_OF_PMTS + __SCAM + __SHARE_IT + __THEY_INHERIT +  UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __URG_BIZ + __YOUR_CONSIGNMENT + __YOUR_FUND + __YOUR_PERM + __YOU_WON > 1) && !__THREAD_INDEX_GOOD",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 31,
+        "upstream_id": "__ADVANCE_FEE_3_NEW",
+        "kind": "meta",
+        "expression": "(__AFRICAN_STATE + __ATM_CARD + __BACK_SCRATCH +  __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + __EX_CUSTOMER + __FOUND_YOU + __FRAUD_AON + __FRAUD_AUM + __FRAUD_AXF + __FRAUD_BEP + __FRAUD_BGP + __FRAUD_CKF + __FRAUD_DPR + __FRAUD_FVU + __FRAUD_GBW + __FRAUD_IPK + __FRAUD_IRT + __FRAUD_JNB + __FRAUD_JYG + __FRAUD_MCQ + __FRAUD_MLY + __FRAUD_MQO + __FRAUD_NEB + __FRAUD_QFY + __FRAUD_QXX + __FRAUD_SNT + __FRAUD_ULK + __FRAUD_UOQ + __FRAUD_VQE + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_XJR + __FRAUD_XWW + __FRAUD_YPO + __FRAUD_YQV + __I_INHERIT + __INTL_BANK + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + LOTTO_AGENT + LOTTO_AGENT_RPLY + __LOTTO_DEPT + __LOTTO_RELATED + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS + __LUCKY_WINNER + __NEXT_OF_KIN + __NOT_DEAD_YET + __PCT_OF_PMTS + __SCAM + __SHARE_IT + __THEY_INHERIT +  UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __URG_BIZ + __YOUR_CONSIGNMENT + __YOUR_FUND + __YOUR_PERM + __YOU_WON > 2) && !__THREAD_INDEX_GOOD",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 36,
+        "upstream_id": "__ADVANCE_FEE_4_NEW",
+        "kind": "meta",
+        "expression": "(__AFRICAN_STATE + __ATM_CARD + __BACK_SCRATCH +  __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + __EX_CUSTOMER + __FOUND_YOU + __FRAUD_AON + __FRAUD_AUM + __FRAUD_AXF + __FRAUD_BEP + __FRAUD_BGP + __FRAUD_CKF + __FRAUD_DPR + __FRAUD_FVU + __FRAUD_GBW + __FRAUD_IPK + __FRAUD_IRT + __FRAUD_JNB + __FRAUD_JYG + __FRAUD_MCQ + __FRAUD_MLY + __FRAUD_MQO + __FRAUD_NEB + __FRAUD_QFY + __FRAUD_QXX + __FRAUD_SNT + __FRAUD_ULK + __FRAUD_UOQ + __FRAUD_VQE + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_XJR + __FRAUD_XWW + __FRAUD_YPO + __FRAUD_YQV + __I_INHERIT + __INTL_BANK + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + LOTTO_AGENT + LOTTO_AGENT_RPLY + __LOTTO_DEPT + __LOTTO_RELATED + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS + __LUCKY_WINNER + __NEXT_OF_KIN + __NOT_DEAD_YET + __PCT_OF_PMTS + __SCAM + __SHARE_IT + __THEY_INHERIT +  UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __URG_BIZ + __YOUR_CONSIGNMENT + __YOUR_FUND + __YOUR_PERM + __YOU_WON > 3) && !__THREAD_INDEX_GOOD",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 40,
+        "upstream_id": "__ADVANCE_FEE_5_NEW",
+        "kind": "meta",
+        "expression": "(__AFRICAN_STATE + __ATM_CARD + __BACK_SCRATCH +  __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + __EX_CUSTOMER + __FOUND_YOU + __FRAUD_AON + __FRAUD_AUM + __FRAUD_AXF + __FRAUD_BEP + __FRAUD_BGP + __FRAUD_CKF + __FRAUD_DPR + __FRAUD_FVU + __FRAUD_GBW + __FRAUD_IPK + __FRAUD_IRT + __FRAUD_JNB + __FRAUD_JYG + __FRAUD_MCQ + __FRAUD_MLY + __FRAUD_MQO + __FRAUD_NEB + __FRAUD_QFY + __FRAUD_QXX + __FRAUD_SNT + __FRAUD_ULK + __FRAUD_UOQ + __FRAUD_VQE + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_XJR + __FRAUD_XWW + __FRAUD_YPO + __FRAUD_YQV + __I_INHERIT + __INTL_BANK + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + LOTTO_AGENT + LOTTO_AGENT_RPLY + __LOTTO_DEPT + __LOTTO_RELATED + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS + __LUCKY_WINNER + __NEXT_OF_KIN + __NOT_DEAD_YET + __PCT_OF_PMTS + __SCAM + __SHARE_IT + __THEY_INHERIT +  UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __URG_BIZ + __YOUR_CONSIGNMENT + __YOUR_FUND + __YOUR_PERM + __YOU_WON > 4) && !__THREAD_INDEX_GOOD",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 158,
+        "upstream_id": "__MONEY_LOTTERY",
+        "kind": "meta",
+        "expression": "LOTS_OF_MONEY && (__LOTTO_WINNINGS + __LOTTO_WIN_01 + __YOU_WON + __LOTTO_AGENT_01 + __LOTTO_AGENT_02 + __LOTTO_DEPT + LOTTO_AGENT_FM + LOTTO_AGENT_RPLY + __LOTTO_ADMITS + __LOTTO_RELATED + DEAR_WINNER + __LOTTO_VERIFY + __GET_TICKET > 1)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 338,
+        "upstream_id": "__MONEY_FRAUD",
+        "kind": "meta",
+        "expression": "LOTS_OF_MONEY && (__FRAUD_VQE + __FRAUD_KJV + __FRAUD_IRJ + __FRAUD_NEB + __FRAUD_XJR + __FRAUD_DPR + __FRAUD_BEP + __FRAUD_TDP + __FRAUD_GAN + __FRAUD_IRT + __FRAUD_AON + __FRAUD_WNY + __FRAUD_IPK + __FRAUD_QXX + __FRAUD_IOV + __FRAUD_MLY + __FRAUD_ULK + __FRAUD_BGP + __FRAUD_YWW + __FRAUD_JYG + __FRAUD_XWW + __FRAUD_UUY + __FRAUD_SNT + __FRAUD_JNB + __FRAUD_QFY + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_AUM + __FRAUD_MCQ + __FRAUD_PVN + __FRAUD_FVU + __FRAUD_CKF + __FRAUD_MQO + __FRAUD_TCC + __FRAUD_GBW + __FRAUD_AXF + __FRAUD_THJ + __FRAUD_YQV + __FRAUD_YJA + __FRAUD_YPO + __FRAUD_UOQ + __AFRICAN_STATE + __AGREED_RATIO + __AM_DYING + __ATM_CARD + __BACK_SCRATCH +  __BARRISTER + __BENEFICIARY + __COMPENSATION + __CONTACT_ATTY + __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIED_IN + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + EMRCP + __EX_CUSTOMER + __FEES + __FIFTY_FIFTY + __FOUND_YOU + __FRAUD + __FRAUD_PTX + __HUSH_HUSH + __I_INHERIT + __INHERIT_PMT + __INTL_BANK + __INVEST_COUNTRY + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + __LOTTO_ADMITS + LOTTO_AGENT + __LOTTO_DEPT + __LOTTO_RELATED + __LOTTO_VERIFY + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS +  __LUCKY_WINNER + __LUCRATIVE + __MILLIONS + __MY_FORTUNE + __NEXT_OF_KIN + __NOT_DEAD_YET + __NOT_SCAM + __OUR_BEHALF + __SCAM + __SHARE_IT + __SUM_OF_FUND + __SURVIVORS + __THEY_INHERIT + __TRTMT_DEFILED + __TRUNK_BOX +  __UN + UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __YOUR_BANK + __YOUR_FUND + __YOUR_PERM + __YOUR_PROFIT + __YOU_WON + LOTTO_AGENT_FM + LOTTO_AGENT_RPLY + __PCT_FOR_YOU + __PCT_OF_PMTS + __RANDOM_PICK + __CHARITY > 1)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 344,
+        "upstream_id": "__MONEY_FRAUD_3",
+        "kind": "meta",
+        "expression": "LOTS_OF_MONEY && (__FRAUD_VQE + __FRAUD_KJV + __FRAUD_IRJ + __FRAUD_NEB + __FRAUD_XJR + __FRAUD_DPR + __FRAUD_BEP + __FRAUD_TDP + __FRAUD_GAN + __FRAUD_IRT + __FRAUD_AON + __FRAUD_WNY + __FRAUD_IPK + __FRAUD_QXX + __FRAUD_IOV + __FRAUD_MLY + __FRAUD_ULK + __FRAUD_BGP + __FRAUD_YWW + __FRAUD_JYG + __FRAUD_XWW + __FRAUD_UUY + __FRAUD_SNT + __FRAUD_JNB + __FRAUD_QFY + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_AUM + __FRAUD_MCQ + __FRAUD_PVN + __FRAUD_FVU + __FRAUD_CKF + __FRAUD_MQO + __FRAUD_TCC + __FRAUD_GBW + __FRAUD_AXF + __FRAUD_THJ + __FRAUD_YQV + __FRAUD_YJA + __FRAUD_YPO + __FRAUD_UOQ + __AFRICAN_STATE + __AGREED_RATIO + __AM_DYING + __ATM_CARD + __BACK_SCRATCH +  __BARRISTER + __BENEFICIARY + __COMPENSATION + __CONTACT_ATTY + __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIED_IN + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + EMRCP + __EX_CUSTOMER + __FEES + __FIFTY_FIFTY + __FOUND_YOU + __FRAUD + __FRAUD_PTX + __HUSH_HUSH + __I_INHERIT + __INHERIT_PMT + __INTL_BANK + __INVEST_COUNTRY + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + __LOTTO_ADMITS + LOTTO_AGENT + __LOTTO_DEPT + __LOTTO_RELATED + __LOTTO_VERIFY + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS +  __LUCKY_WINNER + __LUCRATIVE + __MILLIONS + __MY_FORTUNE + __NEXT_OF_KIN + __NOT_DEAD_YET + __NOT_SCAM + __OUR_BEHALF + __SCAM + __SHARE_IT + __SUM_OF_FUND + __SURVIVORS + __THEY_INHERIT + __TRTMT_DEFILED + __TRUNK_BOX +  __UN + UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __YOUR_BANK + __YOUR_FUND + __YOUR_PERM + __YOUR_PROFIT + __YOU_WON + LOTTO_AGENT_FM + LOTTO_AGENT_RPLY + __PCT_FOR_YOU + __PCT_OF_PMTS + __RANDOM_PICK + __CHARITY > 3)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 350,
+        "upstream_id": "__MONEY_FRAUD_5",
+        "kind": "meta",
+        "expression": "LOTS_OF_MONEY && (__FRAUD_VQE + __FRAUD_KJV + __FRAUD_IRJ + __FRAUD_NEB + __FRAUD_XJR + __FRAUD_DPR + __FRAUD_BEP + __FRAUD_TDP + __FRAUD_GAN + __FRAUD_IRT + __FRAUD_AON + __FRAUD_WNY + __FRAUD_IPK + __FRAUD_QXX + __FRAUD_IOV + __FRAUD_MLY + __FRAUD_ULK + __FRAUD_BGP + __FRAUD_YWW + __FRAUD_JYG + __FRAUD_XWW + __FRAUD_UUY + __FRAUD_SNT + __FRAUD_JNB + __FRAUD_QFY + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_AUM + __FRAUD_MCQ + __FRAUD_PVN + __FRAUD_FVU + __FRAUD_CKF + __FRAUD_MQO + __FRAUD_TCC + __FRAUD_GBW + __FRAUD_AXF + __FRAUD_THJ + __FRAUD_YQV + __FRAUD_YJA + __FRAUD_YPO + __FRAUD_UOQ + __AFRICAN_STATE + __AGREED_RATIO + __AM_DYING + __ATM_CARD + __BACK_SCRATCH +  __BARRISTER + __BENEFICIARY + __COMPENSATION + __CONTACT_ATTY + __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIED_IN + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + EMRCP + __EX_CUSTOMER + __FEES + __FIFTY_FIFTY + __FOUND_YOU + __FRAUD + __FRAUD_PTX + __HUSH_HUSH + __I_INHERIT + __INHERIT_PMT + __INTL_BANK + __INVEST_COUNTRY + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + __LOTTO_ADMITS + LOTTO_AGENT + __LOTTO_DEPT + __LOTTO_RELATED + __LOTTO_VERIFY + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS +  __LUCKY_WINNER + __LUCRATIVE + __MILLIONS + __MY_FORTUNE + __NEXT_OF_KIN + __NOT_DEAD_YET + __NOT_SCAM + __OUR_BEHALF + __SCAM + __SHARE_IT + __SUM_OF_FUND + __SURVIVORS + __THEY_INHERIT + __TRTMT_DEFILED + __TRUNK_BOX +  __UN + UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __YOUR_BANK + __YOUR_FUND + __YOUR_PERM + __YOUR_PROFIT + __YOU_WON + LOTTO_AGENT_FM + LOTTO_AGENT_RPLY + __PCT_FOR_YOU + __PCT_OF_PMTS + __RANDOM_PICK + __CHARITY > 5)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 356,
+        "upstream_id": "__MONEY_FRAUD_8",
+        "kind": "meta",
+        "expression": "LOTS_OF_MONEY && (__FRAUD_VQE + __FRAUD_KJV + __FRAUD_IRJ + __FRAUD_NEB + __FRAUD_XJR + __FRAUD_DPR + __FRAUD_BEP + __FRAUD_TDP + __FRAUD_GAN + __FRAUD_IRT + __FRAUD_AON + __FRAUD_WNY + __FRAUD_IPK + __FRAUD_QXX + __FRAUD_IOV + __FRAUD_MLY + __FRAUD_ULK + __FRAUD_BGP + __FRAUD_YWW + __FRAUD_JYG + __FRAUD_XWW + __FRAUD_UUY + __FRAUD_SNT + __FRAUD_JNB + __FRAUD_QFY + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_AUM + __FRAUD_MCQ + __FRAUD_PVN + __FRAUD_FVU + __FRAUD_CKF + __FRAUD_MQO + __FRAUD_TCC + __FRAUD_GBW + __FRAUD_AXF + __FRAUD_THJ + __FRAUD_YQV + __FRAUD_YJA + __FRAUD_YPO + __FRAUD_UOQ + __AFRICAN_STATE + __AGREED_RATIO + __AM_DYING + __ATM_CARD + __BACK_SCRATCH +  __BARRISTER + __BENEFICIARY + __COMPENSATION + __CONTACT_ATTY + __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIED_IN + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + EMRCP + __EX_CUSTOMER + __FEES + __FIFTY_FIFTY + __FOUND_YOU + __FRAUD + __FRAUD_PTX + __HUSH_HUSH + __I_INHERIT + __INHERIT_PMT + __INTL_BANK + __INVEST_COUNTRY + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + __LOTTO_ADMITS + LOTTO_AGENT + __LOTTO_DEPT + __LOTTO_RELATED + __LOTTO_VERIFY + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS +  __LUCKY_WINNER + __LUCRATIVE + __MILLIONS + __MY_FORTUNE + __NEXT_OF_KIN + __NOT_DEAD_YET + __NOT_SCAM + __OUR_BEHALF + __SCAM + __SHARE_IT + __SUM_OF_FUND + __SURVIVORS + __THEY_INHERIT + __TRTMT_DEFILED + __TRUNK_BOX +  __UN + UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __YOUR_BANK + __YOUR_FUND + __YOUR_PERM + __YOUR_PROFIT + __YOU_WON + LOTTO_AGENT_FM + LOTTO_AGENT_RPLY + __PCT_FOR_YOU + __PCT_OF_PMTS + __RANDOM_PICK + __CHARITY > 8)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 362,
+        "upstream_id": "__FORM_FRAUD",
+        "kind": "meta",
+        "expression": "(__FILL_THIS_FORM || __FILL_THIS_FORM_SHORT) && (__FRAUD_VQE + __FRAUD_KJV + __FRAUD_IRJ + __FRAUD_NEB + __FRAUD_XJR + __FRAUD_DPR + __FRAUD_BEP + __FRAUD_TDP + __FRAUD_GAN + __FRAUD_IRT + __FRAUD_AON + __FRAUD_WNY + __FRAUD_IPK + __FRAUD_QXX + __FRAUD_IOV + __FRAUD_MLY + __FRAUD_ULK + __FRAUD_BGP + __FRAUD_YWW + __FRAUD_JYG + __FRAUD_XWW + __FRAUD_UUY + __FRAUD_SNT + __FRAUD_JNB + __FRAUD_QFY + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_AUM + __FRAUD_MCQ + __FRAUD_PVN + __FRAUD_FVU + __FRAUD_CKF + __FRAUD_MQO + __FRAUD_TCC + __FRAUD_GBW + __FRAUD_AXF + __FRAUD_THJ + __FRAUD_YQV + __FRAUD_YJA + __FRAUD_YPO + __FRAUD_UOQ + __AFRICAN_STATE + __AGREED_RATIO + __AM_DYING + __ATM_CARD + __BACK_SCRATCH +  __BARRISTER + __BENEFICIARY + __COMPENSATION + __CONTACT_ATTY + __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIED_IN + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + EMRCP + __EX_CUSTOMER + __FEES + __FIFTY_FIFTY + __FOUND_YOU + __FRAUD + __FRAUD_PTX + __HUSH_HUSH + __I_INHERIT + __INHERIT_PMT + __INTL_BANK + __INVEST_COUNTRY + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + __LOTTO_ADMITS + LOTTO_AGENT + __LOTTO_DEPT + __LOTTO_RELATED + __LOTTO_VERIFY + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS + __LUCKY_WINNER + __LUCRATIVE + __MILLIONS + __MY_FORTUNE + __NEXT_OF_KIN + __NOT_DEAD_YET + __NOT_SCAM + __OUR_BEHALF + __SCAM + __SHARE_IT + __SUM_OF_FUND + __SURVIVORS + __THEY_INHERIT + __TRTMT_DEFILED + __TRUNK_BOX +  __UN + UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __YOUR_BANK + __YOUR_FUND + __YOUR_PERM + __YOUR_PROFIT + __YOU_WON + LOTTO_AGENT_FM + LOTTO_AGENT_RPLY + __PCT_FOR_YOU + __PCT_OF_PMTS + __RANDOM_PICK + __CHARITY > 1)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 368,
+        "upstream_id": "__FORM_FRAUD_3",
+        "kind": "meta",
+        "expression": "(__FILL_THIS_FORM || __FILL_THIS_FORM_SHORT) && (__FRAUD_VQE + __FRAUD_KJV + __FRAUD_IRJ + __FRAUD_NEB + __FRAUD_XJR + __FRAUD_DPR + __FRAUD_BEP + __FRAUD_TDP + __FRAUD_GAN + __FRAUD_IRT + __FRAUD_AON + __FRAUD_WNY + __FRAUD_IPK + __FRAUD_QXX + __FRAUD_IOV + __FRAUD_MLY + __FRAUD_ULK + __FRAUD_BGP + __FRAUD_YWW + __FRAUD_JYG + __FRAUD_XWW + __FRAUD_UUY + __FRAUD_SNT + __FRAUD_JNB + __FRAUD_QFY + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_AUM + __FRAUD_MCQ + __FRAUD_PVN + __FRAUD_FVU + __FRAUD_CKF + __FRAUD_MQO + __FRAUD_TCC + __FRAUD_GBW + __FRAUD_AXF + __FRAUD_THJ + __FRAUD_YQV + __FRAUD_YJA + __FRAUD_YPO + __FRAUD_UOQ + __AFRICAN_STATE + __AGREED_RATIO + __AM_DYING + __ATM_CARD + __BACK_SCRATCH +  __BARRISTER + __BENEFICIARY + __COMPENSATION + __CONTACT_ATTY + __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIED_IN + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + EMRCP + __EX_CUSTOMER + __FEES + __FIFTY_FIFTY + __FOUND_YOU + __FRAUD + __FRAUD_PTX + __HUSH_HUSH + __I_INHERIT + __INHERIT_PMT + __INTL_BANK + __INVEST_COUNTRY + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + __LOTTO_ADMITS + LOTTO_AGENT + __LOTTO_DEPT + __LOTTO_RELATED + __LOTTO_VERIFY + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS + __LUCKY_WINNER + __LUCRATIVE + __MILLIONS + __MY_FORTUNE + __NEXT_OF_KIN + __NOT_DEAD_YET + __NOT_SCAM + __OUR_BEHALF + __SCAM + __SHARE_IT + __SUM_OF_FUND + __SURVIVORS + __THEY_INHERIT + __TRTMT_DEFILED + __TRUNK_BOX +  __UN + UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __YOUR_BANK + __YOUR_FUND + __YOUR_PERM + __YOUR_PROFIT + __YOU_WON + LOTTO_AGENT_FM + LOTTO_AGENT_RPLY + __PCT_FOR_YOU + __PCT_OF_PMTS + __RANDOM_PICK + __CHARITY > 3)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 374,
+        "upstream_id": "__FORM_FRAUD_5",
+        "kind": "meta",
+        "expression": "(__FILL_THIS_FORM || __FILL_THIS_FORM_SHORT) && (__FRAUD_VQE + __FRAUD_KJV + __FRAUD_IRJ + __FRAUD_NEB + __FRAUD_XJR + __FRAUD_DPR + __FRAUD_BEP + __FRAUD_TDP + __FRAUD_GAN + __FRAUD_IRT + __FRAUD_AON + __FRAUD_WNY + __FRAUD_IPK + __FRAUD_QXX + __FRAUD_IOV + __FRAUD_MLY + __FRAUD_ULK + __FRAUD_BGP + __FRAUD_YWW + __FRAUD_JYG + __FRAUD_XWW + __FRAUD_UUY + __FRAUD_SNT + __FRAUD_JNB + __FRAUD_QFY + __FRAUD_WDR + __FRAUD_WFC + __FRAUD_AUM + __FRAUD_MCQ + __FRAUD_PVN + __FRAUD_FVU + __FRAUD_CKF + __FRAUD_MQO + __FRAUD_TCC + __FRAUD_GBW + __FRAUD_AXF + __FRAUD_THJ + __FRAUD_YQV + __FRAUD_YJA + __FRAUD_YPO + __FRAUD_UOQ + __AFRICAN_STATE + __AGREED_RATIO + __AM_DYING + __ATM_CARD + __BACK_SCRATCH +  __BARRISTER + __BENEFICIARY + __COMPENSATION + __CONTACT_ATTY + __CONTACT_YOU + __COURIER + __DEAD_PARENT + __DEAL + DEAR_BENEFICIARY + DEAR_WINNER + __DECEASED + __DESTROY_ME + __DIED_IN + __DIPLOMATIC + __DORMANT_ACCT + __EARLY_DEMISE + EMRCP + __EX_CUSTOMER + __FEES + __FIFTY_FIFTY + __FOUND_YOU + __FRAUD + __FRAUD_PTX + __HUSH_HUSH + __I_INHERIT + __INHERIT_PMT + __INTL_BANK + __INVEST_COUNTRY + __INVEST_MONEY + __IS_LEGAL + __I_WILL_YOU + __KAM_LOTTO2 + __LOTTO_ADMITS + LOTTO_AGENT + __LOTTO_DEPT + __LOTTO_RELATED + __LOTTO_VERIFY + LOTTO_URI + __LOTTO_WIN_01 + __LOTTO_WINNINGS + __LUCKY_WINNER + __LUCRATIVE + __MILLIONS + __MY_FORTUNE + __NEXT_OF_KIN + __NOT_DEAD_YET + __NOT_SCAM + __OUR_BEHALF + __SCAM + __SHARE_IT + __SUM_OF_FUND + __SURVIVORS + __THEY_INHERIT + __TRTMT_DEFILED + __TRUNK_BOX +  __UN + UNCLAIMED_MONEY + __WIDOW + __WILL_LEGAL + __XFER_MONEY + __YOU_ASSIST + __YOU_INHERIT + __YOUR_BANK + __YOUR_FUND + __YOUR_PERM + __YOUR_PROFIT + __YOU_WON + LOTTO_AGENT_FM + LOTTO_AGENT_RPLY + __PCT_FOR_YOU + __PCT_OF_PMTS + __RANDOM_PICK + __CHARITY > 5)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 32,
+        "upstream_id": "ADVANCE_FEE_3_NEW",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_3_NEW && !__FILL_THIS_FORM && !LOTS_OF_MONEY && !__ADVANCE_FEE_4_NEW && !__ADVANCE_FEE_5_NEW) && !__HTML_LINK_IMAGE && !__COMMENT_EXISTS && !__HAS_SENDER && !__HAS_X_LOOP && !__TO_YOUR_ORG && !__BUGGED_IMG ",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 37,
+        "upstream_id": "ADVANCE_FEE_4_NEW",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_4_NEW && !__FILL_THIS_FORM && !LOTS_OF_MONEY && !__ADVANCE_FEE_5_NEW) && !__HTML_LINK_IMAGE && !__COMMENT_EXISTS && !__TAG_EXISTS_CENTER && !__HAS_ERRORS_TO && !__HAS_X_LOOP && !__BUGGED_IMG",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 41,
+        "upstream_id": "ADVANCE_FEE_5_NEW",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_5_NEW && !__FILL_THIS_FORM && !LOTS_OF_MONEY) && !__BUGGED_IMG",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 46,
+        "upstream_id": "__ADVANCE_FEE_2_NEW_MONEY",
+        "kind": "meta",
+        "expression": "!__FILL_THIS_FORM && LOTS_OF_MONEY && __ADVANCE_FEE_2_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 51,
+        "upstream_id": "__ADVANCE_FEE_3_NEW_MONEY",
+        "kind": "meta",
+        "expression": "!__FILL_THIS_FORM && LOTS_OF_MONEY && __ADVANCE_FEE_3_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 55,
+        "upstream_id": "__ADVANCE_FEE_4_NEW_MONEY",
+        "kind": "meta",
+        "expression": "!__FILL_THIS_FORM && LOTS_OF_MONEY && __ADVANCE_FEE_4_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 59,
+        "upstream_id": "__ADVANCE_FEE_5_NEW_MONEY",
+        "kind": "meta",
+        "expression": "!__FILL_THIS_FORM && LOTS_OF_MONEY && __ADVANCE_FEE_5_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 65,
+        "upstream_id": "__ADVANCE_FEE_2_NEW_FORM",
+        "kind": "meta",
+        "expression": "__FILL_THIS_FORM && !LOTS_OF_MONEY && __ADVANCE_FEE_2_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 70,
+        "upstream_id": "__ADVANCE_FEE_3_NEW_FORM",
+        "kind": "meta",
+        "expression": "__FILL_THIS_FORM && !LOTS_OF_MONEY && __ADVANCE_FEE_3_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 74,
+        "upstream_id": "__ADVANCE_FEE_4_NEW_FORM",
+        "kind": "meta",
+        "expression": "__FILL_THIS_FORM && !LOTS_OF_MONEY && __ADVANCE_FEE_4_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 78,
+        "upstream_id": "__ADVANCE_FEE_5_NEW_FORM",
+        "kind": "meta",
+        "expression": "__FILL_THIS_FORM && !LOTS_OF_MONEY && __ADVANCE_FEE_5_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 84,
+        "upstream_id": "__ADVANCE_FEE_2_NEW_FRM_MNY",
+        "kind": "meta",
+        "expression": "__FILL_THIS_FORM && LOTS_OF_MONEY && __ADVANCE_FEE_2_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 89,
+        "upstream_id": "__ADVANCE_FEE_3_NEW_FRM_MNY",
+        "kind": "meta",
+        "expression": "__FILL_THIS_FORM && LOTS_OF_MONEY && __ADVANCE_FEE_3_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 93,
+        "upstream_id": "__ADVANCE_FEE_4_NEW_FRM_MNY",
+        "kind": "meta",
+        "expression": "__FILL_THIS_FORM && LOTS_OF_MONEY && __ADVANCE_FEE_4_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 97,
+        "upstream_id": "__ADVANCE_FEE_5_NEW_FRM_MNY",
+        "kind": "meta",
+        "expression": "__FILL_THIS_FORM && LOTS_OF_MONEY && __ADVANCE_FEE_5_NEW",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 159,
+        "upstream_id": "MONEY_LOTTERY",
+        "kind": "meta",
+        "expression": "__MONEY_LOTTERY && !__CAN_HELP && !__HTML_LINK_IMAGE && !__DOS_HAS_LIST_UNSUB && !__MSGID_APPLEMAIL && __THREADED",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 345,
+        "upstream_id": "MONEY_FRAUD_3",
+        "kind": "meta",
+        "expression": "(__MONEY_FRAUD_3 && !__MONEY_FRAUD_5 && !__MONEY_FRAUD_8 && !__ADVANCE_FEE_3_NEW_MONEY) && !__COMMENT_EXISTS && !__TAG_EXISTS_CENTER && !__IS_EXCH && !__VIA_ML && !__HAS_THREAD_INDEX && !__UNSUB_LINK && !__DOS_HAS_LIST_UNSUB && !__HTML_LINK_IMAGE && !__THREADED && !__DOS_BODY_THU && !__URL_SHORTENER && !__TAG_EXISTS_STYLE",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 351,
+        "upstream_id": "MONEY_FRAUD_5",
+        "kind": "meta",
+        "expression": "(__MONEY_FRAUD_5 && !__MONEY_FRAUD_8 && !__ADVANCE_FEE_5_NEW_MONEY) && !__VIA_ML && !__HAS_THREAD_INDEX && !__COMMENT_EXISTS && !__UNSUB_LINK && !__TAG_EXISTS_CENTER && !__URL_SHORTENER && !__TAG_EXISTS_STYLE",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 358,
+        "upstream_id": "MONEY_FRAUD_8",
+        "kind": "meta",
+        "expression": "__MONEY_FRAUD_8 && !__VIA_ML && !__HAS_THREAD_INDEX && !__BUGGED_IMG ",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 363,
+        "upstream_id": "FORM_FRAUD",
+        "kind": "meta",
+        "expression": "(__FORM_FRAUD && !__FORM_FRAUD_3 && !__FORM_FRAUD_5) && !__DOS_HAS_LIST_UNSUB && !__THREADED && !__HAS_THREAD_INDEX && !__VIA_ML && !__HTML_LINK_IMAGE && !__COMMENT_EXISTS && !__NOT_SPOOFED && !__UPPERCASE_URI && !__UNSUB_LINK",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 369,
+        "upstream_id": "FORM_FRAUD_3",
+        "kind": "meta",
+        "expression": "(__FORM_FRAUD_3 && !__FORM_FRAUD_5 && !__ADVANCE_FEE_3_NEW_FORM && !__ADVANCE_FEE_3_NEW_FRM_MNY) && !__DOS_HAS_LIST_UNSUB && !__THREADED && !__HAS_THREAD_INDEX && !__VIA_ML && !__HTML_LINK_IMAGE && !__MIME_QP && !__DOS_BODY_FRI && !__UNSUB_LINK && !__BUGGED_IMG && !__NOT_SPOOFED",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_lotsa_money.cf",
+        "line": 375,
+        "upstream_id": "FORM_FRAUD_5",
+        "kind": "meta",
+        "expression": "(__FORM_FRAUD_5 && !__ADVANCE_FEE_5_NEW_FORM && !__ADVANCE_FEE_5_NEW_FRM_MNY) && !__DOS_HAS_LIST_UNSUB && !__THREADED && !__HAS_THREAD_INDEX && !__VIA_ML && !__BOUNCE_CTYPE ",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 1371,
+        "upstream_id": "__VFY_ACCT_FRAUD",
+        "kind": "meta",
+        "expression": "__VERIFY_ACCOUNT && __ADVANCE_FEE_2_NEW ",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 1387,
+        "upstream_id": "__GOOGLE_DOC_SUSP",
+        "kind": "meta",
+        "expression": "__URI_GOOGLE_DOC && (__HAS_DOMAINKEY_SIG || __RDNS_NONE || __SYSADMIN || __STY_INVIS || LOTS_OF_MONEY || __XFER_MONEY || __ADVANCE_FEE_2_NEW) && !ALL_TRUSTED",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 2347,
+        "upstream_id": "BOMB_MONEY",
+        "kind": "meta",
+        "expression": "__EXPLOSIVE_DEVICE && ( __ADVANCE_FEE_3_NEW || __ADVANCE_FEE_4_NEW || __ADVANCE_FEE_5_NEW )",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3785,
+        "upstream_id": "__ENVFROM_GOOG_TRIX_SPAMMY",
+        "kind": "meta",
+        "expression": "__ENVFROM_GOOG_TRIX && (__GOOGLE_DOC_SUSP || FREEMAIL_REPLYTO_END_DIGIT || __ADVANCE_FEE_2_NEW || FORGED_GMAIL_RCVD || LOTS_OF_MONEY || __HAS_X_SOURCE_DIR )",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3884,
+        "upstream_id": "__UNDISC_MONEY",
+        "kind": "meta",
+        "expression": "__TO_UNDISCLOSED && (__ADVANCE_FEE_2_NEW || LOTS_OF_MONEY)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 47,
+        "upstream_id": "ADVANCE_FEE_2_NEW_MONEY",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_2_NEW_MONEY && !__ADVANCE_FEE_3_NEW_MONEY && !__ADVANCE_FEE_4_NEW_MONEY && !__ADVANCE_FEE_5_NEW_MONEY) && !__BOTH_INR_AND_REF && !__LYRIS_EZLM_REMAILER && !__COMMENT_EXISTS && !__VIA_ML && !__THREADED && !__HAS_SENDER && !__HAS_X_LOOP && !__BUGGED_IMG",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 52,
+        "upstream_id": "ADVANCE_FEE_3_NEW_MONEY",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_3_NEW_MONEY && !__ADVANCE_FEE_4_NEW_MONEY && !__ADVANCE_FEE_5_NEW_MONEY) && !__BOTH_INR_AND_REF && !__VIA_ML && !__THREADED && !__HAS_SENDER && !__HAS_X_LOOP && !__BUGGED_IMG",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 56,
+        "upstream_id": "ADVANCE_FEE_4_NEW_MONEY",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_4_NEW_MONEY && !__ADVANCE_FEE_5_NEW_MONEY) && !__BOTH_INR_AND_REF && !__HAS_SENDER && !__HAS_X_LOOP && !__BUGGED_IMG",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 60,
+        "upstream_id": "ADVANCE_FEE_5_NEW_MONEY",
+        "kind": "meta",
+        "expression": "__ADVANCE_FEE_5_NEW_MONEY && !__BOUNCE_CTYPE && !__BUGGED_IMG",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 66,
+        "upstream_id": "ADVANCE_FEE_2_NEW_FORM",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_2_NEW_FORM && !__ADVANCE_FEE_3_NEW_FORM && !__ADVANCE_FEE_4_NEW_FORM && !__ADVANCE_FEE_5_NEW_FORM) && !__FROM_LOWER && !__HAS_X_LOOP",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 71,
+        "upstream_id": "ADVANCE_FEE_3_NEW_FORM",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_3_NEW_FORM && !__ADVANCE_FEE_4_NEW_FORM && !__ADVANCE_FEE_5_NEW_FORM) && !__THREADED && !__HAS_SENDER && !__FROM_LOWER && !__HAS_X_LOOP",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 75,
+        "upstream_id": "ADVANCE_FEE_4_NEW_FORM",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_4_NEW_FORM && !__ADVANCE_FEE_5_NEW_FORM)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 79,
+        "upstream_id": "ADVANCE_FEE_5_NEW_FORM",
+        "kind": "meta",
+        "expression": "__ADVANCE_FEE_5_NEW_FORM",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 85,
+        "upstream_id": "ADVANCE_FEE_2_NEW_FRM_MNY",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_2_NEW_FRM_MNY && !__ADVANCE_FEE_3_NEW_FRM_MNY && !__ADVANCE_FEE_4_NEW_FRM_MNY && !__ADVANCE_FEE_5_NEW_FRM_MNY) && !__HAS_X_LOOP",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 90,
+        "upstream_id": "ADVANCE_FEE_3_NEW_FRM_MNY",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_3_NEW_FRM_MNY && !__ADVANCE_FEE_4_NEW_FRM_MNY && !__ADVANCE_FEE_5_NEW_FRM_MNY) && !__HAS_X_LOOP",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 94,
+        "upstream_id": "ADVANCE_FEE_4_NEW_FRM_MNY",
+        "kind": "meta",
+        "expression": "(__ADVANCE_FEE_4_NEW_FRM_MNY && !__ADVANCE_FEE_5_NEW_FRM_MNY)",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_advance_fee_reevolved.cf",
+        "line": 98,
+        "upstream_id": "ADVANCE_FEE_5_NEW_FRM_MNY",
+        "kind": "meta",
+        "expression": "__ADVANCE_FEE_5_NEW_FRM_MNY",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 1388,
+        "upstream_id": "GOOGLE_DOC_SUSP",
+        "kind": "meta",
+        "expression": "__GOOGLE_DOC_SUSP && !GOOGLE_DOCS_PHISH_MANY && !__HAS_SENDER && !__RCD_RDNS_MTA_MESSY && !__LYRIS_EZLM_REMAILER && !__USING_VERP1 && !__RCD_RDNS_SMTP && !__HAS_THREAD_INDEX && !__RCD_RDNS_SMTP && ! __HAS_LIST_ID && !__SURVEY && !__BUGGED_IMG ",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3786,
+        "upstream_id": "ENVFROM_GOOG_TRIX",
+        "kind": "meta",
+        "expression": "__ENVFROM_GOOG_TRIX_SPAMMY",
+        "disposition": "dependency_review"
+      },
+      {
+        "project": "spamassassin",
+        "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+        "file": "rulesrc/sandbox/jhardin/20_misc_testing.cf",
+        "line": 3885,
+        "upstream_id": "UNDISC_MONEY",
+        "kind": "meta",
+        "expression": "__UNDISC_MONEY && !__VIA_ML && !__MSGID_HEXISH",
+        "disposition": "dependency_review"
+      }
+    ],
+    "source_location": "sandbox",
+    "upstream_role": "component",
+    "status": "research_candidate",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "changes": "Only regex delimiters and modifiers converted. Body expression retained. Component probes do not implement their parent meta rules or email exclusions. Runtime activation is unresolved.",
+    "likely_false_positives": "Ordinary calls to action, commercial documentation, financial or SEO software, and quoted examples. Components are not independent spam rules.",
+    "fixtures": [
+      {
+        "text": "lottery prize",
+        "match": true
+      },
+      {
+        "text": "lottery simulation",
+        "match": false
+      }
+    ]
+  }
+]

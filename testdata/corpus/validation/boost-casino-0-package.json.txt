@@ -1,0 +1,17 @@
+{
+  "name": "boost-casino",
+  "version": "1.0.0",
+  "description": "Boost Casino Arktisten Aarteiden Jääteemaiset Kolikkopelit — Kriteerit Harkittuun Valintaan",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://boostcasino-fi.net/",
+  "repository": {
+    "type": "git",
+    "url": "https://boostcasino-fi.net/"
+  },
+  "keywords": [
+    "notes",
+    "reference",
+    "package"
+  ]
+}

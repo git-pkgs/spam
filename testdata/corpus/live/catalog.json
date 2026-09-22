@@ -1,0 +1,414 @@
+[
+  {
+    "registry": "helm",
+    "name": "yugabyte/yugaware",
+    "version": "2026.1.2",
+    "archive_url": "https://charts.yugabyte.com/yugaware-2026.1.2.tgz",
+    "archive_filename": "yugaware-2026.1.2.tgz",
+    "sha256": "5f00fd033f37510236a199886f32e3e21fdf38f6ccce2c0b6bb4bdc894ce0335",
+    "bytes": 66362,
+    "expected_integrity": "",
+    "upstream_integrity_verified": false,
+    "integrity_status": "not_supplied",
+    "captured_at": "2026-09-22T16:01:33.687406Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "artifacthub.io",
+      "event_id": "3166225",
+      "observed_at": "2026-09-22T15:38:54.797464Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/artifacthub.io/packages/yugabyte%2Fyugaware/versions/2026.1.2"
+    },
+    "documents": [
+      {
+        "path": "yugaware-0-Chart.yaml.txt",
+        "member": "yugaware/Chart.yaml",
+        "bytes": 847,
+        "sha256": "8d69d86f82b5cfe853f8ef8c8eea1b7d21534539f0ef62c1d9c314ff85b5e0b6",
+        "source_kind": "archive_member"
+      },
+      {
+        "path": "yugaware-1-Chart.yaml.txt",
+        "member": "yugaware/charts/perf-advisor-chart/Chart.yaml",
+        "bytes": 138,
+        "sha256": "6fb441200d75390219ad0468cf9963c4b6c6f54eaec7a8fbaef11bdd4246690c",
+        "source_kind": "archive_member"
+      },
+      {
+        "path": "yugaware-2-README.md.txt",
+        "member": "yugaware/README.md",
+        "bytes": 6841,
+        "sha256": "525a9ec60134b5d464a77cebf77ec45dfb48979aa72234f290cbc594ffd5467a",
+        "source_kind": "archive_member"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "yugabyte",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Root and dependency chart manifests plus deployment README describe YugabyteDB Anywhere. Maintainer declarations are present but were not verified.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "maven",
+    "name": "aws.sdk.kotlin:chime-jvm",
+    "version": "1.9.5",
+    "archive_url": "https://maven-central.storage-download.googleapis.com/maven2/aws/sdk/kotlin/chime-jvm/1.9.5/chime-jvm-1.9.5.jar",
+    "archive_filename": "chime-jvm-1.9.5.jar",
+    "sha256": "c2176f392110b2a01ce66fbeb7972c328c9c7cb41d554d6300d01c46a2df8896",
+    "bytes": 1980862,
+    "expected_integrity": "sha1-2fa9c8d766ad46b5d7b67a300d33074a5a5f6ee9",
+    "upstream_integrity_verified": false,
+    "integrity_status": "unsupported: parse SRI entry 1: unsupported algorithm \"sha1\"",
+    "captured_at": "2026-09-22T16:29:18.518125Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "repo1.maven.org",
+      "event_id": "3166630",
+      "observed_at": "2026-09-22T15:38:55.049558Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/aws.sdk.kotlin%3Achime-jvm/versions/1.9.5"
+    },
+    "documents": [
+      {
+        "path": "aws-chime-0-pom.xml.txt",
+        "member": "registry/pom.xml",
+        "bytes": 5634,
+        "sha256": "6e1365f7213c7e3c21b80a9768989acbe73b7b139e292577f9c09c66933807f5",
+        "source_kind": "registry_manifest",
+        "source_url": "https://repo1.maven.org/maven2/aws/sdk/kotlin/chime-jvm/1.9.5/chime-jvm-1.9.5.pom",
+        "response_status": 200,
+        "upstream_integrity_verified": false
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "aws-sdk-kotlin",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Separate POM describes the Kotlin Chime client; repeated lines are dependency group identifiers.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "maven",
+    "name": "aws.sdk.kotlin:arczonalshift",
+    "version": "1.9.5",
+    "archive_url": "https://maven-central.storage-download.googleapis.com/maven2/aws/sdk/kotlin/arczonalshift/1.9.5/arczonalshift-1.9.5.jar",
+    "archive_filename": "arczonalshift-1.9.5.jar",
+    "sha256": "089e24417bf9f6c34eec5720eebb2cbcc82ea2855ecef90133eb17e1079d5868",
+    "bytes": 647,
+    "expected_integrity": "sha1-28cbbd267e2cdbea0a637d71db8f57b788a419c0",
+    "upstream_integrity_verified": false,
+    "integrity_status": "unsupported: parse SRI entry 1: unsupported algorithm \"sha1\"",
+    "captured_at": "2026-09-22T16:29:19.288446Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "repo1.maven.org",
+      "event_id": "3166573",
+      "observed_at": "2026-09-22T15:38:55.021559Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/aws.sdk.kotlin%3Aarczonalshift/versions/1.9.5"
+    },
+    "documents": [
+      {
+        "path": "aws-arczonalshift-0-pom.xml.txt",
+        "member": "registry/pom.xml",
+        "bytes": 3004,
+        "sha256": "ca407e0a9ab5b4fe45b46d953bd5309820a229a839c266e243755d79ae137055",
+        "source_kind": "registry_manifest",
+        "source_url": "https://repo1.maven.org/maven2/aws/sdk/kotlin/arczonalshift/1.9.5/arczonalshift-1.9.5.pom",
+        "response_status": 200,
+        "upstream_integrity_verified": false
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "aws-sdk-kotlin",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Separate POM describes the Kotlin ARC Zonal Shift client; repeated lines are dependency group identifiers.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "cargo",
+    "name": "fragcap",
+    "version": "0.10.2",
+    "archive_url": "https://static.crates.io/crates/fragcap/fragcap-0.10.2.crate",
+    "archive_filename": "fragcap-0.10.2.crate",
+    "sha256": "ff91b2caa7e6f1eb74d8a72ba1b7b7cff2d0b04e9c11f45f15aaee28990b06a3",
+    "bytes": 246354,
+    "expected_integrity": "sha256-ff91b2caa7e6f1eb74d8a72ba1b7b7cff2d0b04e9c11f45f15aaee28990b06a3",
+    "upstream_integrity_verified": false,
+    "integrity_status": "unsupported: parse SRI entry 1: sha256 digest encoding has 64 bytes, incompatible with 32-byte digest",
+    "captured_at": "2026-09-22T15:40:09.871089Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "crates.io",
+      "event_id": "3166756",
+      "observed_at": "2026-09-22T15:38:55.123046Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/fragcap/versions/0.10.2"
+    },
+    "documents": [
+      {
+        "path": "fragcap-0-Cargo.toml.txt",
+        "member": "fragcap-0.10.2/Cargo.toml",
+        "bytes": 4794,
+        "sha256": "380945a1d371ba177a8a3ad5aa4d53086eb7c43a776f9bcdfc77e509200d58d4",
+        "source_kind": "archive_member"
+      },
+      {
+        "path": "fragcap-1-README.md.txt",
+        "member": "fragcap-0.10.2/README.md",
+        "bytes": 2694,
+        "sha256": "97f287c15c1b9544470427b38cc71497be6418ac89bd0fced5e61ef612b13d5d",
+        "source_kind": "archive_member"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "fragcap",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Cargo manifest and README describe a packet-capture library facade. Repetition comes from dependency configuration.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "cargo",
+    "name": "fragcap-core",
+    "version": "0.10.2",
+    "archive_url": "https://static.crates.io/crates/fragcap-core/fragcap-core-0.10.2.crate",
+    "archive_filename": "fragcap-core-0.10.2.crate",
+    "sha256": "082bc05b5c8a16d3f7b755e015aa90f42b0e8e3cbc2e17f7b81774d5a47e3de8",
+    "bytes": 136991,
+    "expected_integrity": "sha256-082bc05b5c8a16d3f7b755e015aa90f42b0e8e3cbc2e17f7b81774d5a47e3de8",
+    "upstream_integrity_verified": false,
+    "integrity_status": "unsupported: parse SRI entry 1: sha256 digest encoding has 64 bytes, incompatible with 32-byte digest",
+    "captured_at": "2026-09-22T15:40:21.484841Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "crates.io",
+      "event_id": "3166753",
+      "observed_at": "2026-09-22T15:38:55.12298Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/crates.io/packages/fragcap-core/versions/0.10.2"
+    },
+    "documents": [
+      {
+        "path": "fragcap-core-0-Cargo.toml.txt",
+        "member": "fragcap-core-0.10.2/Cargo.toml",
+        "bytes": 1189,
+        "sha256": "22a5407693eaac052036b5d766c685ee860f075bf41450e86f4cf78f5a9b2915",
+        "source_kind": "archive_member"
+      },
+      {
+        "path": "fragcap-core-1-README.md.txt",
+        "member": "fragcap-core-0.10.2/README.md",
+        "bytes": 1682,
+        "sha256": "4e5a1526d0cd43b8c97ec2aee269693834e01aed2ec1e4a852a3abda0e2da7ad",
+        "source_kind": "archive_member"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "fragcap",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Cargo manifest and README describe capture types and pipeline components in the same project as fragcap.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "npm",
+    "name": "@nx/eslint",
+    "version": "23.3.0-beta.3",
+    "archive_url": "https://registry.npmjs.org/@nx/eslint/-/eslint-23.3.0-beta.3.tgz",
+    "archive_filename": "eslint-23.3.0-beta.3.tgz",
+    "sha256": "11ea4993852ec6983a73341f35a3248a4e4e0d3ba3f26a6a8f4faf1022f8e22b",
+    "bytes": 91073,
+    "expected_integrity": "sha512-qUxzPGovB2WDIReUH00yqktphDaX8yASwjGyB5qvX1XfO2m2TO021BwgY95luGq2lXk0rxR+xxw3H00UvNV+bg==",
+    "upstream_integrity_verified": true,
+    "integrity_status": "verified",
+    "captured_at": "2026-09-22T15:40:45.142055Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "npmjs.org",
+      "event_id": "3167308",
+      "observed_at": "2026-09-22T15:39:21.67359Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40nx%2Feslint/versions/23.3.0-beta.3"
+    },
+    "documents": [
+      {
+        "path": "nx-eslint-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 2302,
+        "sha256": "ff03f050e816f30525b1d18640fc08579d2e94663f33f160a3d736388a0a4ffb",
+        "source_kind": "archive_member"
+      },
+      {
+        "path": "nx-eslint-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 2107,
+        "sha256": "ff090d7a55f6c2792eac75a352a328872e38ae0054b0849c1224d82ad89b50b0",
+        "source_kind": "archive_member"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "nx",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Manifest describes an ESLint plugin; README supplies Nx setup instructions, badges and documentation links.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "npm",
+    "name": "@midnight-ntwrk/compact-js-command",
+    "version": "3.0.0-rc.0",
+    "archive_url": "https://registry.npmjs.org/@midnight-ntwrk/compact-js-command/-/compact-js-command-3.0.0-rc.0.tgz",
+    "archive_filename": "compact-js-command-3.0.0-rc.0.tgz",
+    "sha256": "ac30c950f2918451e89a2b9d48d9da92fcbd1291d5cb1cc96b46e48e36c9b8ec",
+    "bytes": 54393,
+    "expected_integrity": "sha512-49qdvboiikBNfXQvnjFEDQyoM5jXjzabomEuD3yx8Dh9H3xdT7HyGEEIqnt+Zeur9ikbkmhv4bCbaMA5xodxdQ==",
+    "upstream_integrity_verified": true,
+    "integrity_status": "verified",
+    "captured_at": "2026-09-22T15:42:50.686672Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "npmjs.org",
+      "event_id": "3166657",
+      "observed_at": "2026-09-22T15:38:55.066395Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/%40midnight-ntwrk%2Fcompact-js-command/versions/3.0.0-rc.0"
+    },
+    "documents": [
+      {
+        "path": "compact-command-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 3219,
+        "sha256": "51c68143310d1dcb7b2a85ee3f202b21054e6745ad7cc255fbdde4bbb27528b3",
+        "source_kind": "archive_member"
+      },
+      {
+        "path": "compact-command-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 9238,
+        "sha256": "1440cc1555e387cf963d0a7f347265690dfbc93afe96acce94edec362bbeb9ca",
+        "source_kind": "archive_member"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "midnight-compact",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Manifest and README describe command-line contract utilities. Repeated wording introduces distinct file-path options.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "nuget",
+    "name": "itenterprise.maui.printing",
+    "version": "1.0.29",
+    "archive_url": "https://api.nuget.org/v3-flatcontainer/itenterprise.maui.printing/1.0.29/itenterprise.maui.printing.1.0.29.nupkg",
+    "archive_filename": "itenterprise.maui.printing.1.0.29.nupkg",
+    "sha256": "6ee31d8d83924b699d9be4bfcfccbcb9dce91adb05e233e6a040761486a5d882",
+    "bytes": 104956,
+    "expected_integrity": "sha512-SM4zhiOBUZMD6XgrBuSUo21to3K/1L6OYN1Mmm4TDOQLuc8c2IxVzZdooZAHbi+UHKKHblkv4JiynadZe9keuA==",
+    "upstream_integrity_verified": true,
+    "integrity_status": "verified",
+    "captured_at": "2026-09-22T15:40:25.520574Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "nuget.org",
+      "event_id": "3167064",
+      "observed_at": "2026-09-22T15:38:55.367809Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/nuget.org/packages/itenterprise.maui.printing/versions/1.0.29"
+    },
+    "documents": [
+      {
+        "path": "maui-printing-0-ItEnterprise.Maui.Printing.nuspec.txt",
+        "member": "ItEnterprise.Maui.Printing.nuspec",
+        "bytes": 4291,
+        "sha256": "92bb9167b7721ece76992d91a758848569b8b8ddc77e1aa3666e166a5ad3b199",
+        "source_kind": "archive_member"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "itenterprise-printing",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Printing library manifest repeats dependencies across target frameworks. Label is limited to the selected manifest.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "golang",
+    "name": "github.com/python-caldav/caldav",
+    "version": "v3.3.1+incompatible",
+    "archive_url": "https://proxy.golang.org/cached-only/github.com/python-caldav/caldav/@v/v3.3.1+incompatible.zip",
+    "archive_filename": "v3.3.1+incompatible.zip",
+    "sha256": "8d1d9c4ace4462db6d33b83605ac33971fa48ee2eec4aaf5c41f06466f38c9de",
+    "bytes": 883486,
+    "expected_integrity": "",
+    "upstream_integrity_verified": false,
+    "integrity_status": "not_supplied",
+    "captured_at": "2026-09-22T15:40:27.203013Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "proxy.golang.org",
+      "event_id": "3166565",
+      "observed_at": "2026-09-22T15:38:54.999449Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/proxy.golang.org/packages/github.com%2Fpython-caldav%2Fcaldav/versions/v3.3.1%2Bincompatible"
+    },
+    "documents": [
+      {
+        "path": "caldav-0-README.md.txt",
+        "member": "github.com/python-caldav/caldav@v3.3.1+incompatible/README.md",
+        "bytes": 2330,
+        "sha256": "086de51a67e5fd33228746866b867000ba02f82d3fad1fce47eb41e3d4be2a51",
+        "source_kind": "archive_member"
+      },
+      {
+        "path": "caldav-1-README.md.txt",
+        "member": "github.com/python-caldav/caldav@v3.3.1+incompatible/docs/design/README.md",
+        "bytes": 6239,
+        "sha256": "b5faa1c97caf17b020959f85114c441a8dcd21ed3bdec7abf27b68549efb3787",
+        "source_kind": "archive_member"
+      },
+      {
+        "path": "caldav-2-README.md.txt",
+        "member": "github.com/python-caldav/caldav@v3.3.1+incompatible/tests/README.md",
+        "bytes": 7829,
+        "sha256": "9e0d9af6c33d78c998a5439c6fd6b0284166ab30e3d1942d805966ab643ecb32",
+        "source_kind": "archive_member"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "python-caldav",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "READMEs describe a Python CalDAV client, design diagrams and test-server commands. Repeated lines are diagram borders and setup commands. This archive was observed through the Go proxy; its contents are Python documentation.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  },
+  {
+    "registry": "pypi",
+    "name": "graphatoms",
+    "version": "2.0.0",
+    "archive_url": "https://files.pythonhosted.org/packages/41/7f/959e756d755abfeb8d3cf4f1cffad303b2a4e66f658d7f8aa1eb9c4a064a/graphatoms-2.0.0-py3-none-any.whl",
+    "archive_filename": "graphatoms-2.0.0-py3-none-any.whl",
+    "sha256": "3462fd7cf45c72a8a87ae24e729225fbbc8f9ea66f253332b16c425085dc0fbc",
+    "bytes": 233409,
+    "expected_integrity": "sha256-3462fd7cf45c72a8a87ae24e729225fbbc8f9ea66f253332b16c425085dc0fbc",
+    "upstream_integrity_verified": false,
+    "integrity_status": "unsupported: parse SRI entry 1: sha256 digest encoding has 64 bytes, incompatible with 32-byte digest",
+    "captured_at": "2026-09-22T15:39:52.089332Z",
+    "discovery": {
+      "source": "live.ecosyste.ms version.created events",
+      "registry": "pypi.org",
+      "event_id": "3167321",
+      "observed_at": "2026-09-22T15:39:23.448854Z",
+      "version_url": "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/graphatoms/versions/2.0.0"
+    },
+    "documents": [
+      {
+        "path": "graphatoms-0-METADATA.txt",
+        "member": "graphatoms-2.0.0.dist-info/METADATA",
+        "bytes": 5293,
+        "sha256": "c7f967a3832066d9e8ab338dc6b7a3e8c02eeba49dcddb2270b7a97c63103271",
+        "source_kind": "archive_member"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "graphatoms",
+    "label_basis": "Provisional manual review of selected raw text, with scanner output already visible. This is a promotional-spam comparison label, not a whole-package or safety verdict.",
+    "observations": "Wheel METADATA describes chemical graph structures and reaction analysis, with scientific dependencies.",
+    "inspection": "Saved manifest and README bytes only. No package code executed, HTML rendered, document links followed or publisher identity verified."
+  }
+]

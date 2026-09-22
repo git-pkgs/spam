@@ -1,0 +1,17 @@
+{
+  "name": "macau-casino",
+  "version": "1.0.0",
+  "description": "Macau Casino — Comprendre les Wilds Multiplicateurs Cumulés Avant de Choisir Votre Session",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://macau-casino.info/",
+  "repository": {
+    "type": "git",
+    "url": "https://macau-casino.info/"
+  },
+  "keywords": [
+    "notes",
+    "reference",
+    "package"
+  ]
+}

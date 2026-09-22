@@ -1,0 +1,573 @@
+[
+  {
+    "registry": "nuget",
+    "name": "free-steam-codes-generator",
+    "version": "1.0.0",
+    "category": "phishing_link_promotion",
+    "campaign": "checkmarx-2022-cross-registry",
+    "archive_url": "https://api.nuget.org/v3-flatcontainer/free-steam-codes-generator/1.0.0/free-steam-codes-generator.1.0.0.nupkg",
+    "metadata_url": "https://api.nuget.org/v3/registration5-semver1/free-steam-codes-generator/index.json",
+    "evidence_url": "https://checkmarx.com/blog/how-140k-nuget-npm-and-pypi-packages-were-used-to-spread-phishing-links/?p=80611",
+    "observations": [
+      "Promotional description and one outbound link.",
+      "Archive contains a zero-byte library placeholder and no application code."
+    ],
+    "sha256": "8eca0af42d28709e27959c517f160e9935dea2e55ebcc98eb164ca1b5587e0be",
+    "bytes": 12947,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": false,
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "label_basis": "Reported campaign membership and promotional content in the preserved original metadata or documentation.",
+    "split_group": "checkmarx-2022-cross-registry",
+    "documents": [
+      {
+        "path": "free-steam-codes-generator.nuspec.txt",
+        "member": "Free-steam-codes-generator.nuspec",
+        "bytes": 2261,
+        "sha256": "a6baf15455ac97e8eeea5f4baea5172e4c8bf6c5581e843478cd305cac248bdc"
+      }
+    ],
+    "archive_filename": "free-steam-codes-generator.1.0.0.nupkg"
+  },
+  {
+    "registry": "nuget",
+    "name": "project-makeover-hack-gems",
+    "version": "1.0.0",
+    "category": "phishing_link_promotion",
+    "campaign": "checkmarx-2022-cross-registry",
+    "archive_url": "https://api.nuget.org/v3-flatcontainer/project-makeover-hack-gems/1.0.0/project-makeover-hack-gems.1.0.0.nupkg",
+    "metadata_url": "https://api.nuget.org/v3/registration5-semver1/project-makeover-hack-gems/index.json",
+    "evidence_url": "https://checkmarx.com/blog/how-140k-nuget-npm-and-pypi-packages-were-used-to-spread-phishing-links/?p=80611",
+    "observations": [
+      "Promotional description and one outbound link.",
+      "Archive contains a zero-byte library placeholder and no application code."
+    ],
+    "sha256": "8a67d8d27a8f736039bff8c7376e3bc16775d6a5487f23cb68235839877fb4d0",
+    "bytes": 13231,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": false,
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "label_basis": "Reported campaign membership and promotional content in the preserved original metadata or documentation.",
+    "split_group": "checkmarx-2022-cross-registry",
+    "documents": [
+      {
+        "path": "project-makeover-hack-gems.nuspec.txt",
+        "member": "Project-Makeover-Hack-gems.nuspec",
+        "bytes": 2338,
+        "sha256": "056dcf8345c53a57ac7c8865aef78582af6456a1b0fc3dcf6206930c4daf0611"
+      }
+    ],
+    "archive_filename": "project-makeover-hack-gems.1.0.0.nupkg"
+  },
+  {
+    "registry": "npm",
+    "name": "sournoise",
+    "version": "1.0.1",
+    "category": "dependency_misdirection",
+    "campaign": "phylum-2024-tea-related",
+    "archive_url": "https://registry.npmjs.org/sournoise/-/sournoise-1.0.1.tgz",
+    "expected_integrity": "sha512-l2CZUPAeooA8Plxbdi0dbNVaAMGQtOeaQ5zdZSZ7E1R6xnZ1SvuiYDco7g2ZOQDVqZi9YECTPOrD60zx9xi3Bg==",
+    "metadata_url": "https://registry.npmjs.org/sournoise",
+    "evidence_url": "https://blog.phylum.io/the-great-npm-garbage-patch/",
+    "observations": [
+      "Archive contains only package.json.",
+      "Dependency named axios points to a differently named package tarball."
+    ],
+    "sha256": "6d3a855f78ca70f9ae18ce9901af6b0b67b7b20e5ab8a94f5d81be71044d84da",
+    "bytes": 303,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": true,
+    "label": "dependency_misdirection",
+    "evaluation_group": "excluded",
+    "label_basis": "Reported dependency manipulation, outside promotional-spam evaluation.",
+    "split_group": "phylum-2024-tea-related",
+    "documents": [
+      {
+        "path": "npm/sournoise-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 322,
+        "sha256": "6fc5ff1598914410eb092fb2d1e5876dfcb9629cbb94b6c5fdc88a2591c90b62"
+      }
+    ],
+    "archive_filename": "sournoise-1.0.1.tgz"
+  },
+  {
+    "registry": "npm",
+    "name": "web3-cover",
+    "version": "2.35.609",
+    "category": "bulk_publication_spam",
+    "campaign": "phylum-2024-tea-related",
+    "archive_url": "https://registry.npmjs.org/web3-cover/-/web3-cover-2.35.609.tgz",
+    "expected_integrity": "sha512-9XNZFgqc8R3x7xqwK6FTe/YmsNSCsv7TOhCB5Wevwm/OKH9Yl6QiUimK/NgKJdaxjaKVbIz/BTL5WUufF4I3HA==",
+    "metadata_url": "https://registry.npmjs.org/web3-cover",
+    "evidence_url": "https://blog.phylum.io/the-great-npm-garbage-patch/",
+    "observations": [
+      "170 direct dependencies.",
+      "Archive contains only a manifest and a one-line README."
+    ],
+    "sha256": "e3103028d076ccf8ac43abdb5c83bba6083d5b07df59d9d9995d1b7985cf67ee",
+    "bytes": 3676,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": true,
+    "label": "bulk_publication",
+    "evaluation_group": "excluded",
+    "label_basis": "Reported bulk-publication campaign; sparse contents alone do not establish promotional spam.",
+    "split_group": "phylum-2024-tea-related",
+    "documents": [
+      {
+        "path": "npm/web3-cover-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 9156,
+        "sha256": "f477c1d2156cfc085a1aba6f6ca155342bec50d21ec67139b8b05305c5606a09"
+      },
+      {
+        "path": "npm/web3-cover-readme.txt",
+        "member": "package/README.md",
+        "bytes": 12,
+        "sha256": "02ba620b11db843d92acd5919b5f85d7499e93acf485fe42196d6baf94254baa"
+      }
+    ],
+    "archive_filename": "web3-cover-2.35.609.tgz"
+  },
+  {
+    "registry": "pypi",
+    "name": "aae",
+    "version": "0.1.0",
+    "category": "bulk_publication_spam",
+    "campaign": "2025-11-warlockee",
+    "archive_url": "https://files.pythonhosted.org/packages/3f/3a/e5da12fe522b57e22ef3a3e484eb56b40d1b4df9130f1f29e05434f58077/aae-0.1.0-py3-none-any.whl",
+    "expected_integrity": "sha256-9385b321eccd8a9fc602555862727006c76273a77d422c693f49910450b6f5ef",
+    "metadata_url": "https://pypi.org/pypi/aae/json",
+    "evidence_file": "evidence/aae.json",
+    "campaign_file": "evidence/2025-11-warlockee.json",
+    "observations": [
+      "Wheel contains only dist-info metadata, with no Python modules.",
+      "Metadata differs from the paired sample only by package name."
+    ],
+    "limitation": "Bulk-publication classification depends on campaign evidence; an empty package alone does not establish spam.",
+    "sha256": "9385b321eccd8a9fc602555862727006c76273a77d422c693f49910450b6f5ef",
+    "bytes": 1044,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": true,
+    "evidence_source": "Kamil Mankowski, kam193/package-campaigns",
+    "evidence_revision": "e4c037d2a25de813701b5bfa3f879e66110f1e68",
+    "evidence_url": "https://bad-packages.kam193.eu/pypi/package/aae/",
+    "label_basis": "Reported bulk-publication campaign; sparse contents alone do not establish promotional spam.",
+    "label": "bulk_publication",
+    "evaluation_group": "excluded",
+    "split_group": "2025-11-warlockee",
+    "documents": [
+      {
+        "path": "pypi/aae-metadata.txt",
+        "member": "aae-0.1.0.dist-info/METADATA",
+        "bytes": 288,
+        "sha256": "e30384ab1896baafe4cab79b126e423dce9265b8a591fb90bb750b74f7c358ad"
+      }
+    ],
+    "archive_filename": "aae-0.1.0.whl"
+  },
+  {
+    "registry": "pypi",
+    "name": "aag",
+    "version": "0.1.0",
+    "category": "bulk_publication_spam",
+    "campaign": "2025-11-warlockee",
+    "archive_url": "https://files.pythonhosted.org/packages/7c/f5/1ea8cc420f94d927b75ee0332bfceb955145dc0464cf271e110560f7e9b7/aag-0.1.0-py3-none-any.whl",
+    "expected_integrity": "sha256-b09fbc857b517b816f80cbe1deed8d471cf87301a87f29b003d30d3847ff0a54",
+    "metadata_url": "https://pypi.org/pypi/aag/json",
+    "evidence_file": "evidence/aag.json",
+    "campaign_file": "evidence/2025-11-warlockee.json",
+    "observations": [
+      "Wheel contains only dist-info metadata, with no Python modules.",
+      "Metadata differs from the paired sample only by package name."
+    ],
+    "limitation": "Bulk-publication classification depends on campaign evidence; an empty package alone does not establish spam.",
+    "sha256": "b09fbc857b517b816f80cbe1deed8d471cf87301a87f29b003d30d3847ff0a54",
+    "bytes": 1043,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": true,
+    "evidence_source": "Kamil Mankowski, kam193/package-campaigns",
+    "evidence_revision": "e4c037d2a25de813701b5bfa3f879e66110f1e68",
+    "evidence_url": "https://bad-packages.kam193.eu/pypi/package/aag/",
+    "label_basis": "Reported bulk-publication campaign; sparse contents alone do not establish promotional spam.",
+    "label": "bulk_publication",
+    "evaluation_group": "excluded",
+    "split_group": "2025-11-warlockee",
+    "documents": [
+      {
+        "path": "pypi/aag-metadata.txt",
+        "member": "aag-0.1.0.dist-info/METADATA",
+        "bytes": 288,
+        "sha256": "05e699b16c68a39c6d479ce83007c88b38e02896305f13cf43bb67502bcbc8d1"
+      }
+    ],
+    "archive_filename": "aag-0.1.0.whl"
+  },
+  {
+    "registry": "pypi",
+    "name": "1000-pip-climber-system-cracked",
+    "version": "2023",
+    "category": "affiliate_advertising",
+    "campaign": "2023-pip-climber",
+    "archive_url": "https://files.pythonhosted.org/packages/15/0d/c2856cdbf625c12d40c0e739a32d18be3d09414a14c089bfe7beda417cc3/1000%20pip%20Climber%20System%20cracked-2023.tar.gz",
+    "expected_integrity": "sha256-fbfda95a8c106258409936265be73a019377b133535518fed327321233780ef0",
+    "metadata_url": "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/1000-pip-climber-system-cracked/versions",
+    "evidence_file": "evidence/1000-pip-climber-system-cracked.json",
+    "campaign_file": "evidence/2023-pip-climber.json",
+    "observations": [
+      "README promotes a Forex trading product through repeated affiliate links.",
+      "Archive contains packaging files and metadata, with no application modules."
+    ],
+    "sha256": "fbfda95a8c106258409936265be73a019377b133535518fed327321233780ef0",
+    "bytes": 3451,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": true,
+    "evidence_source": "Kamil Mankowski, kam193/package-campaigns",
+    "evidence_revision": "e4c037d2a25de813701b5bfa3f879e66110f1e68",
+    "evidence_url": "https://bad-packages.kam193.eu/pypi/package/1000-pip-climber-system-cracked/",
+    "label_basis": "Reported campaign membership and promotional content in the preserved original metadata or documentation.",
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "split_group": "2023-pip-climber",
+    "documents": [
+      {
+        "path": "pypi/climber-readme.txt",
+        "member": "1000 pip Climber System cracked-2023/README.md",
+        "bytes": 4330,
+        "sha256": "0f6568b91c03d408b2440f9f10df2c18d53069b2201cb459ad50940fc54e88a4"
+      },
+      {
+        "path": "pypi/climber-pkg-info.txt",
+        "member": "1000 pip Climber System cracked-2023/PKG-INFO",
+        "bytes": 4930,
+        "sha256": "3ab2bb9bdbf6dfc5c3ffb1264e7fc4cd5a56e7f657a8e6605aaa2fbb62c41a39"
+      }
+    ],
+    "archive_filename": "1000-pip-climber-system-cracked-2023.tar.gz"
+  },
+  {
+    "registry": "pypi",
+    "name": "ai-interior-design-info",
+    "version": "0.1.5",
+    "category": "service_advertising",
+    "campaign": "2026-08-dallen",
+    "archive_url": "https://files.pythonhosted.org/packages/10/52/a32644ee478ab773f7dbf6cc42e6bd0e21b46eee9d9501f6807983c04c09/ai_interior_design_info-0.1.5-py3-none-any.whl",
+    "expected_integrity": "sha256-980cc4e8c2dda2c114c4e2a48194b9527d71c29ca6ffca0dcc8dff7fb30d6de6",
+    "metadata_url": "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/ai-interior-design-info/latest_version",
+    "evidence_file": "evidence/ai-interior-design-info.json",
+    "campaign_file": "evidence/2026-08-dallen.json",
+    "observations": [
+      "83,272-byte METADATA file contains a long table of press-release links.",
+      "492-byte module stores website links and returns them from get_info."
+    ],
+    "sha256": "980cc4e8c2dda2c114c4e2a48194b9527d71c29ca6ffca0dcc8dff7fb30d6de6",
+    "bytes": 11873,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": true,
+    "evidence_source": "Kamil Mankowski, kam193/package-campaigns",
+    "evidence_revision": "e4c037d2a25de813701b5bfa3f879e66110f1e68",
+    "evidence_url": "https://bad-packages.kam193.eu/pypi/package/ai-interior-design-info/",
+    "label_basis": "Reported campaign membership and promotional content in the preserved original metadata or documentation.",
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "split_group": "2026-08-dallen",
+    "documents": [
+      {
+        "path": "pypi/interior-metadata.txt",
+        "member": "ai_interior_design_info-0.1.5.dist-info/METADATA",
+        "bytes": 83272,
+        "sha256": "3c24423074372a0a065c00d16c4b291dbe81f40d9d17760beb8376bf768f4360"
+      }
+    ],
+    "archive_filename": "ai-interior-design-info-0.1.5.whl"
+  },
+  {
+    "registry": "pypi",
+    "name": "copilot3d-info",
+    "version": "0.1.0",
+    "category": "service_advertising",
+    "campaign": "2026-08-dallen",
+    "archive_url": "https://files.pythonhosted.org/packages/bc/f8/eed1c5d3dfaef720cd3e516b0f8512d51d8808cc33a60d3c870e6829abc5/copilot3d_info-0.1.0-py2.py3-none-any.whl",
+    "expected_integrity": "sha256-6d3f769ef5b54661b6a0e061171f8b0b620c4ded0a97c7ad43a841d652169fa7",
+    "metadata_url": "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/copilot3d-info/latest_version",
+    "evidence_file": "evidence/copilot3d-info.json",
+    "campaign_file": "evidence/2026-08-dallen.json",
+    "observations": [
+      "Short promotional metadata points to a website.",
+      "50-byte module defines version and website constants only."
+    ],
+    "sha256": "6d3f769ef5b54661b6a0e061171f8b0b620c4ded0a97c7ad43a841d652169fa7",
+    "bytes": 1145,
+    "captured_at": "2026-09-22T07:47:25Z",
+    "inspection": "Archive listing and selected members read as text; nothing installed or executed.",
+    "upstream_integrity_verified": true,
+    "evidence_source": "Kamil Mankowski, kam193/package-campaigns",
+    "evidence_revision": "e4c037d2a25de813701b5bfa3f879e66110f1e68",
+    "evidence_url": "https://bad-packages.kam193.eu/pypi/package/copilot3d-info/",
+    "label_basis": "Reported campaign membership and promotional content in the preserved original metadata or documentation.",
+    "label": "promotional_spam",
+    "evaluation_group": "positive",
+    "split_group": "2026-08-dallen",
+    "documents": [
+      {
+        "path": "pypi/copilot3d-metadata.txt",
+        "member": "copilot3d_info-0.1.0.dist-info/METADATA",
+        "bytes": 327,
+        "sha256": "7d0fef8dd4d3c11d955f565fe427d4e59819452818a9d43b486e9431f8ebbf99"
+      }
+    ],
+    "archive_filename": "copilot3d-info-0.1.0.whl"
+  },
+  {
+    "registry": "npm",
+    "name": "validator",
+    "version": "13.15.35",
+    "archive_url": "https://registry.npmjs.org/validator/-/validator-13.15.35.tgz",
+    "expected_integrity": "sha512-TQ5pAGhd5whStmqWvYF4OjQROlmv9SMFVt37qoCBdqRffuuklWYQlCNnEs2ZaIBD1kZRNnikiZOS1eqgkar0iw==",
+    "metadata_url": "https://registry.npmjs.org/validator/latest",
+    "documents": [
+      {
+        "path": "controls/validator-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 2148,
+        "sha256": "e33c239e4e4cbd1142b7ad37e831951f45cce3e655f3164eb88c7e1eae1a2af5"
+      },
+      {
+        "path": "controls/validator-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 42760,
+        "sha256": "13a1d47b495aeec2300faf156c0cb34c14fdf38e3844780c46d229155c40ab32"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "category": "link_heavy_reference",
+    "split_group": "validator",
+    "observations": [
+      "API reference includes URL, email, currency, and credit-card validation, many reference links, and a sponsor badge.",
+      "Links and repeated terms describe documented validation functions."
+    ],
+    "label_basis": "Manually reviewed registry identity, archive listing, and selected documentation for the promotional-spam task; no package code was executed or audited.",
+    "sha256": "f9a6b506bd9eda8df9d2a4120613426948d9f66cde1b6d5fad3406758d2f81f4",
+    "bytes": 200992,
+    "captured_at": "2026-09-22T08:05:30Z",
+    "inspection": "Archive listing and selected metadata/README members read as text; nothing installed or executed; links not followed.",
+    "upstream_integrity_verified": true,
+    "evidence_url": "https://registry.npmjs.org/validator/latest",
+    "archive_filename": "validator-13.15.35.tgz"
+  },
+  {
+    "registry": "npm",
+    "name": "stripe",
+    "version": "22.6.2",
+    "archive_url": "https://registry.npmjs.org/stripe/-/stripe-22.6.2.tgz",
+    "expected_integrity": "sha512-PwRE2scocvXqDKPiskMa5vRJEAEkq46W69XyUYmAwrNSLr675lQnfqLwnsndAWizwgihOWw/irLmoFRo3ez7ew==",
+    "metadata_url": "https://registry.npmjs.org/stripe/latest",
+    "documents": [
+      {
+        "path": "controls/stripe-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 2812,
+        "sha256": "d94dc30bc4744c1196c8eb4a8f25da11a0d3dc71694474e2f72d74ac76f39104"
+      },
+      {
+        "path": "controls/stripe-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 26626,
+        "sha256": "943c1a1afe69365e15ff0ba59b8f5c92321dc36d5a6b2b3e1576bc066e653939"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "category": "financial_service_client",
+    "split_group": "stripe-sdks",
+    "observations": [
+      "Payment-service SDK with API documentation links, a Discord invitation, and usage examples.",
+      "Financial vocabulary and repeated product links occur in client documentation."
+    ],
+    "label_basis": "Manually reviewed registry identity, archive listing, and selected documentation for the promotional-spam task; no package code was executed or audited.",
+    "sha256": "b59426d1cae67593eeb536e32c227a2d99c0dfb9f3acc722cf30e3a8633b4c5a",
+    "bytes": 1866125,
+    "captured_at": "2026-09-22T08:05:31Z",
+    "inspection": "Archive listing and selected metadata/README members read as text; nothing installed or executed; links not followed.",
+    "upstream_integrity_verified": true,
+    "evidence_url": "https://registry.npmjs.org/stripe/latest",
+    "archive_filename": "stripe-22.6.2.tgz"
+  },
+  {
+    "registry": "pypi",
+    "name": "forex-python",
+    "version": "1.9.2",
+    "archive_url": "https://files.pythonhosted.org/packages/cc/67/c56f18aa20ba4d5a5e41290c67ac0c8024391fabc8356dbfb9625d15e2d0/forex_python-1.9.2-py3-none-any.whl",
+    "expected_integrity": "sha256-d7fa5f98305d9afee8bef5e05dcdc439137476827086cd5c13b45d5ffc97eb19",
+    "metadata_url": "https://pypi.org/pypi/forex-python/json",
+    "documents": [
+      {
+        "path": "controls/forex-python-METADATA.txt",
+        "member": "forex_python-1.9.2.dist-info/METADATA",
+        "bytes": 4620,
+        "sha256": "94b5bb0a7ac7dc1ca5252c3888a56cb765f482c70a6da1c4880da190c18dc661"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "category": "financial_library_with_service_promotion",
+    "split_group": "forex-python",
+    "observations": [
+      "Currency-conversion documentation includes Bitcoin examples and links promoting custom development services.",
+      "The service promotion accompanies documented library usage rather than replacing it."
+    ],
+    "label_basis": "Manually reviewed registry identity, archive listing, and selected documentation for the promotional-spam task; no package code was executed or audited.",
+    "sha256": "d7fa5f98305d9afee8bef5e05dcdc439137476827086cd5c13b45d5ffc97eb19",
+    "bytes": 9489,
+    "captured_at": "2026-09-22T08:05:30Z",
+    "inspection": "Archive listing and selected metadata/README members read as text; nothing installed or executed; links not followed.",
+    "upstream_integrity_verified": true,
+    "evidence_url": "https://pypi.org/pypi/forex-python/json",
+    "archive_filename": "forex_python-1.9.2-py3-none-any.whl"
+  },
+  {
+    "registry": "pypi",
+    "name": "python-telegram-bot",
+    "version": "22.8",
+    "archive_url": "https://files.pythonhosted.org/packages/60/7c/ed7d4dd94280bd434173cae9f7a7aedaaab9af128ae4f494423a5687c820/python_telegram_bot-22.8-py3-none-any.whl",
+    "expected_integrity": "sha256-42373918097f1b837cc4e717d588c19ea79651497ec712bb5b0c76e5e63c50e1",
+    "metadata_url": "https://pypi.org/pypi/python-telegram-bot/json",
+    "documents": [
+      {
+        "path": "controls/python-telegram-bot-METADATA.txt",
+        "member": "python_telegram_bot-22.8.dist-info/METADATA",
+        "bytes": 17336,
+        "sha256": "9fae99aaa169ef6a554b0aa8a1e0cdc4d23d5aec5b5d01b6633fc9a86bf19e34"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "category": "contact_links_in_documentation",
+    "split_group": "python-telegram-bot",
+    "observations": [
+      "Bot API documentation repeats Telegram group invitations and includes many documentation links.",
+      "A donation section asks readers to support other projects; it does not solicit payment to this project."
+    ],
+    "label_basis": "Manually reviewed registry identity, archive listing, and selected documentation for the promotional-spam task; no package code was executed or audited.",
+    "sha256": "42373918097f1b837cc4e717d588c19ea79651497ec712bb5b0c76e5e63c50e1",
+    "bytes": 769397,
+    "captured_at": "2026-09-22T08:05:31Z",
+    "inspection": "Archive listing and selected metadata/README members read as text; nothing installed or executed; links not followed.",
+    "upstream_integrity_verified": true,
+    "evidence_url": "https://pypi.org/pypi/python-telegram-bot/json",
+    "archive_filename": "python_telegram_bot-22.8-py3-none-any.whl"
+  },
+  {
+    "registry": "pypi",
+    "name": "jupyter",
+    "version": "1.1.1",
+    "archive_url": "https://files.pythonhosted.org/packages/38/64/285f20a31679bf547b75602702f7800e74dbabae36ef324f716c02804753/jupyter-1.1.1-py2.py3-none-any.whl",
+    "expected_integrity": "sha256-7a59533c22af65439b24bbe60373a4e95af8f16ac65a6c00820ad378e3f7cc83",
+    "metadata_url": "https://pypi.org/pypi/jupyter/json",
+    "documents": [
+      {
+        "path": "controls/jupyter-METADATA.txt",
+        "member": "jupyter-1.1.1.dist-info/METADATA",
+        "bytes": 1964,
+        "sha256": "5ed413cb0e259a88948a21be8c5d598885616cea4aa6ac8757c458b394f0f1e9"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "category": "legitimate_metapackage",
+    "split_group": "jupyter",
+    "observations": [
+      "Wheel contains only distribution metadata.",
+      "Description explicitly documents a convenience metapackage and the components it installs."
+    ],
+    "label_basis": "Manually reviewed registry identity, archive listing, and selected documentation for the promotional-spam task; no package code was executed or audited.",
+    "sha256": "7a59533c22af65439b24bbe60373a4e95af8f16ac65a6c00820ad378e3f7cc83",
+    "bytes": 2657,
+    "captured_at": "2026-09-22T08:05:30Z",
+    "inspection": "Archive listing and selected metadata/README members read as text; nothing installed or executed; links not followed.",
+    "upstream_integrity_verified": true,
+    "evidence_url": "https://pypi.org/pypi/jupyter/json",
+    "archive_filename": "jupyter-1.1.1-py2.py3-none-any.whl"
+  },
+  {
+    "registry": "nuget",
+    "name": "Humanizer",
+    "version": "3.0.10",
+    "archive_url": "https://api.nuget.org/v3-flatcontainer/humanizer/3.0.10/humanizer.3.0.10.nupkg",
+    "expected_integrity": "sha512-P+aKPpylPXAitNYv8lB9GEXHFKBsiiokSRi1DI+kNWpu+9lxU/OV+0JUtYMGEF6w84bxnp7yew9VgCpv0FOxnw==",
+    "metadata_url": "https://api.nuget.org/v3/registration5-semver1/humanizer/3.0.10.json",
+    "documents": [
+      {
+        "path": "controls/humanizer-Humanizer.nuspec.txt",
+        "member": "Humanizer.nuspec",
+        "bytes": 4193,
+        "sha256": "9cef8513494eaa037c828a4e9840b4d15624243aa2499ee33b4f44bee30c6042"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "category": "legitimate_metapackage",
+    "split_group": "humanizer",
+    "observations": [
+      "Archive contains metadata, an image, and a signature, without application DLLs.",
+      "Manifest declares a family of Humanizer.Core language-package dependencies."
+    ],
+    "label_basis": "Manually reviewed registry identity, archive listing, and selected documentation for the promotional-spam task; no package code was executed or audited.",
+    "sha256": "a0d4972b92cb30d88af2203fd07fb341ea0371bac3b93a7ffb3c342c64c408d0",
+    "bytes": 35728,
+    "captured_at": "2026-09-22T08:05:30Z",
+    "inspection": "Archive listing and selected metadata/README members read as text; nothing installed or executed; links not followed.",
+    "upstream_integrity_verified": true,
+    "evidence_url": "https://api.nuget.org/v3/registration5-semver1/humanizer/3.0.10.json",
+    "archive_filename": "humanizer.3.0.10.nupkg"
+  },
+  {
+    "registry": "nuget",
+    "name": "Stripe.net",
+    "version": "47.4.0",
+    "archive_url": "https://api.nuget.org/v3-flatcontainer/stripe.net/47.4.0/stripe.net.47.4.0.nupkg",
+    "expected_integrity": "sha512-K9AY/otrjeKa56zVQFXI+Jp5VBzjE5WvroazVDcuw08yfQ21+tsEKDi/NEn2GKo6XiSJ8U2NcgmL9QYt8duAkA==",
+    "metadata_url": "https://api.nuget.org/v3/registration5-semver1/stripe.net/47.4.0.json",
+    "documents": [
+      {
+        "path": "controls/stripe-net-Stripe.net.nuspec.txt",
+        "member": "Stripe.net.nuspec",
+        "bytes": 3093,
+        "sha256": "1a1a65f23b6b0a9caebf9ace30a36ffbd55c225e2969788f268a1e3e1b4863a2"
+      },
+      {
+        "path": "controls/stripe-net-README.md.txt",
+        "member": "README.md",
+        "bytes": 12215,
+        "sha256": "1a486b5c9887c14fc130e82daee1cfa6f916de18e482a0b6f463de56c177e079"
+      }
+    ],
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "category": "financial_service_client",
+    "split_group": "stripe-sdks",
+    "observations": [
+      "Payment-service SDK with API usage examples and repeated documentation links.",
+      "Manifest tags include payment, credit cards, money, and payment-provider names."
+    ],
+    "label_basis": "Manually reviewed registry identity, archive listing, and selected documentation for the promotional-spam task; no package code was executed or audited.",
+    "sha256": "cc794496b02497abe6a208455ee2a24ad2bd86b2641a4578ae02deab1594cfc8",
+    "bytes": 11672151,
+    "captured_at": "2026-09-22T08:05:33Z",
+    "inspection": "Archive listing and selected metadata/README members read as text; nothing installed or executed; links not followed.",
+    "upstream_integrity_verified": true,
+    "evidence_url": "https://api.nuget.org/v3/registration5-semver1/stripe.net/47.4.0.json",
+    "archive_filename": "stripe.net.47.4.0.nupkg"
+  }
+]

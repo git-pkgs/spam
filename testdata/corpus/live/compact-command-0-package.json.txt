@@ -1,0 +1,97 @@
+{
+  "name": "@midnight-ntwrk/compact-js-command",
+  "version": "3.0.0-rc.0",
+  "description": "Command line utilities for working with smart contracts compiled with the Compact language",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/midnightntwrk/midnight-sdk.git"
+  },
+  "sideEffects": [],
+  "author": "IOHK",
+  "dependencies": {
+    "@effect/cli": "^0.77.0",
+    "@effect/cluster": "^0.60.0",
+    "@effect/experimental": "^0.61.1",
+    "@effect/platform": "^0.97.0",
+    "@effect/platform-node": "^0.108.1",
+    "@effect/platform-node-shared": "^0.61.1",
+    "@effect/printer": "^0.51.0",
+    "@effect/printer-ansi": "^0.51.0",
+    "@effect/rpc": "^0.76.2",
+    "@effect/sql": "^0.52.1",
+    "@effect/typeclass": "^0.41.0",
+    "@effect/workflow": "^0.19.0",
+    "@midnight-ntwrk/compact-js": "^3.0.0-rc.0",
+    "@midnight-ntwrk/compact-js-node": "^3.0.0-rc.0",
+    "@midnight-ntwrk/platform-js": "^3.0.0",
+    "@midnight-ntwrk/wallet-sdk-address-format": "3.1.0",
+    "effect": "^3.22.1",
+    "json5": "^2.2.3",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "typescript": ">=5.0.0 <7.0.0"
+  },
+  "main": "./dist/esm/index.js",
+  "types": "./dist/dts/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/dts/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    },
+    "./effect": {
+      "types": "./dist/dts/effect/index.d.ts",
+      "import": "./dist/esm/effect/index.js",
+      "default": "./dist/esm/effect/index.js"
+    },
+    "./effect/CompiledContractReflection": {
+      "types": "./dist/dts/effect/CompiledContractReflection.d.ts",
+      "import": "./dist/esm/effect/CompiledContractReflection.js",
+      "default": "./dist/esm/effect/CompiledContractReflection.js"
+    },
+    "./effect/ConfigCompilationError": {
+      "types": "./dist/dts/effect/ConfigCompilationError.d.ts",
+      "import": "./dist/esm/effect/ConfigCompilationError.js",
+      "default": "./dist/esm/effect/ConfigCompilationError.js"
+    },
+    "./effect/ConfigCompiler": {
+      "types": "./dist/dts/effect/ConfigCompiler.d.ts",
+      "import": "./dist/esm/effect/ConfigCompiler.js",
+      "default": "./dist/esm/effect/ConfigCompiler.js"
+    },
+    "./effect/ConfigError": {
+      "types": "./dist/dts/effect/ConfigError.d.ts",
+      "import": "./dist/esm/effect/ConfigError.js",
+      "default": "./dist/esm/effect/ConfigError.js"
+    },
+    "./effect/index": {
+      "types": "./dist/dts/effect/index.d.ts",
+      "import": "./dist/esm/effect/index.js",
+      "default": "./dist/esm/effect/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "effect": [
+        "./dist/dts/effect/index.d.ts"
+      ],
+      "effect/CompiledContractReflection": [
+        "./dist/dts/effect/CompiledContractReflection.d.ts"
+      ],
+      "effect/ConfigCompilationError": [
+        "./dist/dts/effect/ConfigCompilationError.d.ts"
+      ],
+      "effect/ConfigCompiler": [
+        "./dist/dts/effect/ConfigCompiler.d.ts"
+      ],
+      "effect/ConfigError": [
+        "./dist/dts/effect/ConfigError.d.ts"
+      ],
+      "effect/index": [
+        "./dist/dts/effect/index.d.ts"
+      ]
+    }
+  }
+}

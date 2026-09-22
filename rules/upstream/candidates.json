@@ -1,0 +1,1204 @@
+[
+  {
+    "id": "SA_GUARANTEED_100_PERCENT",
+    "project": "spamassassin",
+    "upstream_id": "GUARANTEED_100_PERCENT",
+    "file": "rules/20_phrases.cf",
+    "line": 43,
+    "source_definition": "body GUARANTEED_100_PERCENT\t/100% GUARANTEED/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)100% GUARANTEED",
+    "description": "One hundred percent guaranteed",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 156,
+        "text": "score GUARANTEED_100_PERCENT 2.699 2.699 2.480 2.699"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "100% GUARANTEED",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "100% documented",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_MONEY_BACK",
+    "project": "spamassassin",
+    "upstream_id": "MONEY_BACK",
+    "file": "rules/20_phrases.cf",
+    "line": 103,
+    "source_definition": "body     MONEY_BACK             /money back guarantee/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)money back guarantee",
+    "description": "Money back guarantee",
+    "category": "promotion",
+    "upstream_score_definitions": [],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "money back guarantee",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "money transfer",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_FIN_FREE",
+    "project": "spamassassin",
+    "upstream_id": "FIN_FREE",
+    "file": "rules/20_phrases.cf",
+    "line": 130,
+    "source_definition": "body FIN_FREE\t\t        /\\bfinancial(?:ly)? (?:free|independen)/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bfinancial(?:ly)? (?:free|independen)",
+    "description": "Freedom of a financial nature",
+    "category": "financial",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 106,
+        "text": "score FIN_FREE 0.1"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Financial software documentation, disclaimers and classifier examples.",
+    "fixtures": [
+      {
+        "text": "financial independence",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "financial data",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_ONE_TIME",
+    "project": "spamassassin",
+    "upstream_id": "ONE_TIME",
+    "file": "rules/20_phrases.cf",
+    "line": 136,
+    "source_definition": "body ONE_TIME\t\t\t/\\bone\\W+time (?:charge|investment|offer|promotion)/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bone\\W+time (?:charge|investment|offer|promotion)",
+    "description": "One Time Rip Off",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 256,
+        "text": "score ONE_TIME 1.840 1.175 1.830 0.714 # n=0"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "one-time offer",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "one-time password",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_JOIN_MILLIONS",
+    "project": "spamassassin",
+    "upstream_id": "JOIN_MILLIONS",
+    "file": "rules/20_phrases.cf",
+    "line": 139,
+    "source_definition": "body JOIN_MILLIONS\t        /\\bjoin (?:millions|thousands)\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bjoin (?:millions|thousands)\\b",
+    "description": "Join Millions of Americans",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 204,
+        "text": "score JOIN_MILLIONS 0.1"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "join millions",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "join two tables",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_MARKETING_PARTNERS",
+    "project": "spamassassin",
+    "upstream_id": "MARKETING_PARTNERS",
+    "file": "rules/20_phrases.cf",
+    "line": 142,
+    "source_definition": "body MARKETING_PARTNERS\t\t/\\b(?:marketing|network) partner|\\bpartner (?:web)?site/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\b(?:marketing|network) partner|\\bpartner (?:web)?site",
+    "description": "Claims you registered with a partner",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 221,
+        "text": "score MARKETING_PARTNERS 0.553 0.235 0.689 0.001"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "marketing partner",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "marketing tools",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_ACT_NOW_CAPS",
+    "project": "spamassassin",
+    "upstream_id": "ACT_NOW_CAPS",
+    "file": "rules/20_phrases.cf",
+    "line": 158,
+    "source_definition": "body ACT_NOW_CAPS               /\\bA(?i:ct) N(?i:ow)\\b/",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "\\bA(?i:ct) N(?i:ow)\\b",
+    "description": "Talks about 'acting now' with capitals",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 36,
+        "text": "score ACT_NOW_CAPS 0.1"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "Act Now",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "act now",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_BANG_GUAR",
+    "project": "spamassassin",
+    "upstream_id": "BANG_GUAR",
+    "file": "rules/20_phrases.cf",
+    "line": 165,
+    "source_definition": "body BANG_GUAR\t         \t/\\bguaranteed?\\!/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bguaranteed?\\!",
+    "description": "Something is emphatically guaranteed",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 43,
+        "text": "score BANG_GUAR 1.0"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "guaranteed!",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "guaranteed delivery",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_PRICES_ARE_AFFORDABLE",
+    "project": "spamassassin",
+    "upstream_id": "PRICES_ARE_AFFORDABLE",
+    "file": "rules/20_phrases.cf",
+    "line": 184,
+    "source_definition": "body PRICES_ARE_AFFORDABLE\t/\\baffordable .{0,10}prices\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\baffordable .{0,10}prices\\b",
+    "description": "Message says that prices aren't too expensive",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 262,
+        "text": "score PRICES_ARE_AFFORDABLE 0.794 0.851 1.112 0.551"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "affordable low prices",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "affordable software",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_FREE_QUOTE_INSTANT",
+    "project": "spamassassin",
+    "upstream_id": "FREE_QUOTE_INSTANT",
+    "file": "rules/20_phrases.cf",
+    "line": 108,
+    "source_definition": "body FREE_QUOTE_INSTANT\t\t/free.{0,12}(?:(?:instant|express|online|no.?obligation).{0,4})+.{0,32}\\bquote/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)free.{0,12}(?:(?:instant|express|online|no.?obligation).{0,4})+.{0,32}\\bquote",
+    "description": "Free express or no-obligation quote",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 138,
+        "text": "score FREE_QUOTE_INSTANT 2.700 2.699 2.699 1.297 # n=2"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "free online quote",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "free quotation parser",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_BAD_CREDIT",
+    "project": "spamassassin",
+    "upstream_id": "BAD_CREDIT",
+    "file": "rules/20_phrases.cf",
+    "line": 111,
+    "source_definition": "body BAD_CREDIT\t\t        /\\b(?:(?:bad|poor|eliminate|repair|(?:re)?establish|damag).{0,10} (?:credit|debt)|no credit (?:check|histor|need))/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\b(?:(?:bad|poor|eliminate|repair|(?:re)?establish|damag).{0,10} (?:credit|debt)|no credit (?:check|histor|need))",
+    "description": "Eliminate Bad Credit",
+    "category": "financial",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 42,
+        "text": "score BAD_CREDIT 0.1"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Financial software documentation, disclaimers and classifier examples.",
+    "fixtures": [
+      {
+        "text": "repair your credit",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "credit card parser",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_REFINANCE_YOUR_HOME",
+    "project": "spamassassin",
+    "upstream_id": "REFINANCE_YOUR_HOME",
+    "file": "rules/20_phrases.cf",
+    "line": 115,
+    "source_definition": "body REFINANCE_YOUR_HOME\t/\\brefinance your(?: current)? (?:home|house)\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\brefinance your(?: current)? (?:home|house)\\b",
+    "description": "Home refinancing",
+    "category": "financial",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 291,
+        "text": "score REFINANCE_YOUR_HOME 0 # n=0 n=1 n=2 n=3"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Financial software documentation, disclaimers and classifier examples.",
+    "fixtures": [
+      {
+        "text": "refinance your home",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "refinance calculator",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_UNCLAIMED_MONEY",
+    "project": "spamassassin",
+    "upstream_id": "UNCLAIMED_MONEY",
+    "file": "rules/20_phrases.cf",
+    "line": 148,
+    "source_definition": "body UNCLAIMED_MONEY            /\\bunclaimed\\s(?:assets?|accounts?|mon(?:ey|ies)|balance|funds?|prizes?|rewards?|payments?|deposits?)\\b/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bunclaimed\\s(?:assets?|accounts?|mon(?:ey|ies)|balance|funds?|prizes?|rewards?|payments?|deposits?)\\b",
+    "description": "People just leave money laying around",
+    "category": "financial",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 364,
+        "text": "score UNCLAIMED_MONEY 2.699 2.699 2.699 2.427"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Financial software documentation, disclaimers and classifier examples.",
+    "fixtures": [
+      {
+        "text": "unclaimed prizes",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "unclaimed variable",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_STRONG_BUY",
+    "project": "spamassassin",
+    "upstream_id": "STRONG_BUY",
+    "file": "rules/20_phrases.cf",
+    "line": 61,
+    "source_definition": "body STRONG_BUY\t\t\t/strong buy/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)strong buy",
+    "description": "Tells you about a strong buy",
+    "category": "financial",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 317,
+        "text": "score STRONG_BUY 0 # n=0 n=1 n=2 n=3"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Financial software documentation, disclaimers and classifier examples.",
+    "fixtures": [
+      {
+        "text": "strong buy",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "strong type",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_STOCK_ALERT",
+    "project": "spamassassin",
+    "upstream_id": "STOCK_ALERT",
+    "file": "rules/20_phrases.cf",
+    "line": 65,
+    "source_definition": "body STOCK_ALERT\t\t/\\bstock alert/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bstock alert",
+    "description": "Offers a alert about a stock",
+    "category": "financial",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 308,
+        "text": "score STOCK_ALERT 0 # n=0 n=1 n=2 n=3"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Financial software documentation, disclaimers and classifier examples.",
+    "fixtures": [
+      {
+        "text": "stock alert",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "stock data",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_NOT_ADVISOR",
+    "project": "spamassassin",
+    "upstream_id": "NOT_ADVISOR",
+    "file": "rules/20_phrases.cf",
+    "line": 67,
+    "source_definition": "body NOT_ADVISOR\t\t/not a registered investment advisor/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)not a registered investment advisor",
+    "description": "Not registered investment advisor",
+    "category": "financial",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 249,
+        "text": "score NOT_ADVISOR 0 # n=0 n=1 n=2 n=3"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Financial software documentation, disclaimers and classifier examples.",
+    "fixtures": [
+      {
+        "text": "not a registered investment advisor",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "registered function",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_INVESTMENT_ADVICE",
+    "project": "spamassassin",
+    "upstream_id": "INVESTMENT_ADVICE",
+    "file": "rules/20_phrases.cf",
+    "line": 177,
+    "source_definition": "body INVESTMENT_ADVICE\t\t/\\binvestment advice/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\binvestment advice",
+    "description": "Message mentions investment advice",
+    "category": "financial",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 197,
+        "text": "score INVESTMENT_ADVICE 0.1"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Financial software documentation, disclaimers and classifier examples.",
+    "fixtures": [
+      {
+        "text": "investment advice",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "investment data",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_PREST_NON_ACCREDITED",
+    "project": "spamassassin",
+    "upstream_id": "PREST_NON_ACCREDITED",
+    "file": "rules/20_phrases.cf",
+    "line": 71,
+    "source_definition": "body PREST_NON_ACCREDITED\t/prestigi?ous\\b.{0,20}\\bnon-accredited\\b.{0,20}\\buniversities/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)prestigi?ous\\b.{0,20}\\bnon-accredited\\b.{0,20}\\buniversities",
+    "description": "'Prestigious Non-Accredited Universities'",
+    "category": "promotion",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 260,
+        "text": "score PREST_NON_ACCREDITED 0 # n=0 n=1 n=2 n=3"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "d21208a24b6e9bfd757b5c97a67b2d660d3bdd4d26871c6446e276b85f20e9df",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "prestigious non-accredited universities",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "accredited universities",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_FREE_PORN",
+    "project": "spamassassin",
+    "upstream_id": "FREE_PORN",
+    "file": "rules/20_porn.cf",
+    "line": 34,
+    "source_definition": "body FREE_PORN                  /\\bfree (?:porn|xxx|adult)/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bfree (?:porn|xxx|adult)",
+    "description": "Possible porn - Free Porn",
+    "category": "adult",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 137,
+        "text": "score FREE_PORN 0 # n=0 n=1 n=2 n=3"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "2736970ae10bc8f1a519dcfcf2a032c285129fe9028296fb98cedeae422590b3",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "free adult videos",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "free software",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_ONLINE_PHARMACY",
+    "project": "spamassassin",
+    "upstream_id": "ONLINE_PHARMACY",
+    "file": "rules/20_drugs.cf",
+    "line": 78,
+    "source_definition": "body ONLINE_PHARMACY\t\t/\\bonline pharmacy|\\b(?:drugs|medications) online/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bonline pharmacy|\\b(?:drugs|medications) online",
+    "description": "Online Pharmacy",
+    "category": "pharmaceutical",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 257,
+        "text": "score ONLINE_PHARMACY 0.843 2.371 0.008 0.650"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "3d903639fc313bcc8176f923776ed42cce081471f1e845dc733e763ce29c3548",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "online pharmacy",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "pharmacy data",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_NO_PRESCRIPTION",
+    "project": "spamassassin",
+    "upstream_id": "NO_PRESCRIPTION",
+    "file": "rules/20_drugs.cf",
+    "line": 82,
+    "source_definition": "body NO_PRESCRIPTION\t\t/N[o0].{1,10}P(?:er|re)scr[i1]pt[i1][o0]n.{1,10}(?:n[e3][e3]d[e3]d|requ[1i]re|n[e3]c[e3]ssary)/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)N[o0].{1,10}P(?:er|re)scr[i1]pt[i1][o0]n.{1,10}(?:n[e3][e3]d[e3]d|requ[1i]re|n[e3]c[e3]ssary)",
+    "description": "No prescription needed",
+    "category": "pharmaceutical",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 251,
+        "text": "score NO_PRESCRIPTION 1.915 1.102 2.280 2.399"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "3d903639fc313bcc8176f923776ed42cce081471f1e845dc733e763ce29c3548",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "No Prescription needed",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "Prescription parser",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_DRUG_ED_ONLINE",
+    "project": "spamassassin",
+    "upstream_id": "DRUG_ED_ONLINE",
+    "file": "rules/20_drugs.cf",
+    "line": 75,
+    "source_definition": "body DRUG_ED_ONLINE\t\t/\\bviagra .{0,25}(?:express|online|overnight)/i",
+    "upstream_input": "body",
+    "scope": "document",
+    "expression": "(?i)\\bviagra .{0,25}(?:express|online|overnight)",
+    "description": "Fast Viagra Delivery",
+    "category": "pharmaceutical",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 89,
+        "text": "score DRUG_ED_ONLINE 0.696 1.152 1.221 0.608 # n=0"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "3d903639fc313bcc8176f923776ed42cce081471f1e845dc733e763ce29c3548",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Legitimate commercial documentation, domain-specific software and quoted examples.",
+    "fixtures": [
+      {
+        "text": "viagra online",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "online package",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_NUMERIC_HTTP_ADDR",
+    "project": "spamassassin",
+    "upstream_id": "NUMERIC_HTTP_ADDR",
+    "file": "rules/20_uri_tests.cf",
+    "line": 44,
+    "source_definition": "uri NUMERIC_HTTP_ADDR\t\tm{^https?://[\\d.]+(?:[:/?\\#]|$)}i",
+    "upstream_input": "uri",
+    "scope": "url",
+    "expression": "(?i)^https?://[\\d.]+(?:[:/?\\#]|$)",
+    "description": "Uses a numeric IP address in URL",
+    "category": "url",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 253,
+        "text": "score NUMERIC_HTTP_ADDR 0.000 0.001 0.001 1.242"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "fb9e21cc85f9e2d6d47e32342ac0c1c233c4a737f03707bd34774a91a877cb1d",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Networking documentation, local file references, URL encoders and test fixtures.",
+    "fixtures": [
+      {
+        "text": "https://203.0.113.9/path",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "https://example.test/path",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_IP_LINK_PLUS",
+    "project": "spamassassin",
+    "upstream_id": "IP_LINK_PLUS",
+    "file": "rules/20_uri_tests.cf",
+    "line": 61,
+    "source_definition": "uri IP_LINK_PLUS\tm{^https?://\\d+\\.\\d+\\.\\d+\\.\\d+.{0,20}(?:cgi|click|ads|id=)}i",
+    "upstream_input": "uri",
+    "scope": "url",
+    "expression": "(?i)^https?://\\d+\\.\\d+\\.\\d+\\.\\d+.{0,20}(?:cgi|click|ads|id=)",
+    "description": "Dotted-decimal IP address followed by CGI",
+    "category": "url",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 198,
+        "text": "score IP_LINK_PLUS 0.001 0.001 0.246 0.012"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "fb9e21cc85f9e2d6d47e32342ac0c1c233c4a737f03707bd34774a91a877cb1d",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Networking documentation, local file references, URL encoders and test fixtures.",
+    "fixtures": [
+      {
+        "text": "https://203.0.113.9/click",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "https://203.0.113.9/docs",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "SA_HTTP_EXCESSIVE_ESCAPES",
+    "project": "spamassassin",
+    "upstream_id": "HTTP_EXCESSIVE_ESCAPES",
+    "file": "rules/20_uri_tests.cf",
+    "line": 57,
+    "source_definition": "uri HTTP_EXCESSIVE_ESCAPES\t/^https?:\\/\\/\\S*%(?:3\\d|[46][1-9a-f]|[57][\\da])/i",
+    "upstream_input": "uri",
+    "scope": "url",
+    "expression": "(?i)^https?:\\/\\/\\S*%(?:3\\d|[46][1-9a-f]|[57][\\da])",
+    "description": "Completely unnecessary %-escapes inside a URL",
+    "category": "url",
+    "upstream_score_definitions": [
+      {
+        "file": "rules/50_scores.cf",
+        "line": 190,
+        "text": "score HTTP_EXCESSIVE_ESCAPES 0.001"
+      }
+    ],
+    "changes": "Regex delimiter/modifiers converted to Go syntax. Expression body retained. Package documents or lexical URLs replace upstream email preprocessing; no equivalence claim.",
+    "revision": "5e3ad4cfb07eba575b1082c0583d3744a9c360ea",
+    "license": "Apache-2.0",
+    "license_file": "sources/spamassassin/LICENSE",
+    "source_sha256": "fb9e21cc85f9e2d6d47e32342ac0c1c233c4a737f03707bd34774a91a877cb1d",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Networking documentation, local file references, URL encoders and test fixtures.",
+    "fixtures": [
+      {
+        "text": "https://example.test/%41",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "https://example.test/%20",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "RSPAMD_HTML_META_REFRESH_URL",
+    "project": "rspamd",
+    "upstream_id": "HTML_META_REFRESH_URL",
+    "file": "rules/regexp/misc.lua",
+    "line": 20,
+    "source_definition": "reconf['HTML_META_REFRESH_URL'] = {\n  -- Requires options { check_attachements = true; }\n  re = '/<meta\\\\s+http-equiv=\"refresh\"\\\\s+content=\"\\\\d+\\\\s*;\\\\s*url=/{sa_raw_body}i',\n  description = \"Has HTML Meta refresh URL\",\n  score = 5.0,\n  one_shot = true,\n  group = 'HTML'\n}\n",
+    "upstream_input": "sa_raw_body",
+    "scope": "document",
+    "expression": "(?i)<meta\\s+http-equiv=\"refresh\"\\s+content=\"\\d+\\s*;\\s*url=",
+    "description": "Has HTML Meta refresh URL",
+    "category": "obfuscation",
+    "upstream_score_definitions": [
+      "score = 5.0,"
+    ],
+    "changes": "Lua string escaping and regex delimiter/modifiers converted to Go syntax. Expression body retained. Package text or lexical URLs replace Rspamd input views; MIME/HTML processing is not reproduced.",
+    "revision": "8a829eeda2157e851dedca2f3706fc9e1f1dcbc3",
+    "license": "Apache-2.0",
+    "license_file": "sources/rspamd/LICENSE.md",
+    "source_sha256": "7f27989d9dcb1e8330b4e8a2e7d7407421c4102a89fb73439e9cfefb251d27f0",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "HTML tooling, embedded assets, encoding examples and test fixtures.",
+    "fixtures": [
+      {
+        "text": "<meta http-equiv=\"refresh\" content=\"0;url=https://example.test/\">",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "<meta name=\"description\" content=\"library\">",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "RSPAMD_HAS_DATA_URI",
+    "project": "rspamd",
+    "upstream_id": "HAS_DATA_URI",
+    "file": "rules/regexp/misc.lua",
+    "line": 29,
+    "source_definition": "reconf['HAS_DATA_URI'] = {\n  -- Requires options { check_attachements = true; }\n  re = '/data:[^\\\\/]+\\\\/[^; ]+;base64,/{sa_raw_body}i',\n  description = \"Has Data URI encoding\",\n  group = 'HTML',\n  one_shot = true,\n}\n",
+    "upstream_input": "sa_raw_body",
+    "scope": "document",
+    "expression": "(?i)data:[^\\/]+\\/[^; ]+;base64,",
+    "description": "Has Data URI encoding",
+    "category": "obfuscation",
+    "upstream_score_definitions": [],
+    "changes": "Lua string escaping and regex delimiter/modifiers converted to Go syntax. Expression body retained. Package text or lexical URLs replace Rspamd input views; MIME/HTML processing is not reproduced.",
+    "revision": "8a829eeda2157e851dedca2f3706fc9e1f1dcbc3",
+    "license": "Apache-2.0",
+    "license_file": "sources/rspamd/LICENSE.md",
+    "source_sha256": "7f27989d9dcb1e8330b4e8a2e7d7407421c4102a89fb73439e9cfefb251d27f0",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "HTML tooling, embedded assets, encoding examples and test fixtures.",
+    "fixtures": [
+      {
+        "text": "data:image/png;base64,AAAA",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "data:image/png,AAAA",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "RSPAMD_DATA_URI_OBFU",
+    "project": "rspamd",
+    "upstream_id": "DATA_URI_OBFU",
+    "file": "rules/regexp/misc.lua",
+    "line": 37,
+    "source_definition": "reconf['DATA_URI_OBFU'] = {\n  -- Requires options { check_attachements = true; }\n  re = '/data:text\\\\/(?:plain|html);base64,/{sa_raw_body}i',\n  description = \"Uses Data URI encoding to obfuscate plain or HTML in base64\",\n  group = 'HTML',\n  one_shot = true,\n  score = 2.0\n}\n",
+    "upstream_input": "sa_raw_body",
+    "scope": "document",
+    "expression": "(?i)data:text\\/(?:plain|html);base64,",
+    "description": "Uses Data URI encoding to obfuscate plain or HTML in base64",
+    "category": "obfuscation",
+    "upstream_score_definitions": [
+      "score = 2.0"
+    ],
+    "changes": "Lua string escaping and regex delimiter/modifiers converted to Go syntax. Expression body retained. Package text or lexical URLs replace Rspamd input views; MIME/HTML processing is not reproduced.",
+    "revision": "8a829eeda2157e851dedca2f3706fc9e1f1dcbc3",
+    "license": "Apache-2.0",
+    "license_file": "sources/rspamd/LICENSE.md",
+    "source_sha256": "7f27989d9dcb1e8330b4e8a2e7d7407421c4102a89fb73439e9cfefb251d27f0",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "HTML tooling, embedded assets, encoding examples and test fixtures.",
+    "fixtures": [
+      {
+        "text": "data:text/html;base64,AAAA",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "data:image/png;base64,AAAA",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "RSPAMD_INTRODUCTION",
+    "project": "rspamd",
+    "upstream_id": "INTRODUCTION",
+    "file": "rules/regexp/misc.lua",
+    "line": 46,
+    "source_definition": "reconf['INTRODUCTION'] = {\n  re = '/\\\\b(?:my name is\\\\b|(?:i am|this is)\\\\s+(?:mr|mrs|ms|miss|master|sir|prof(?:essor)?|d(?:octo)?r|rev(?:erend)?)(?:\\\\.|\\\\b))/{sa_body}i',\n  description = \"Sender introduces themselves\",\n  score = 2.0,\n  one_shot = true,\n  group = 'scams'\n}\n",
+    "upstream_input": "sa_body",
+    "scope": "document",
+    "expression": "(?i)\\b(?:my name is\\b|(?:i am|this is)\\s+(?:mr|mrs|ms|miss|master|sir|prof(?:essor)?|d(?:octo)?r|rev(?:erend)?)(?:\\.|\\b))",
+    "description": "Sender introduces themselves",
+    "category": "contact",
+    "upstream_score_definitions": [
+      "score = 2.0,"
+    ],
+    "changes": "Lua string escaping and regex delimiter/modifiers converted to Go syntax. Expression body retained. Package text or lexical URLs replace Rspamd input views; MIME/HTML processing is not reproduced.",
+    "revision": "8a829eeda2157e851dedca2f3706fc9e1f1dcbc3",
+    "license": "Apache-2.0",
+    "license_file": "sources/rspamd/LICENSE.md",
+    "source_sha256": "7f27989d9dcb1e8330b4e8a2e7d7407421c4102a89fb73439e9cfefb251d27f0",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Author introductions and quoted example messages.",
+    "fixtures": [
+      {
+        "text": "my name is Alex",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "my package is available",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  },
+  {
+    "id": "RSPAMD_HAS_FILE_URL",
+    "project": "rspamd",
+    "upstream_id": "HAS_FILE_URL",
+    "file": "rules/regexp/urls.lua",
+    "line": 25,
+    "source_definition": "reconf['HAS_FILE_URL'] = {\n  re = '/^file:\\\\/\\\\//{url}i',\n  description = 'Contains file:// URL',\n  score = 2.0,\n  group = 'url'\n}\n",
+    "upstream_input": "url",
+    "scope": "url",
+    "expression": "(?i)^file:\\/\\/",
+    "description": "Contains file:// URL",
+    "category": "url",
+    "upstream_score_definitions": [
+      "score = 2.0,"
+    ],
+    "changes": "Lua string escaping and regex delimiter/modifiers converted to Go syntax. Expression body retained. Package text or lexical URLs replace Rspamd input views; MIME/HTML processing is not reproduced.",
+    "revision": "8a829eeda2157e851dedca2f3706fc9e1f1dcbc3",
+    "license": "Apache-2.0",
+    "license_file": "sources/rspamd/LICENSE.md",
+    "source_sha256": "9ee7b8b482f269466b10828d03772707fd0516c76a229cb40e901c3f62c78c4a",
+    "default_weight": 0,
+    "enabled_by_default": false,
+    "status": "research_candidate",
+    "likely_false_positives": "Networking documentation, local file references, URL encoders and test fixtures.",
+    "fixtures": [
+      {
+        "text": "file:///tmp/report.txt",
+        "match": true,
+        "purpose": "positive expression example"
+      },
+      {
+        "text": "https://example.test/report.txt",
+        "match": false,
+        "purpose": "nearby nonmatching example"
+      }
+    ]
+  }
+]

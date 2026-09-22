@@ -1,0 +1,16 @@
+{
+  "name": "working-trick-vbucks-now-2023-free-offers-fgfgdfg",
+  "version": "4.2.7",
+  "homepage": "https://bnidigital.com/get-v-bucks",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "author": "xava",
+  "license": "ISC"
+}

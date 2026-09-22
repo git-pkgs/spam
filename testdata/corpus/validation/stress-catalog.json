@@ -1,0 +1,65 @@
+[
+  {
+    "registry": "npm",
+    "name": "@stdlib/datasets-spam-assassin",
+    "version": "0.2.3",
+    "archive_url": "https://registry.npmjs.org/@stdlib/datasets-spam-assassin/-/datasets-spam-assassin-0.2.3.tgz",
+    "expected_integrity": "sha512-prhsLtZInQ4fX9kdYC+rhurigafJdtXlp/fTnBYw//At21Hcw4zhSbiyyAcj2Quv/EKl8sE3PMlB2IJ7IHv6Dw==",
+    "metadata_url": "https://registry.npmjs.org/@stdlib%2Fdatasets-spam-assassin/0.2.3",
+    "split_group": "spam-assassin",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "upstream_integrity_verified": true,
+    "sha256": "8d15982711d6fa4b415fa84e83f654b34ac06db49f120eb9a3d33dd3346622cb",
+    "bytes": 19941393,
+    "documents": [
+      {
+        "path": "-stdlib-datasets-spam-assassin-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 1562,
+        "sha256": "ff4b549ac7ecccf81458a0ff7f17fe6738ceaa852db68497d03df85fd9dd583c"
+      },
+      {
+        "path": "-stdlib-datasets-spam-assassin-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 7574,
+        "sha256": "879a91b1c4b4e3043f528afc68c307927612f80e12d0a1e6d325c3c18f0482ca"
+      },
+      {
+        "path": "spam-assassin-fixture-1.txt",
+        "member": "package/data/spam-1/00001.7848dde101aa985090474a91ec93fcf0.txt",
+        "bytes": 4928,
+        "sha256": "bb9b2ee480076ceb911bd493ab0d866217c104f4c2f31b3d172fccc1ebe88813"
+      },
+      {
+        "path": "spam-assassin-fixture-2.txt",
+        "member": "package/data/spam-1/00002.d94f1b97e48ed3b553b3508d116e6a09.txt",
+        "bytes": 2770,
+        "sha256": "b184009ede9141f87a8c76fabf2a23ca388f9a73cd8667401db349cce999e15c"
+      },
+      {
+        "path": "spam-assassin-fixture-3.txt",
+        "member": "package/data/spam-1/00003.2ee33bc6eacdb11f38d052c44819ba6c.txt",
+        "bytes": 2096,
+        "sha256": "8f6272eaef144851699b0170603dad704a5dbc943466f92ab630e0d6c4d5b4b8"
+      },
+      {
+        "path": "spam-assassin-fixture-4.txt",
+        "member": "package/data/spam-1/00004.eac8de8d759b7e74154f142194282724.txt",
+        "bytes": 4630,
+        "sha256": "5772655fb6526b061e3ac6cee55a71babf4d9314303ca1b4bc5e539bbc6053d5"
+      },
+      {
+        "path": "spam-assassin-fixture-5.txt",
+        "member": "package/data/spam-1/00005.57696a39d7d84318ce497886896bf90d.txt",
+        "bytes": 2697,
+        "sha256": "d205eb9c8a237301ffa2047a2be822af10c6bf9b9247e09145dcd96e23c65c7b"
+      }
+    ],
+    "inspection": "Archive listing and selected raw text only; no package code executed or promotional links fetched.",
+    "captured_at": "2026-09-22T09:23:46Z",
+    "observations": "Legitimate public email corpus with documented spam and ham groups. Baseline selects only package.json and README.",
+    "selection": "Same baseline documents plus first five spam-1 .txt members in lexicographic order, selected before scoring. Separate stress test, not another independent package.",
+    "archive_filename": "datasets-spam-assassin-0.2.3.tgz"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "boomerang-casino",
+  "version": "1.0.0",
+  "description": "Boomerang Casino Australia 2026: Comparing Retro Neon Slots, Features and Value for Players",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://boomerang-casino-au.net/",
+  "repository": {
+    "type": "git",
+    "url": "https://boomerang-casino-au.net/"
+  },
+  "keywords": [
+    "notes",
+    "reference",
+    "package"
+  ]
+}

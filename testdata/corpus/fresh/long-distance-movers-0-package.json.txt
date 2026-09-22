@@ -1,0 +1,15 @@
+{
+  "name": "long-distance-movers",
+  "version": "1.0.0",
+  "homepage": "https://moving-blog.constantcontactsites.com/",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react", "java", "python", "movers", "moving company", "long distance movers", "cross country movers"
+  ],
+  "author": "",
+  "license": "ISC"
+}

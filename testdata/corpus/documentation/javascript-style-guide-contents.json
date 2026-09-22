@@ -1,0 +1,132 @@
+[
+  {
+    "name": "package/package.json",
+    "bytes": 902,
+    "regular": true
+  },
+  {
+    "name": "package/.eslintrc.json",
+    "bytes": 2196,
+    "regular": true
+  },
+  {
+    "name": "package/.jscsrc",
+    "bytes": 2025,
+    "regular": true
+  },
+  {
+    "name": "package/.jshintrc",
+    "bytes": 461,
+    "regular": true
+  },
+  {
+    "name": "package/.travis.yml",
+    "bytes": 664,
+    "regular": true
+  },
+  {
+    "name": "package/circle.yml",
+    "bytes": 248,
+    "regular": true
+  },
+  {
+    "name": "package/CONTRIBUTE.md",
+    "bytes": 314,
+    "regular": true
+  },
+  {
+    "name": "package/LICENSE",
+    "bytes": 1084,
+    "regular": true
+  },
+  {
+    "name": "package/Makefile",
+    "bytes": 3770,
+    "regular": true
+  },
+  {
+    "name": "package/README.md",
+    "bytes": 11619,
+    "regular": true
+  },
+  {
+    "name": "package/REVISION.md",
+    "bytes": 2509,
+    "regular": true
+  },
+  {
+    "name": "package/test/console.js",
+    "bytes": 90,
+    "regular": true
+  },
+  {
+    "name": "package/test/do.js",
+    "bytes": 323,
+    "regular": true
+  },
+  {
+    "name": "package/test/for.js",
+    "bytes": 470,
+    "regular": true
+  },
+  {
+    "name": "package/test/function.js",
+    "bytes": 1373,
+    "regular": true
+  },
+  {
+    "name": "package/test/if.js",
+    "bytes": 710,
+    "regular": true
+  },
+  {
+    "name": "package/test/multiline.js",
+    "bytes": 1160,
+    "regular": true
+  },
+  {
+    "name": "package/test/object.js",
+    "bytes": 623,
+    "regular": true
+  },
+  {
+    "name": "package/test/semicolon.js",
+    "bytes": 185,
+    "regular": true
+  },
+  {
+    "name": "package/test/space-comma.js",
+    "bytes": 376,
+    "regular": true
+  },
+  {
+    "name": "package/test/space-semicolon.js",
+    "bytes": 231,
+    "regular": true
+  },
+  {
+    "name": "package/test/switch.js",
+    "bytes": 728,
+    "regular": true
+  },
+  {
+    "name": "package/test/throw-try-catch.js",
+    "bytes": 1126,
+    "regular": true
+  },
+  {
+    "name": "package/test/variable.js",
+    "bytes": 551,
+    "regular": true
+  },
+  {
+    "name": "package/test/while.js",
+    "bytes": 211,
+    "regular": true
+  },
+  {
+    "name": "package/test/with.js",
+    "bytes": 182,
+    "regular": true
+  }
+]

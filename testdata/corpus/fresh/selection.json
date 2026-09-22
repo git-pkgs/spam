@@ -1,0 +1,33 @@
+{
+  "labelled_at": "2026-09-22T10:37:48Z",
+  "catalogue_sha256": "be9efd69569264617d5610b940966d281f7afc6b1613891d72c6a8ed4625030e",
+  "packages": 8,
+  "groups": {
+    "positive": {
+      "packages": 4,
+      "split_groups": 3
+    },
+    "negative": {
+      "packages": 4,
+      "split_groups": 4
+    }
+  },
+  "selection": "Topic-directed registry searches and manually chosen related controls. Labels and member selection frozen before evaluation. No random-sampling or operator-independence claim.",
+  "grouping": "Both supplement advertisements grouped together despite different publisher accounts and destinations. Essay and moving-service articles form separate observed content groups. No shared operator or independence from older groups established.",
+  "members": "Top-level manifests or core metadata, READMEs and LICENSE files selected by filename before scoring. RubyGems metadata.gz is decompressed as text without YAML deserialization; README and LICENSE are from data.tar.gz.",
+  "limits": {
+    "archive_bytes": 20971520,
+    "expanded_bytes": 67108864,
+    "document_bytes": 524288,
+    "package_text_bytes": 2097152
+  },
+  "rules_at_collection": {
+    "spam.go": "a7904c2d4ad164b3d9b8d937d49ce90e831c5836f40c695ec3a5d6d417dc4e33",
+    "signals.go": "e45a9a4e319f13133b444a25f02647f5eb7040f600eb5adc79eb536e71ab7d0e",
+    "cmd/spam-eval/main.go": "ffd0aaf7de14166e779fd7274698d585c0cef3eed9611f1a4325ccddd1b2321b",
+    "cmd/spam-rules-eval/main.go": "586d7c1a277a37190dc23f988c25548eebd0a9b63e84f90284225daa982ba61a",
+    "cmd/spam-rules-eval/normalize.go": "9b5126188ffed98b8af80cf3f1a473d4181b6162a5a42ea08020ef6a59c14246",
+    "rules/upstream/candidates.json": "1546594f7e3ccff997a23030f67b80b97dcc386214b79ceb6d50dbb541849b87",
+    "rules/upstream/second-candidates.json": "4925648865e22ba23efe8f6b2da5111d4770bd6f32bc387db4a324270857bf5b"
+  }
+}

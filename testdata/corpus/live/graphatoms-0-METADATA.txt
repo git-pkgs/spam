@@ -1,0 +1,161 @@
+Metadata-Version: 2.4
+Name: graphatoms
+Version: 2.0.0
+Summary: The Chemical Core Class for Graph Theory Analysis.
+Keywords: chemistry,graph theory,reaction,event,KMC
+Author: LiuGaoyong
+Author-email: LiuGaoyong <liugaoyong_88@163.com>
+License-Expression: GPL-3.0-or-later
+License-File: src/LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Intended Audience :: Science/Research
+Requires-Dist: ase
+Requires-Dist: pymatgen>2023.6
+Requires-Dist: rdkit>=2025
+Requires-Dist: numpy>=2,<3
+Requires-Dist: pandas>=2,<4
+Requires-Dist: scipy>=1.10,<2
+Requires-Dist: scikit-learn>=1.5
+Requires-Dist: array-api-compat>=1.10
+Requires-Dist: array-api-extra>=0.10
+Requires-Dist: pyarrow
+Requires-Dist: igraph>=0.11
+Requires-Dist: h5py>=3.16
+Requires-Dist: numpydantic
+Requires-Dist: ovld
+Requires-Dist: pydantic>=2.10
+Requires-Dist: python-snappy>=0.7.3
+Requires-Dist: tomli ; python_full_version < '3.11'
+Requires-Dist: tomli-w
+Requires-Dist: typing-extensions
+Requires-Dist: plotext
+Requires-Dist: plotext-plus
+Requires-Dist: matplotlib
+Requires-Dist: executorlib
+Requires-Dist: hydra-core
+Requires-Dist: pipefunc
+Requires-Dist: typer
+Requires-Dist: loguru
+Requires-Python: >=3.12
+Project-URL: Homepage, https://github.com/LiuGaoyong/GraphAtoms
+Project-URL: Repository, https://github.com/LiuGaoyong/GraphAtoms
+Project-URL: Issues, https://github.com/LiuGaoyong/GraphAtoms/issues/
+Description-Content-Type: text/markdown
+
+# graphatoms
+
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/graphatoms.svg)](https://anaconda.org/conda-forge/graphatoms)  [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/graphatoms.svg)](https://anaconda.org/conda-forge/graphatoms)    [![Pypi version](https://img.shields.io/pypi/v/graphatoms)](https://pypi.org/project/graphatoms/) [![PyPI Downloads](https://static.pepy.tech/badge/graphatoms)](https://pepy.tech/projects/graphatoms)
+
+The Chemical Core Class for Graph Theory Analysis.
+
+## Overview
+
+The `graphatoms` is a Python library designed for chemical graph theory analysis. It provides core classes for representing chemical systems and reactions with graph-based data structures.
+
+## Features
+
+- **Graph-based Chemical System Representation**: Represent chemical systems, clusters, and gas molecules using graph theory
+- **Reaction Modeling**: Support for reaction classes, KMC (Kinetic Monte Carlo) events, and MC (Monte Carlo) moves
+- **Geometry Operations**: Bond lists, distance calculations, neighbor lists, rotations, MIC (Minimum Image Convention), and sampling
+- **Data Storage**: Support for HDF5 and SQLite databases for efficient data persistence
+- **Dataclasses**: Pydantic-based data models for type-safe data handling
+- **Array API Compatibility**: Full support for array API standard for cross-framework compatibility (NumPy, PyTorch, JAX, CuPy, etc.)
+- **Subgraph Operations**: Backend-agnostic subgraph extraction with relabeling support using array-api-compat and array-api-extra
+
+## Module Structure
+
+```
+src/graphatoms/
+├── arrayapi/        # Array API compatibility layer
+├── dataclasses/     # Pydantic-based data models
+├── geometry/        # Geometric operations
+├── reaction/        # Reaction classes and KMC events
+│   ├── base/        # Abstract base classes
+│   ├── event/       # KMC events (adsorption, desorption, reaction)
+│   ├── mcmove/      # Monte Carlo moves
+│   ├── mdwarpper/   # MD wrapper
+│   └── network/     # Reaction network
+├── system/          # Core system classes
+│   ├── atoms/       # Atomic structure handling
+│   ├── database/    # Database storage backends
+│   └── graph/       # Graph-based system representation
+└── utils/           # Utility functions
+    └── subgraph.py  # Array API compatible subgraph operations
+```
+
+## Requirements
+
+- Python >= 3.12
+- ase
+- pymatgen > 2023.6
+- rdkit >= 2025
+- scikit-learn >= 1.5
+- array-api-compat >= 1.15.0
+- array-api-extra >= 0.11.0
+- pyarrow
+- igraph >= 0.11
+- h5py >= 3.16
+- hydra-core
+- numpy >= 2.0.0
+- numpydantic
+- ovld
+- pydantic >= 2.10
+- python-snappy >= 0.7.3
+- loguru
+
+## Installation
+
+```bash
+pip install graphatoms
+```
+
+Or with conda:
+
+```bash
+conda install -c conda-forge graphatoms
+```
+
+## Development
+
+For development setup with pixi:
+
+```bash
+pixi install
+pixi run test
+```
+
+## Running Tests
+
+# Run all tests
+
+pytest src/tests/ -v
+
+# Run benchmark tests
+
+pytest src/tests-benchmark/ -v
+
+## Array API Compatibility
+
+The library leverages `array-api-compat` and `array-api-extra` for backend-agnostic array operations. Key utilities include:
+
+- `subgraph()`: Extracts induced subgraphs from edge indices
+- `map_index()`: Maps indices across arrays
+- `index_to_mask()`: Converts index arrays to boolean masks
+- `maybe_num_nodes()`: Determines the number of nodes from edge indices
+
+These functions work seamlessly with NumPy, PyTorch, JAX, and other array API compliant libraries.
+
+## License
+
+GPL-3.0-or-later
+
+## Authors
+
+- LiuGaoyong (liugaoyong_88@163.com)
+
+## Links
+
+- Homepage: https://github.com/LiuGaoyong/GraphAtoms
+- Repository: https://github.com/LiuGaoyong/GraphAtoms
+- Issues: https://github.com/LiuGaoyong/GraphAtoms/issues/

@@ -1,0 +1,168 @@
+[
+  {
+    "registry": "npm",
+    "name": "node-style-guide",
+    "version": "1.0.0",
+    "metadata_url": "https://registry.npmjs.org/node-style-guide/1.0.0",
+    "metadata_request_url": "https://registry.npmjs.org/node-style-guide/latest",
+    "metadata_sha256": "5b13b09769caddc33c45da9fbbb82e821a8ea172e6cc6fbb60f0965a5f840b93",
+    "archive_url": "https://registry.npmjs.org/node-style-guide/-/node-style-guide-1.0.0.tgz",
+    "archive_filename": "node-style-guide-1.0.0.tgz",
+    "expected_integrity": "sha512-gGyxms7eaeBBvhYJon7+YbgWeXG0ojPlIirZKPpPuxZXBBcz9XT8gWFMsspAj+w6YAKkYIaklSxRxmJmxhFXXg==",
+    "upstream_integrity_verified": true,
+    "sha256": "f7fd275974bad464a31054deba23591ea176665be93e9c97f25060456a6cca97",
+    "bytes": 23261,
+    "captured_at": "2026-09-22T10:50:17Z",
+    "archive_listing": {
+      "path": "node-style-guide-contents.json",
+      "sha256": "cd5b768f42162abbf0be5f8cec091adae6e254dcca0b90704d61b0f42b05fed0"
+    },
+    "documents": [
+      {
+        "path": "node-style-guide-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 565,
+        "sha256": "9c3d066623523e44fc4e0c8242cdf79d4fabc06120512c3143a912c7d08ca471"
+      },
+      {
+        "path": "node-style-guide-Readme.md.txt",
+        "member": "package/Readme.md",
+        "bytes": 11626,
+        "sha256": "60929437cdd43422d77bf8eb149f059ad2604e89e4e35322c4079c9829bbae93"
+      }
+    ],
+    "inspection": "Bounded archive listing and top-level manifest, README and license text only. No package code executed, HTML rendered, or document links fetched.",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "documentation-style-guides",
+    "label_basis": "Manual review of manifest, README and archive listing before detector evaluation. Label concerns promotional spam, not a malware assessment.",
+    "observations": "Style guide with lint configuration. README explains formatting conventions and provides code examples; the archive also lists its declared index.js and lint configuration. This is a documentation-focused control, not a documentation-only archive.",
+    "discovery": "Named documentation and reference-list candidates checked through npm registry metadata; selected by content and archive layout before scoring."
+  },
+  {
+    "registry": "npm",
+    "name": "javascript-style-guide",
+    "version": "1.0.1",
+    "metadata_url": "https://registry.npmjs.org/javascript-style-guide/1.0.1",
+    "metadata_request_url": "https://registry.npmjs.org/javascript-style-guide/latest",
+    "metadata_sha256": "5e71e1e6a9d639f8bd2a6deda19d8294948dd257e4c069fccbdc464d927a1fc0",
+    "archive_url": "https://registry.npmjs.org/javascript-style-guide/-/javascript-style-guide-1.0.1.tgz",
+    "archive_filename": "javascript-style-guide-1.0.1.tgz",
+    "expected_integrity": "sha512-1uL/hV7nLX0eAz74EuUs3hCGOq0KjZwXYcpQV5qoGWn7oq6FtT6oXZ096/Qu7L3IZFakCiDniUJEzcPiWH65Vw==",
+    "upstream_integrity_verified": true,
+    "sha256": "a1bd0b6fa4cedda688d5f65e21eab0d5bf6fb8d80cc2f54d18288db670003c22",
+    "bytes": 10334,
+    "captured_at": "2026-09-22T10:50:17Z",
+    "archive_listing": {
+      "path": "javascript-style-guide-contents.json",
+      "sha256": "91b0074e0861f55ee82a62456d5b7a1ca6f2d85178c9595d3ac186e62798d8c0"
+    },
+    "documents": [
+      {
+        "path": "javascript-style-guide-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 902,
+        "sha256": "a34fa3d931cbad1365dc8694a1a92f3c858e8950c7142aa6fe55a99242a2e578"
+      },
+      {
+        "path": "javascript-style-guide-LICENSE.txt",
+        "member": "package/LICENSE",
+        "bytes": 1084,
+        "sha256": "197b420210ca9b5f95ac85e5187d695aa548552eb18b77e714e25d102a605e14"
+      },
+      {
+        "path": "javascript-style-guide-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 11619,
+        "sha256": "7dcc17ababa0dc2a1c858c3c6eef082be94f36733f3ffa38c4b2fc6207e8056e"
+      }
+    ],
+    "inspection": "Bounded archive listing and top-level manifest, README and license text only. No package code executed, HTML rendered, or document links fetched.",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "documentation-style-guides",
+    "label_basis": "Manual review of manifest, README and archive listing before detector evaluation. Label concerns promotional spam, not a malware assessment.",
+    "observations": "README teaches JavaScript conventions and explains lint configuration, with matching configuration and example-test paths in the archive. The main field is null. This is a documentation-focused control, not a documentation-only archive.",
+    "discovery": "Named documentation and reference-list candidates checked through npm registry metadata; selected by content and archive layout before scoring."
+  },
+  {
+    "registry": "npm",
+    "name": "awesome-standard",
+    "version": "1.0.2",
+    "metadata_url": "https://registry.npmjs.org/awesome-standard/1.0.2",
+    "metadata_request_url": "https://registry.npmjs.org/awesome-standard/latest",
+    "metadata_sha256": "63d9da550b02be4131dfe4b4b793c61d6123e5421bed3f317b34aed407516eba",
+    "archive_url": "https://registry.npmjs.org/awesome-standard/-/awesome-standard-1.0.2.tgz",
+    "archive_filename": "awesome-standard-1.0.2.tgz",
+    "expected_integrity": "sha512-8li5g6xEBbVaD9jkwsTnvDBVeG5y38/rVXaKh0CuuRFb8CbtRT1CfnVH6J4qI97kHyV3gC7dZ8aU4ftXeo4nLA==",
+    "upstream_integrity_verified": true,
+    "sha256": "db4cc5c8797764f0db44854a5266073710a4dcc3f2d273aefd9b569127c4794e",
+    "bytes": 2488,
+    "captured_at": "2026-09-22T10:50:17Z",
+    "archive_listing": {
+      "path": "awesome-standard-contents.json",
+      "sha256": "0c64f423b1043768e0f17ccec0233b37ad06525eced5c605927e0c46ae8d76db"
+    },
+    "documents": [
+      {
+        "path": "awesome-standard-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 618,
+        "sha256": "f1d8da2dcf3a6c0d96cb71f93bf0a2c139903b88b7580f7c3f188a71822ed7bb"
+      },
+      {
+        "path": "awesome-standard-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 5267,
+        "sha256": "b3cad563a08c85c118721de2fd44646b02fd103260fb1a7689b65ee525e27d5a"
+      }
+    ],
+    "inspection": "Bounded archive listing and top-level manifest, README and license text only. No package code executed, HTML rendered, or document links fetched.",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "documentation-js-link-collections",
+    "label_basis": "Manual review of manifest, README and archive listing before detector evaluation. Label concerns promotional spam, not a malware assessment.",
+    "observations": "Archive contains only package.json, README.md and CONTRIBUTING.md. README categorizes links to JavaScript linting tools, editor integrations and related resources; no runtime entrypoint is declared. This is a documentation-only archive.",
+    "discovery": "Named documentation and reference-list candidates checked through npm registry metadata; selected by content and archive layout before scoring."
+  },
+  {
+    "registry": "npm",
+    "name": "awesome-electron",
+    "version": "2.6.0",
+    "metadata_url": "https://registry.npmjs.org/awesome-electron/2.6.0",
+    "metadata_request_url": "https://registry.npmjs.org/awesome-electron/latest",
+    "metadata_sha256": "b22efc02fa83be9cbf4089787eadf2665e30d05eeacab4cbfef42ece8ffbc373",
+    "archive_url": "https://registry.npmjs.org/awesome-electron/-/awesome-electron-2.6.0.tgz",
+    "archive_filename": "awesome-electron-2.6.0.tgz",
+    "expected_integrity": "sha512-kfxe7vreUiAiS2r5IkOfnzNYOsZwkTuMSzJBPAKoHR3ykiMzVaevg/21YAQQg/vYYWya8/gBwbDKz3L5RQbs0Q==",
+    "upstream_integrity_verified": true,
+    "sha256": "164bd57b78fd722623ddde396db17d74276544b8521db9637fa3bb397fcd6e66",
+    "bytes": 27995,
+    "captured_at": "2026-09-22T10:50:17Z",
+    "archive_listing": {
+      "path": "awesome-electron-contents.json",
+      "sha256": "e91af8aa7774a172a501116419ba359686d447ac762f7804b338fd9826cbac9b"
+    },
+    "documents": [
+      {
+        "path": "awesome-electron-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 809,
+        "sha256": "4c19da85bc0148969862a013cf181a264dde7557dcac483c2d340d9b14cb8b4f"
+      },
+      {
+        "path": "awesome-electron-readme.md.txt",
+        "member": "package/readme.md",
+        "bytes": 32508,
+        "sha256": "7465439b002a8ac6b6b7bf941775c4c94b985724e8cf077f78827f0da426e6de"
+      }
+    ],
+    "inspection": "Bounded archive listing and top-level manifest, README and license text only. No package code executed, HTML rendered, or document links fetched.",
+    "label": "legitimate",
+    "evaluation_group": "negative",
+    "split_group": "documentation-js-link-collections",
+    "label_basis": "Manual review of manifest, README and archive listing before detector evaluation. Label concerns promotional spam, not a malware assessment.",
+    "observations": "README categorizes Electron applications and developer resources, including a sponsor banner, commercial products, books and courses. The package exposes the list as JSON and includes build/test scripts. This is a reference-data control, not a documentation-only archive.",
+    "discovery": "Named documentation and reference-list candidates checked through npm registry metadata; selected by content and archive layout before scoring."
+  }
+]

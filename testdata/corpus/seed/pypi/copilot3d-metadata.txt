@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: copilot3d-info
+Version: 0.1.0
+Summary: Copilot 3D AI 3D model generator
+Project-URL: Homepage, https://copilot3d.net/
+License: MIT
+Keywords: ai,generator,tool
+Description-Content-Type: text/markdown
+
+# Copilot 3D AI 3D model generator
+
+Copilot 3D AI 3D model generator
+
+Site: https://copilot3d.net/

@@ -1,0 +1,339 @@
+[
+  {
+    "registry": "npm",
+    "name": "slimchews-acv-gummies-weight-loss-formula-reviews",
+    "version": "1.0.0",
+    "metadata_url": "https://registry.npmjs.org/slimchews-acv-gummies-weight-loss-formula-reviews/1.0.0",
+    "publisher": "slimchewsgummies",
+    "archive_url": "https://registry.npmjs.org/slimchews-acv-gummies-weight-loss-formula-reviews/-/slimchews-acv-gummies-weight-loss-formula-reviews-1.0.0.tgz",
+    "expected_integrity": "sha512-QRwK2dJBc8ktFHJMFsjtyfMpSlRG9jyraYPJWYeNQVNa64sqIs0WSnywYuzZbaz58Eprx/YSuGjSslro5U6Btg==",
+    "archive_filename": "slimchews-acv-gummies-weight-loss-formula-reviews-1.0.0.tgz",
+    "sha256": "84a244288f68711135dc949ad79dd6fecb1af3fa0f00c523b9849bd7e4768969",
+    "bytes": 3251,
+    "upstream_integrity_verified": true,
+    "captured_at": "2026-09-22T10:36:29Z",
+    "documents": [
+      {
+        "path": "slimchews-acv-gummies-weight-loss-formula-reviews-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 363,
+        "sha256": "add72eaf19ba1d9d191769ae756b7a381892bebb0802dd8d1177d5e9baf98067"
+      },
+      {
+        "path": "slimchews-acv-gummies-weight-loss-formula-reviews-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 5285,
+        "sha256": "89c33a233ac406d4766da426f320f79aaa64e3e167aa476490a3568b2daa451c"
+      }
+    ],
+    "inspection": "Archive digest checked; bounded archive listing and selected text only. No package code executed, YAML deserialized, HTML rendered, or promotional links fetched.",
+    "evaluation_group": "positive",
+    "label": "promotional_spam",
+    "split_group": "fresh-supplement-adverts",
+    "label_basis": "Manual review of archive listing, manifest and README before either evaluator was run on this selection. This is a promotional-content label, not a malware assessment.",
+    "observations": "README advertises supplement benefits, bottle prices and purchase links. No package API is documented; an index.js file exists but was not executed or inspected.",
+    "discovery": {
+      "registry_search": "pills"
+    },
+    "metadata_request_url": "https://registry.npmjs.org/slimchews-acv-gummies-weight-loss-formula-reviews/latest",
+    "metadata_sha256": "997841ae11bb5e0f3d99bc988960127e016f4f900e0ec730395c5758d21993da"
+  },
+  {
+    "registry": "npm",
+    "name": "ikigai-reviews-weight-loss-capsule",
+    "version": "1.0.0",
+    "metadata_url": "https://registry.npmjs.org/ikigai-reviews-weight-loss-capsule/1.0.0",
+    "publisher": "trialswellness",
+    "archive_url": "https://registry.npmjs.org/ikigai-reviews-weight-loss-capsule/-/ikigai-reviews-weight-loss-capsule-1.0.0.tgz",
+    "expected_integrity": "sha512-qyHeMKMB0czzpYrs7LoXBO1ch06c/xvjWQnk4HTAcMWEO6JskrLbC8B+jBlvAjzXMHX8nyz4OrE7Lttkeem4uw==",
+    "archive_filename": "ikigai-reviews-weight-loss-capsule-1.0.0.tgz",
+    "sha256": "fa50d411eb18ac23e9e322cb6d588dda8952e452a0703aa9e5b63508e8176ecf",
+    "bytes": 5565,
+    "upstream_integrity_verified": true,
+    "captured_at": "2026-09-22T10:36:29Z",
+    "documents": [
+      {
+        "path": "ikigai-reviews-weight-loss-capsule-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 392,
+        "sha256": "64a42bd347c9cea0ea078da933a8e91c86b41b623ea2a34871ff3d9cd6a7c7ca"
+      },
+      {
+        "path": "ikigai-reviews-weight-loss-capsule-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 31684,
+        "sha256": "69bef97996b4c2e9903a5ec80c50aa6c82d39b8160bc3800f76b35cd5e6edf20"
+      }
+    ],
+    "inspection": "Archive digest checked; bounded archive listing and selected text only. No package code executed, YAML deserialized, HTML rendered, or promotional links fetched.",
+    "evaluation_group": "positive",
+    "label": "promotional_spam",
+    "split_group": "fresh-supplement-adverts",
+    "label_basis": "Manual review of archive listing, manifest and README before either evaluator was run on this selection. This is a promotional-content label, not a malware assessment.",
+    "observations": "Archive contains only package.json and a supplement advertisement with purchase links and repeated promotional pages. The manifest points its main field at README.md.",
+    "discovery": {
+      "registry_search": "pills"
+    },
+    "metadata_request_url": "https://registry.npmjs.org/ikigai-reviews-weight-loss-capsule/latest",
+    "metadata_sha256": "b1148427a67b2eb6e222e2cc5467f8af8ba003d095defa275a89647fdd946195"
+  },
+  {
+    "registry": "npm",
+    "name": "essay-writing-tips-for-descriptive-essays-read",
+    "version": "1.0.0",
+    "metadata_url": "https://registry.npmjs.org/essay-writing-tips-for-descriptive-essays-read/1.0.0",
+    "publisher": "dankilmer",
+    "archive_url": "https://registry.npmjs.org/essay-writing-tips-for-descriptive-essays-read/-/essay-writing-tips-for-descriptive-essays-read-1.0.0.tgz",
+    "expected_integrity": "sha512-Rj5/ir0eFq0JJxPSnjOw/5sl81jR3T5jznKbvgB7zox646RJ7x5grdyHaG6xpIdHQTvD/XUh1v7nBKNfnBUnSQ==",
+    "archive_filename": "essay-writing-tips-for-descriptive-essays-read-1.0.0.tgz",
+    "sha256": "7c1118a957e60dfe5ae77fbddae283a5e1b75b9875f3ea613d762369123a0c20",
+    "bytes": 1476,
+    "upstream_integrity_verified": true,
+    "captured_at": "2026-09-22T10:36:29Z",
+    "documents": [
+      {
+        "path": "essay-writing-tips-for-descriptive-essays-read-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 253,
+        "sha256": "a57e83fb19fad23ea55f488151cecce9494cc90f0395f0de46e4a1a845378bb7"
+      },
+      {
+        "path": "essay-writing-tips-for-descriptive-essays-read-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 2456,
+        "sha256": "10b836f1cdbd7717aa6eca49dbd1eee07edd3eae11b81a67d201da7e01ad0126"
+      }
+    ],
+    "inspection": "Archive digest checked; bounded archive listing and selected text only. No package code executed, YAML deserialized, HTML rendered, or promotional links fetched.",
+    "evaluation_group": "positive",
+    "label": "promotional_spam",
+    "split_group": "fresh-essay-service-links",
+    "label_basis": "Manual review of archive listing, manifest and README before either evaluator was run on this selection. This is a promotional-content label, not a malware assessment.",
+    "observations": "Archive contains only package.json and an essay-writing article with a commercial essay-help link. The declared index.js entrypoint is absent, and no software API is documented.",
+    "discovery": {
+      "registry_search": "essays"
+    },
+    "metadata_request_url": "https://registry.npmjs.org/essay-writing-tips-for-descriptive-essays-read/latest",
+    "metadata_sha256": "30b0d2253ce401216501acd4668fe40ee87d912511f1d206d8a2834397b814d3"
+  },
+  {
+    "registry": "npm",
+    "name": "fitness-calculator",
+    "version": "1.1.1",
+    "metadata_url": "https://registry.npmjs.org/fitness-calculator/1.1.1",
+    "publisher": "tripathimanas",
+    "archive_url": "https://registry.npmjs.org/fitness-calculator/-/fitness-calculator-1.1.1.tgz",
+    "expected_integrity": "sha512-/4mVdjj1Wc9YVAf0D0P0K++xvv7lpq+fN4vje1lEnfj5+SX6W3xvkvwrCmezPTsNRW3Urlr2vxDbYBwrhngz+Q==",
+    "archive_filename": "fitness-calculator-1.1.1.tgz",
+    "sha256": "1c0f8c3e279b69c7e98e8230ab9c21048694ff3fe252536e55ce018843a7ce23",
+    "bytes": 4452,
+    "upstream_integrity_verified": true,
+    "captured_at": "2026-09-22T10:36:29Z",
+    "documents": [
+      {
+        "path": "fitness-calculator-0-LICENSE.txt",
+        "member": "package/LICENSE",
+        "bytes": 1071,
+        "sha256": "ad5879d535787a7cd25d65e426516b7bee8789fe4b4943683c524279537849b9"
+      },
+      {
+        "path": "fitness-calculator-1-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 617,
+        "sha256": "f420e14e3757ec2d797b84e2951dfe078225862e3b3725941ad09bacae1b6c81"
+      },
+      {
+        "path": "fitness-calculator-2-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 6476,
+        "sha256": "e7a7a1c6c3bc566fabbe3d73638bd2eab21c317fd33f21b2c3884cc28ad0b09c"
+      }
+    ],
+    "inspection": "Archive digest checked; bounded archive listing and selected text only. No package code executed, YAML deserialized, HTML rendered, or promotional links fetched.",
+    "evaluation_group": "negative",
+    "label": "legitimate",
+    "split_group": "fresh-fitness-calculator",
+    "label_basis": "Manual review of archive listing, manifest and README before either evaluator was run on this selection. This is a promotional-content label, not a malware assessment.",
+    "observations": "README documents callable BMI, calorie and macronutrient calculations with parameter types and examples. Archive contains the declared index.js entrypoint.",
+    "discovery": {
+      "method": "topic-related legitimate control chosen before scoring"
+    },
+    "metadata_request_url": "https://registry.npmjs.org/fitness-calculator/latest",
+    "metadata_sha256": "5e4a882b950004b0e611c4a30e2dc866233259a91d0384569b5522fc0b110442"
+  },
+  {
+    "registry": "npm",
+    "name": "write-good",
+    "version": "1.0.8",
+    "metadata_url": "https://registry.npmjs.org/write-good/1.0.8",
+    "publisher": "richardlitt",
+    "archive_url": "https://registry.npmjs.org/write-good/-/write-good-1.0.8.tgz",
+    "expected_integrity": "sha512-P1Ct7+DNrOcr2JAxDZ3Q5i5sx2LSveu7iLaoUL0A+YiG0GKf0l5+9j3rwMeyh6JeTL1+HfQV1rnwEvzhNIvpFw==",
+    "archive_filename": "write-good-1.0.8.tgz",
+    "sha256": "f54db3db8db0076fd1c05411c7f3923f055176632c51dc4046ab216e51130221",
+    "bytes": 12418,
+    "upstream_integrity_verified": true,
+    "captured_at": "2026-09-22T10:36:29Z",
+    "documents": [
+      {
+        "path": "write-good-0-LICENSE.txt",
+        "member": "package/LICENSE",
+        "bytes": 1082,
+        "sha256": "897df2d117b16204eb1af4f1ffc9b3bf7359bcf88089d64e695c98451b91bca3"
+      },
+      {
+        "path": "write-good-1-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 1611,
+        "sha256": "06a3fdbdc386028d17f88de4b08b32fed8aee158693454cb4d1d86e57f30bb6d"
+      },
+      {
+        "path": "write-good-2-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 9470,
+        "sha256": "2a036c7f47036857e91e746576c915213fb4380d942783b31fa695c561694a0b"
+      }
+    ],
+    "inspection": "Archive digest checked; bounded archive listing and selected text only. No package code executed, YAML deserialized, HTML rendered, or promotional links fetched.",
+    "evaluation_group": "negative",
+    "label": "legitimate",
+    "split_group": "fresh-write-good",
+    "label_basis": "Manual review of archive listing, manifest and README before either evaluator was run on this selection. This is a promotional-content label, not a malware assessment.",
+    "observations": "README documents a prose-linting API and CLI with examples. Archive listing includes implementation and tests, matching its declared software purpose.",
+    "discovery": {
+      "method": "topic-related legitimate control chosen before scoring"
+    },
+    "metadata_request_url": "https://registry.npmjs.org/write-good/latest",
+    "metadata_sha256": "60b821ba5159d85bf75930cb9994cb6d18545f15e62838f4b891815a2f1a4429"
+  },
+  {
+    "registry": "npm",
+    "name": "long-distance-movers",
+    "version": "1.0.0",
+    "metadata_url": "https://registry.npmjs.org/long-distance-movers/1.0.0",
+    "publisher": "altonjamesbrown",
+    "archive_url": "https://registry.npmjs.org/long-distance-movers/-/long-distance-movers-1.0.0.tgz",
+    "expected_integrity": "sha512-w6+LEncq2VO+J2u2MT+9neg3zKzNxk2vODAr2prunsXDMU/7Fes6yfiiFJk97UIg8ImtLaxcY/YcAc8/EY9ZSA==",
+    "archive_filename": "long-distance-movers-1.0.0.tgz",
+    "sha256": "1d725b1eec722a514216f3581094bdc96c04d592637b712c89501ddcc3e031c1",
+    "bytes": 1214,
+    "upstream_integrity_verified": true,
+    "captured_at": "2026-09-22T10:36:29Z",
+    "documents": [
+      {
+        "path": "long-distance-movers-0-package.json.txt",
+        "member": "package/package.json",
+        "bytes": 406,
+        "sha256": "d41cb323d547a57c64245ce9f97b6c47d2053460ad6655018d23432c91dd88d0"
+      },
+      {
+        "path": "long-distance-movers-1-README.md.txt",
+        "member": "package/README.md",
+        "bytes": 1848,
+        "sha256": "e6a510cf4b435d543e120742016d89cd22bc97c3980ae222729722bbc0bc4e29"
+      }
+    ],
+    "inspection": "Archive digest checked; bounded archive listing and selected text only. No package code executed, YAML deserialized, HTML rendered, or promotional links fetched.",
+    "evaluation_group": "positive",
+    "label": "promotional_spam",
+    "split_group": "fresh-moving-service-seo",
+    "label_basis": "Manual review of archive listing, manifest and README before either evaluator was run on this selection. This is a promotional-content label, not a malware assessment.",
+    "observations": "Archive contains only package.json and a moving-services article. The manifest links to a moving-services blog and mixes programming-language keywords with moving-service keywords; its declared index.js entrypoint is absent.",
+    "discovery": {
+      "registry_search": "moving"
+    },
+    "metadata_request_url": "https://registry.npmjs.org/long-distance-movers/latest",
+    "metadata_sha256": "03552acb8f6694bdcdcf931cb86dde5fe898c39b67ae8cc643b540e10147f17f"
+  },
+  {
+    "registry": "pypi",
+    "name": "garminconnect",
+    "version": "0.3.16",
+    "metadata_url": "https://pypi.org/pypi/garminconnect/0.3.16/json",
+    "archive_url": "https://files.pythonhosted.org/packages/16/d2/e96fd8209578a16ddccb78042ed6c7f86365cecbd3339429e1b81ba8a157/garminconnect-0.3.16.tar.gz",
+    "expected_integrity": "sha256-2a5e838bf19608ff62329ef9845658bfed0c4974d7b1e486e3a49595438b69c5",
+    "archive_filename": "garminconnect-0.3.16.tar.gz",
+    "sha256": "2a5e838bf19608ff62329ef9845658bfed0c4974d7b1e486e3a49595438b69c5",
+    "bytes": 106316,
+    "upstream_integrity_verified": true,
+    "captured_at": "2026-09-22T10:36:29Z",
+    "documents": [
+      {
+        "path": "garminconnect-0-LICENSE.txt",
+        "member": "garminconnect-0.3.16/LICENSE",
+        "bytes": 1074,
+        "sha256": "e2366e0a5250c4defdb55953213e4e5bf35edc7f7cb7e39217e813b8eadcb8bb"
+      },
+      {
+        "path": "garminconnect-1-README.md.txt",
+        "member": "garminconnect-0.3.16/README.md",
+        "bytes": 20617,
+        "sha256": "dbb763e418e721afbbaaf4c9cd5c454775afd0894abc1dece4b25f4b3470ebe7"
+      },
+      {
+        "path": "garminconnect-2-PKG-INFO.txt",
+        "member": "garminconnect-0.3.16/PKG-INFO",
+        "bytes": 22722,
+        "sha256": "b14fd4f4dfa453c8819542303edd4895cab504bb220acffb77a3b67edcbc0c27"
+      }
+    ],
+    "inspection": "Archive digest checked; bounded archive listing and selected text only. No package code executed, YAML deserialized, HTML rendered, or promotional links fetched.",
+    "evaluation_group": "negative",
+    "label": "legitimate",
+    "split_group": "fresh-garminconnect",
+    "label_basis": "Manual review of archive listing, manifest and README before either evaluator was run on this selection. This is a promotional-content label, not a malware assessment.",
+    "observations": "README and PKG-INFO describe a Garmin Connect API client with authentication and health-data methods. Donation links accompany software documentation, and the archive contains the documented Python package.",
+    "discovery": {
+      "method": "topic-related legitimate control chosen before scoring"
+    },
+    "metadata_request_url": "https://pypi.org/pypi/garminconnect/json",
+    "metadata_sha256": "4eaea9ec0d0f9801938c4dd60bcf7732174969ba12290d616a220043b8cd1e31"
+  },
+  {
+    "registry": "rubygems",
+    "name": "casino",
+    "version": "4.1.2",
+    "metadata_url": "https://rubygems.org/api/v1/gems/casino.json",
+    "archive_url": "https://rubygems.org/gems/casino-4.1.2.gem",
+    "expected_integrity": "sha256-408067f71ce6ec39f9bd1c22317849cdae64d312ad9e8e3eec3e736223473c6e",
+    "archive_filename": "casino-4.1.2.gem",
+    "sha256": "408067f71ce6ec39f9bd1c22317849cdae64d312ad9e8e3eec3e736223473c6e",
+    "bytes": 95744,
+    "upstream_integrity_verified": true,
+    "captured_at": "2026-09-22T10:36:29Z",
+    "documents": [
+      {
+        "path": "casino-0-metadata.gz.txt",
+        "member": "metadata.gz",
+        "bytes": 21241,
+        "sha256": "a843563047ba248302bdce41cbb112506f049e7bbfd84854721c27aa21519360",
+        "encoding": "gzip-decompressed text; YAML not deserialized"
+      },
+      {
+        "path": "casino-1-LICENSE.txt.txt",
+        "member": "LICENSE.txt",
+        "bytes": 1055,
+        "sha256": "26438d169a336cfd120716877e1e1df6674ac0448d463a57e0cfae6fa0b4c316",
+        "container": "data.tar.gz"
+      },
+      {
+        "path": "casino-2-README.md.txt",
+        "member": "README.md",
+        "bytes": 715,
+        "sha256": "81f99b56f7fbe4bb04b6bcd28e4ce36ecb0cf31d3fc30b9f1e9a03d4a22848ed",
+        "container": "data.tar.gz"
+      }
+    ],
+    "inspection": "Archive digest checked; bounded archive listing and selected text only. No package code executed, YAML deserialized, HTML rendered, or promotional links fetched.",
+    "evaluation_group": "negative",
+    "label": "legitimate",
+    "split_group": "fresh-rbcas",
+    "label_basis": "Manual review of archive listing, manifest and README before either evaluator was run on this selection. This is a promotional-content label, not a malware assessment.",
+    "observations": "README identifies a Central Authentication Service server implemented as a Rails engine. Metadata and archive listing contain matching application paths and dependencies. The package name is unrelated to gambling promotion.",
+    "discovery": {
+      "method": "topic-related legitimate control chosen before scoring"
+    },
+    "metadata_request_url": "https://rubygems.org/api/v1/gems/casino.json",
+    "metadata_sha256": "ce30b716def04c7dab8abdcadfe125bdf4c4946e59709af6883305313d5105c3"
+  }
+]

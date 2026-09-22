@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Project-Makeover-Hack-gems</id>
+    <version>1.0.0</version>
+    <title>Project Makeover Hack cheats unlimited gems GENERATOR</title>
+    <authors>SHARMI</authors>
+    <owners></owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Project Makeover Hack cheats unlimited gems GENERATOR: 
+Project Makeover hack has been released for Android and iOS devices. It is really a mobile game where you decorate your character, equip your wardrobe and upgrade your apartment to stand out. For these players who don't want to purchase Gems, there's been released Project Makeover Hack that's highly recommended. You are able to check it by clicking this button below.
+
+ GENERATE HERE : https://madgames.xyz/project-makeover
+
+Let's go up with Project Makeover gameplay. During the overall game, you have the ability to collect gems, that's the premium currency. If you do not want to hold back till you obtain enough gems, just use Project Makeover Cheats. You're also rewarded with coins for clothing and furniture. With currency, you are permitted to unlock new areas or categories. You may also open a complete video arrangement, that's called “drama”, which recounts the tales that you're feeling inside this game.
+ 
+In the event that you played a fit three game you will be acquainted with the Project Makeover puzzle mode. To play each level you require lives also gems and coins, which you can find using Project Makeover Hack. Keep reading for helpful information on what best to make use of this mod to get instant access to any or all currencies, that'll produce a significant change in your game. For instance, coins are used to buy interior design. Actually receiving free coins is fairly a straightforward task to achieve. After completing each level you are rewarded with a coins pack. What's important with coins you have the ability to unlock the drama portions of the game. 
+
+Time for the overall game, on the off chance that you coordinate four out of a square, you obtain only a little bomb. 
+
+Project Makeover,project makeover mod,project makeover infinito,project makeover dinheiro infinito</description>
+  </metadata>
+</package>
