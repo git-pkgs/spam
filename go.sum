@@ -1,7 +1,7 @@
 github.com/git-pkgs/purl v0.1.21 h1:PDZUX43lxIiXPn2eHcsNiiiwQo+HajntZ/4TwSvCGlw=
 github.com/git-pkgs/purl v0.1.21/go.mod h1:4dOmris48ehjiKmWBqSmMHguUQht48BLeXW+hQUnuj0=
-github.com/git-pkgs/scan v0.1.0 h1:m11tjpq1dQcFQ23m1tby/3WEIB94iKeHI8fmcnxzvI0=
-github.com/git-pkgs/scan v0.1.0/go.mod h1:XWlnQFm9NVpqw+ztH9QpZl/3tm252wfj9z6/479pp2c=
+github.com/git-pkgs/scan v0.1.1 h1:q5VsnGgd4wpjt/EZ2YnuIpjUZkj1OWzySv3IEwo8wPk=
+github.com/git-pkgs/scan v0.1.1/go.mod h1:XWlnQFm9NVpqw+ztH9QpZl/3tm252wfj9z6/479pp2c=
 github.com/git-pkgs/vers v0.7.1 h1:23VceCbOjQKib0jhbfNRqL3YqkBPiUwdkQNhJoZgnsU=
 github.com/git-pkgs/vers v0.7.1/go.mod h1:ofLiBpPNkQmC0LB1k0zmN1gCv7Hi3MiZx8WtmWZ4A9A=
 github.com/package-url/packageurl-go v0.1.7 h1:iFWg6tzAjLA6F/qX3M5nZaiMHJgc+p2zxVyr/fY+sZY=
