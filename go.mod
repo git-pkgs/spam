@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/git-pkgs/purl v0.1.21
-	github.com/git-pkgs/scan v0.1.0
+	github.com/git-pkgs/scan v0.1.1
 	golang.org/x/net v0.59.0
 )
 
