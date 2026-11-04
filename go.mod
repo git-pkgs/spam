@@ -3,7 +3,7 @@ module github.com/git-pkgs/spam
 go 1.26.0
 
 require (
-	github.com/git-pkgs/purl v0.1.22
+	github.com/git-pkgs/purl v0.1.24
 	github.com/git-pkgs/scan v0.1.1
 	golang.org/x/net v0.62.0
 )
